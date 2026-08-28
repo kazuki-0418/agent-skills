@@ -32,6 +32,10 @@ Kivori 固有のリリース手順はここには置かない。それは Kivori
 
 直すときはこのリポジトリを編集して commit する。symlink 側を直接直しても同じファイルになる。
 
+## プラグイン（growth-squad 向け）
+
+honcho と同じく Team plugins に載せられる。manifest は `.cursor-plugin/plugin.json` と `.claude-plugin/plugin.json`。手順は [docs/plugin.md](docs/plugin.md)。
+
 ## Grok Bot
 
-公式の Skills は `SKILL.md` の自動発見ではない。クラウド PC にこの repo を clone し、Bot に読ませる。手順は [docs/grok-bot.md](docs/grok-bot.md)。
+Team plugins に出したあと、Settings → Plugins で Add する。まだ出ていない間はクラウド PC に clone して Read する。詳細は [docs/grok-bot.md](docs/grok-bot.md)。

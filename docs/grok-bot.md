@@ -16,7 +16,13 @@ Skills はアカウント内の Bot で共有される。ただしコネクタ�
 
 Memory は Bot ごとに分かれる（会話と learned role は他 Bot と別）。ファイル・ログイン・ブラウザは全 Bot で1台の PC を共有する。
 
-## クラウド PC での初回
+## 先に試す順
+
+1. growth-squad の marketplace にこの repo を足す（[docs/plugin.md](plugin.md)）
+2. Settings → Plugins で `agent-skills` を Add
+3. 出てこなければ、下の clone に倒す
+
+## クラウド PC での初回（プラグインがまだ無いとき）
 
 Bot に次をそのまま投げる。
 
