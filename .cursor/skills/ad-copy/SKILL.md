@@ -448,27 +448,32 @@ The goal: look and sound like a real person filmed this on their phone. NOT a sc
 **Structure:**
 ```
 [HOOK — 0-3s] Pattern interrupt, curiosity question, or bold claim
-  [VISUAL: talking to camera, casual setting]
+  [VISUAL: phone selfie or chest-height handheld, casual setting — not a lit interview]
 
 [PROBLEM — 3-10s] Name the pain specifically, make them nod
-  [VISUAL: frustrated expression, relatable scenario]
+  [VISUAL: whatever the room is doing — looking at the phone, mid-thought. Not a "frustrated" acting face]
 
 [MECHANISM — 10-25s] Tease the discovery/solution, explain just enough
-  [VISUAL: showing product casually, or demonstrating]
+  [VISUAL: showing the thing the way a friend would, off-center, available light]
 
 [RESULT — 25-40s] Specific transformation, before/after
-  [VISUAL: showing results, genuine excitement]
+  [VISUAL: the result in the same messy frame. Do not switch to a "genuine excitement" performance]
 
 [CTA — 40-60s] Natural close, not salesy
-  [VISUAL: direct to camera, genuine recommendation]
+  [VISUAL: still the same phone. Recommendation to a friend, not a closer's eyeline]
 ```
 
 **Voice rules:**
-- First person, conversational — sounds like a real person sharing what worked for them
-- Include verbal fillers sparingly ("honestly," "like," "I mean") for authenticity
+- First person — a real person telling a friend, not a copywriter performing "UGC"
+- **セリフは日常の素人がその場で言っている風。**作り物のキャッチコピーを声に出さない
+  （2026-08-28）。LINE の音声や飲みの席で言わない文は、書き直す
+- 言い淀み・言い直し・言葉を探す間は、盛らずに 1 本の台本に 1〜2 箇所まで
+  （"honestly" / "like" / 「あの」「なんか」「昨日もそれで」）
 - Specific details: names, dates, numbers, places — not vague claims
 - The CTA should feel like a recommendation to a friend, not a pitch
 - Include `[VISUAL DIRECTION]` notes for what should be on screen
+- 視覚も同じ既定: スマホで素人が撮った構図。プロのインタビュー構図にしない
+  （詳細は `buzzy-video-prompt` の「既定の見た目」）
 
 ## Format B: ADHD Super Hook Ad (3-7 minutes)
 
@@ -639,15 +644,23 @@ From Clayton Makepeace: feel your way through ad copy, don't think your way thro
 
 Read your ad aloud. When the tingle dips at any passage, that's where you rewrite.
 
-## Power Words (Use Liberally)
+## Power Words（書き言葉の Meta 本文・見出しだけ）
 
 Amazing, Astonishing, Breakthrough, Discover, Easy, Effortless, First Time Ever, Free, Guaranteed, How To, Hurry, Immediate, Instant, Introducing, Last Chance, Limited, Miracle, New, Now, Proven, Quick, Revolutionary, Secret, Shocking, Simple, Special, Surprising, Truth, Unique, Win, YOU
+
+**声に出すセリフ・UGC 台本では使わない。**口に出すと広告だと分かる。
+日本語なら「信じられない」「革命的」「今すぐ」「人生変わった」「これ知らないと損」も同じ。
 
 ## Words and Phrases to Ban
 
 **AI tells:** delve, dive into, comprehensive, robust, cutting-edge, utilize, leverage, crucial, vital, essential, unlock, unleash, supercharge, game-changer, revolutionary (when used generically), landscape, navigate, streamline
 
 **Ad cliches:** "click the link in my bio," "you won't believe," "game-changer," "take your X to the next level," "in today's fast-paced world," "are you ready to"
+
+**作り物のセリフ（日本語・声に出す文）:** 「〜してみませんか」「誰でも一度は経験しますよね」
+「実はこれ、知らない人多いんです」「これ、マジで人生変わった」
+対句のキャッチコピーを読み上げただけ（「忘れる人」vs「覚えている人」）
+全員が同じテンションで同じ長さの文。友達に言わない丁寧すぎる締め
 
 **Wimpy hedging (Makepeace):** can, could, should, might, may, ought to — tell them what it WILL do
 
@@ -656,6 +669,16 @@ Amazing, Astonishing, Breakthrough, Discover, Easy, Effortless, First Time Ever,
 ## The UGC Authenticity Test
 
 Before delivering a UGC script, ask: would a real person actually say this out loud, on camera, to their phone? If it sounds like a copywriter wrote it, rewrite it. UGC scripts should feel slightly imperfect — that's what makes them believable.
+
+**2026-08-28: 日常の素人が言っている風。**「UGC っぽく書いた広告」は不合格。
+
+| 落とす | 通す |
+|---|---|
+| 「名前が出てこない瞬間、誰でも一度は経験しますよね」 | 「あの人の名前、出ないときあるじゃん。昨日もそれで」 |
+| 「Kivoriなら、会った人を静かに残せます」 | 「会った人、メモしとくやつ。それだけ」 |
+| フック・問題・解決が同じ熱量のきれいな三段 | 途中で言葉を探し、一番言いたいことだけ具体 |
+
+判定: **友達に LINE 音声で送るか。**送らない文は書き直す。埋め草の「えーと」を量産しない。
 
 ## Readability
 
@@ -671,7 +694,8 @@ Before delivering ad copy, verify:
 4. Are there open loops pulling them to click?
 5. Is it about THEM (their transformation) or about YOU (your product)?
 6. Does the rhythm alternate? (Punchy moments, then breathing room)
-7. Would a real person actually say this out loud?
+7. Would a real person actually say this out loud? **友達に LINE 音声で送るか。**
+   キャッチコピー・対句・「誰でも一度は」は否。日常の素人がその場で言っている風か
 8. Is the CTA benefit-driven, not command-driven?
 
 If any answer is no, rewrite that part.
