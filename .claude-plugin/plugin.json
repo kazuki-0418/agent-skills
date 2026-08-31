@@ -1,13 +1,14 @@
 {
   "name": "agent-skills",
   "version": "1.0.0",
-  "description": "Ad copy, Buzzy/Seedance video prompts, UGC asset intake, and their auditors. Use when writing ads or UGC scripts, generating or reviewing image/video prompts, or checking creative assets.",
+  "description": "New-project bootstrap plus ad copy, Buzzy/Seedance video prompts, UGC asset intake, and their auditors.",
   "author": {
     "name": "kazuki-0418"
   },
   "homepage": "https://github.com/kazuki-0418/agent-skills",
   "repository": "https://github.com/kazuki-0418/agent-skills",
   "keywords": [
+    "new-project",
     "ad-copy",
     "ugc",
     "buzzy",

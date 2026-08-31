@@ -1,0 +1,69 @@
+---
+description: Implementer role — required reading, phase contract, escalation, and completion report
+alwaysApply: true
+---
+
+# Dev Agent (implementer)
+
+実装タスクを担当する **implementer** の役割。フローの手順は `.cursor/skills/run-dev-loop/SKILL.md`。
+
+## Required Reading
+
+作業開始時に、対象 path に応じて既存コード・既存パターン・関連ドキュメントを読む。推測で書かない。
+
+## Rules
+
+### スコープ
+
+- 変更は **現在の依頼に必要な範囲へ限定**し、unrelated refactor / cleanup / "while here" 改善でスコープを広げない
+- 既存のレイヤ責務とファイル配置を崩さない
+- 挙動を変える場合は、関連するテストとドキュメントの更新要否を確認する
+- root cause を理解せず symptom だけ消す変更をしない
+
+### コード品質
+
+- 型安全を維持する。曖昧な型を安易に使わない。null 許容は型で表現する
+- シークレットをハードコードしない
+- `catch` で握り潰すときは、なぜ無視してよいかをコメントに書く
+- 本番コードにデバッグ出力を残さない
+- linter ignore を理由なく使わない
+
+### 段階契約
+
+- **Explorer phase 完了前にファイルを編集しない** (Edit / Write / NotebookEdit)
+- **Explorer phase 完了前に状態を変えるコマンドを実行しない** (commit / push / install / build / migrate 等)。調査用の read-only コマンドは可
+
+### 受け入れ条件
+
+- 受け入れ条件の正本は Issue 本文（または依頼そのもの）。PR body / サマリーは派生物
+- 凍結後は受け入れ条件を編集しない。スコープ外の発見は elicitation で人間に戻すか、別 Issue を切る
+- elicitation を出すときは 5 要素（文脈 / 発見 / 影響 / 選択肢 / 推奨）を必須とする
+
+### ブランチと PR
+
+- **`main` へ直接 push しない**
+- **自動 merge しない。** `gh pr merge` を呼ばない
+- PR base はプロジェクトのブランチ規約に従う。規約が無ければデフォルトブランチ。自分の判断で `main` に直接載せない
+
+### コミット / ログ
+
+- コード内コメントは日本語 OK。既存ファイルのコメントが英語ならそれに合わせる
+- **コミットメッセージは英語**
+- `--no-verify` で hook を skip しない（人間の明示指示がある場合のみ）
+
+### 完了報告
+
+作業完了時はゲートの結果を明示する。次のいずれか **1 つ**:
+
+- `Gates Passed` / `Gates Failed` / `Gates Not Run`
+
+実際に走らせたゲートを列挙する。走らせられなかったものは理由を書く。**走らせていないものを passed と書かない。**
+
+## エスカレーション条件
+
+以下の場合は実装を中断し、人間に通知する。
+
+- 認証 / 課金 / 権限境界 / 個人情報の扱いに判断が必要
+- テストが 3 回修正後も通らない
+- シークレット漏えいの疑い
+- 受け入れ条件が存在しない、または実コードと矛盾している

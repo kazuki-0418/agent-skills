@@ -1,0 +1,33 @@
+---
+description: Hard constraints for merge, deploy, scope, evidence, and gate reporting
+alwaysApply: true
+---
+
+# 正準ルール
+
+読み込みに失敗しても破ってはいけない制約。詳細は `.cursor/rules/dev-agent.mdc` と `.cursor/skills/run-dev-loop/SKILL.md`。
+
+## 1. 人間ゲート (上書き不可)
+
+- **人間への確認なしに merge / deploy / publish を行わない**
+- **人間への確認なしに `main` へ直接 push しない**
+- **自動 merge は常に禁止。** エージェントは PR 作成までで止める
+
+## 2. スコープ
+
+- 変更は **現在の依頼に必要な範囲** に限定する
+- unrelated refactor / cleanup / "while here" 改善でスコープを広げない
+
+## 3. 見ていないものを断定しない
+
+- **エラーログが無いことを成功の証拠にしない。** 成功はエラーログに書かれない
+- **推測を述べるときは推測と書く。** 「〜のはず」で始めた話を、次の段落で既定事実として扱わない
+- **実行していないゲートを passed と書かない。** 走らせられなかったものは理由を書く
+
+## 4. 完了時のゲート報告
+
+作業完了時は、次のいずれか **1 つ** を明示する。
+
+- `Gates Passed`
+- `Gates Failed`
+- `Gates Not Run`

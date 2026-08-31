@@ -5,19 +5,20 @@
     "name": "kazuki-0418"
   },
   "metadata": {
-    "description": "Canonical skills for ad copy, Buzzy/Seedance prompts, and UGC assets",
+    "description": "Canonical skills for new-project bootstrap, ad copy, Buzzy/Seedance prompts, and UGC assets",
     "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "agent-skills",
       "source": "./",
-      "description": "Ad copy, Buzzy/Seedance video prompts, UGC asset intake, and their auditors.",
+      "description": "New-project bootstrap, ad copy, Buzzy/Seedance video prompts, UGC asset intake, and their auditors.",
       "version": "1.0.0",
       "author": {
         "name": "kazuki-0418"
       },
       "keywords": [
+        "new-project",
         "ad-copy",
         "ugc",
         "buzzy",

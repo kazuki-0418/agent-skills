@@ -28,7 +28,7 @@ private なので、そのチームの GitHub App がこの repo を読める必
 1. 下の「ダッシュボードでの足し方」で repo を Import する
 2. Grok Bot アプリ → Settings → Plugins → 検索欄に `agent-skills`
 3. Team plugins に出たら **Add**
-4. チャットで `/ad-copy` `/buzzy-video-prompt` `/ugc-assets` が使えるか確認する
+4. チャットで `/new-project` `/ad-copy` `/buzzy-video-prompt` `/ugc-assets` が使えるか確認する
 
 出なければ、Plugins の画面をスクショして判断する。項目名は見ていないので書かない。
 
