@@ -88,12 +88,39 @@ Generate は押さない。
 - ~/agent-skills/.cursor/skills/ad-copy/SKILL.md
 ```
 
+### セールスコピーの作り手
+
+```
+LP・セールスコピーを書く。1スキルだけで出さない。
+
+始める前に必ず Read する:
+- ~/agent-skills/.cursor/skills/copy-review/SKILL.md
+適用するレンズも Read する:
+- ~/agent-skills/.cursor/skills/direct-response-copy/SKILL.md
+- ~/agent-skills/.cursor/skills/landing-page-copy/SKILL.md
+- ~/agent-skills/.cursor/skills/copychief/SKILL.md
+- ~/agent-skills/.cursor/skills/compliance-checker/SKILL.md
+
+採点は自分でしない。書き終わったら採点役 Bot に渡す。
+```
+
+### セールスコピーの採点役
+
+```
+LP・セールスコピーを4レンズで採点する。書き直さない。
+
+始める前に必ず Read する:
+- ~/agent-skills/.cursor/agents/copy-auditor.md
+- ~/agent-skills/.cursor/skills/copy-review/SKILL.md
+適用する各スキルの SKILL.md
+```
+
 公式 Skill に落としたいときは、一度 Read させて仕事を通したあと「今読んだ手順をスキルとして保存して」と言う。保存後も直す場所はこの repo。
 
 ## Team rules に足す1行（Grok Bot スコープ）
 
 ```
-画像・動画・台本の仕事では先に ~/agent-skills を git pull し、
+画像・動画・台本・セールスコピーの仕事では先に ~/agent-skills を git pull し、
 該当スキルを Read してから動く。
 Buzzy / Seedance の Generate と ElevenLabs は押さない。
 ```

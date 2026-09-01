@@ -1,7 +1,7 @@
 {
   "name": "agent-skills",
   "version": "1.0.0",
-  "description": "New-project bootstrap plus ad copy, Buzzy/Seedance video prompts, UGC asset intake, and their auditors.",
+  "description": "New-project bootstrap plus ad copy, landing-page / sales copy review, Buzzy/Seedance video prompts, UGC asset intake, and their auditors.",
   "author": {
     "name": "kazuki-0418"
   },
@@ -13,7 +13,10 @@
     "ugc",
     "buzzy",
     "seedance",
-    "video-prompt"
+    "video-prompt",
+    "copy-review",
+    "landing-page",
+    "copychief"
   ],
   "skills": "./.cursor/skills/"
 }

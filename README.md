@@ -14,8 +14,14 @@ Edit procedure text here only. `~/.claude/skills/` and `~/.claude/agents/` are s
 | `.cursor/skills/ad-copy/` | Ad copy and scripts, including vidIQ research |
 | `.cursor/skills/buzzy-video-prompt/` | Production gate for still and video prompts |
 | `.cursor/skills/ugc-assets/` | UGC asset inventory and review |
+| `.cursor/skills/copy-review/` | One-pass write + review through four copy skills |
+| `.cursor/skills/direct-response-copy/` | Sales copy (Palmer). Loaded by copy-review |
+| `.cursor/skills/landing-page-copy/` | Bridge / pre-sell landers. Loaded by copy-review |
+| `.cursor/skills/copychief/` | Copy-chief review format. Loaded by copy-review |
+| `.cursor/skills/compliance-checker/` | Platform policy check. Loaded by copy-review |
 | `.cursor/agents/ad-copy-auditor.md` | Scores ad copy. Does not rewrite |
 | `.cursor/agents/buzzy-prompt-auditor.md` | Scores prompts and outputs. Does not rewrite |
+| `.cursor/agents/copy-auditor.md` | Scores LP / sales copy across four lenses. Does not rewrite |
 | `knowledge/` | Facts and decisions. No procedures |
 
 Kivori-specific release steps do not live here. Those stay in the Kivori repo at `.claude/skills/kivori-release/`.
@@ -43,8 +49,14 @@ After first setup, these paths point at the same directories.
 ~/.claude/skills/ad-copy                →  .cursor/skills/ad-copy
 ~/.claude/skills/buzzy-video-prompt     →  .cursor/skills/buzzy-video-prompt
 ~/.claude/skills/ugc-assets             →  .cursor/skills/ugc-assets
+~/.claude/skills/copy-review            →  .cursor/skills/copy-review
+~/.claude/skills/direct-response-copy
+~/.claude/skills/landing-page-copy
+~/.claude/skills/copychief
+~/.claude/skills/compliance-checker
 ~/.claude/agents/ad-copy-auditor.md     →  .cursor/agents/ad-copy-auditor.md
 ~/.claude/agents/buzzy-prompt-auditor.md
+~/.claude/agents/copy-auditor.md
 ~/.cursor/agents/*.md                   →  same auditors
 ```
 

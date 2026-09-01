@@ -14,8 +14,14 @@ Claude Code / Cursor / Grok Bot が同じ手順を読むための正本。
 | `.cursor/skills/ad-copy/` | 台本・広告文。vidIQ 調査込み |
 | `.cursor/skills/buzzy-video-prompt/` | 静止画 / 動画プロンプトの制作ゲート |
 | `.cursor/skills/ugc-assets/` | UGC 素材の棚卸しと検品 |
+| `.cursor/skills/copy-review/` | 4つのコピー用スキルを一度に通す入口 |
+| `.cursor/skills/direct-response-copy/` | セールスコピー（Palmer）。copy-review が読む |
+| `.cursor/skills/landing-page-copy/` | 橋渡し lander。copy-review が読む |
+| `.cursor/skills/copychief/` | コピーチーフのレビュー型。copy-review が読む |
+| `.cursor/skills/compliance-checker/` | 広告ポリシー。copy-review が読む |
 | `.cursor/agents/ad-copy-auditor.md` | 台本の採点役。書き直さない |
 | `.cursor/agents/buzzy-prompt-auditor.md` | プロンプト / 生成物の採点役。書き直さない |
+| `.cursor/agents/copy-auditor.md` | LP / セールスコピーを4レンズで採点。書き直さない |
 | `knowledge/` | 事実・決定。手順は置かない |
 
 Kivori 固有のリリース手順はここには置かない。それは Kivori リポジトリの `.claude/skills/kivori-release/`。
@@ -43,8 +49,14 @@ Kivori 固有のリリース手順はここには置かない。それは Kivori
 ~/.claude/skills/ad-copy                →  .cursor/skills/ad-copy
 ~/.claude/skills/buzzy-video-prompt     →  .cursor/skills/buzzy-video-prompt
 ~/.claude/skills/ugc-assets             →  .cursor/skills/ugc-assets
+~/.claude/skills/copy-review            →  .cursor/skills/copy-review
+~/.claude/skills/direct-response-copy
+~/.claude/skills/landing-page-copy
+~/.claude/skills/copychief
+~/.claude/skills/compliance-checker
 ~/.claude/agents/ad-copy-auditor.md     →  .cursor/agents/ad-copy-auditor.md
 ~/.claude/agents/buzzy-prompt-auditor.md
+~/.claude/agents/copy-auditor.md
 ~/.cursor/agents/*.md                   →  同じ auditor
 ```
 
