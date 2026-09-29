@@ -1,54 +1,54 @@
 ---
 name: frame-macos-notification
-zh_name: "macOS 通知横幅"
+zh_name: "macOS 通知バナー"
 en_name: "macOS Notification Banner"
 emoji: "🔔"
-description: "拟真 macOS 通知 banner + app icon + 标题正文, 适合 video overlay / 产品发布预告"
+description: "本物に近い macOS 通知 banner + app icon + 見出し本文。video overlay / 製品発表予告向け"
 category: card
 scenario: video
-aspect_hint: "1920×1080 视频或 480×120 横幅"
+aspect_hint: "1920×1080 動画または 480×120 バナー"
 featured: 41
 tags: ["macos", "notification", "banner", "overlay", "frame"]
 example_id: sample-frame-macos-notification
-example_name: "macOS 通知 · 新功能发布"
+example_name: "macOS 通知 · 新機能リリース"
 example_format: markdown
-example_tagline: "Big Sur 磨砂玻璃 banner"
-example_desc: "App icon + 标题 + 双行正文, 视频角落叠加用"
+example_tagline: "Big Sur フロストガラス banner"
+example_desc: "App icon + タイトル + 2 行本文。動画の角に重ねる用"
 example_source_url: "https://hyperframes.heygen.com/catalog"
 example_source_label: "hyperframes · macos-notification"
 ---
 
-【模板: macOS 通知横幅】
-【意图】把一段公告 / 消息 / 提示渲染成 macOS Big Sur+ 风格的通知横幅, 适合视频角落叠加、产品发布预告、社媒图。Inspired by hyperframes macos-notification。
+【テンプレート: macOS 通知バナー】
+【意図】告知 / メッセージ / ヒントを macOS Big Sur+ スタイルの通知バナーにする。動画の角オーバーレイ、製品リリース予告、SNS 図向け。Inspired by hyperframes macos-notification。
 
-【画布】两种用法:
-- 视频叠加 1920×1080, 通知放右上角, 周围透明。
-- 单独 banner 480×120, 居中输出。
+【キャンバス】使い方 2 種:
+- 動画オーバーレイ 1920×1080, 通知は右上、周囲は透明。
+- 単独 banner 480×120, 中央出力。
 
-【横幅结构】
-- 外框: 圆角 14px (macOS Big Sur 标准), 480×120 (或更长 480×180 含正文), 12-16px 内边距。
-- 背景: **frosted glass** 效果 — `background: rgba(245,245,247,0.78)` + `backdrop-filter: blur(40px) saturate(180%)`; 暗色版 `rgba(28,28,30,0.78)`。
-- 边框: 1px `rgba(0,0,0,0.06)` (light) / `rgba(255,255,255,0.08)` (dark); 顶部加 1px 亮 highlight `rgba(255,255,255,0.5)`。
-- 阴影: `0 10px 40px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.08)`。
+【バナー構造】
+- 外枠: 角丸 14px (macOS Big Sur 標準), 480×120 (または本文込みで長く 480×180), 12-16px 内側余白。
+- 背景: **frosted glass** 効果 — `background: rgba(245,245,247,0.78)` + `backdrop-filter: blur(40px) saturate(180%)`; 暗色版 `rgba(28,28,30,0.78)`。
+- 枠線: 1px `rgba(0,0,0,0.06)` (light) / `rgba(255,255,255,0.08)` (dark); 上部に 1px 明るい highlight `rgba(255,255,255,0.5)`。
+- 影: `0 10px 40px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.08)`。
 
 【内容】
-- 左侧: **App icon** (44×44, 圆角 10px, CSS gradient + 1 个 emoji 或 monogram 字母, **不用外链图片**)。
-- 中间:
-  - 顶部 row: App 名 (SF Pro 13px, weight 600) + `now` 或具体时间 (12px, opacity 0.6) — 两端对齐。
-  - 标题 (15px, weight 600, 1 行截断)。
-  - 正文 (13px, weight 400, 1-2 行截断, line-height 1.35)。
-- 右侧 (可选): action button "Open" 或 "Reply" (capsule, 浅灰底)。
+- 左側: **App icon** (44×44, 角丸 10px, CSS gradient + emoji 1 つまたは monogram の文字, **外部画像は使わない**)。
+- 中央:
+  - 上部 row: App 名 (SF Pro 13px, weight 600) + `now` または具体時刻 (12px, opacity 0.6) — 両端揃え。
+  - タイトル (15px, weight 600, 1 行で切る)。
+  - 本文 (13px, weight 400, 1-2 行で切る, line-height 1.35)。
+- 右側 (任意): action button "Open" または "Reply" (capsule, 薄い灰地)。
 
-【字体】
-- 主: `SF Pro Text` → fallback `Inter` / `system-ui`; 中文用 `PingFang SC` / `Noto Sans SC`。
+【フォント】
+- メイン: `SF Pro Text` → fallback `Inter` / `system-ui`; 中国語は `PingFang SC` / `Noto Sans SC`。
 
-【可选附加】
-- 多条通知堆叠: 第一条在前, 后面 2 条向后向下递缩 (scale 0.96 + opacity 0.6 + translateY)。
-- 入场动效: 从屏幕外右侧滑入 `transform: translateX(110%)→0`, 200ms ease-out; 可被 `prefers-reduced-motion` 关闭。
-- 右上角控制 chip "Clear" (hover 显示, opacity 默认 0)。
+【任意の追加】
+- 通知の重ね: 1 枚目が前、後ろ 2 枚は後ろ下へ縮小 (scale 0.96 + opacity 0.6 + translateY)。
+- 入場モーション: 画面外右からスライドイン `transform: translateX(110%)→0`, 200ms ease-out; `prefers-reduced-motion` でオフ可。
+- 右上の制御 chip "Clear" (hover で表示, opacity 既定 0)。
 
-【设计细节】
-- light mode 背景白磨砂, dark mode (推荐 video) 几乎黑磨砂。
-- icon 不能用外链 emoji 图片, 用 unicode emoji 或 CSS 绘制几何。
-- 必须用用户提供的内容; 标题 + 正文清晰来自用户输入。
-- 单文件 HTML, 注意 `backdrop-filter` Safari 需要 `-webkit-` 前缀。
+【デザインの要点】
+- light mode は白フロスト、dark mode (動画推奨) はほぼ黒フロスト。
+- icon に外部リンクの emoji 画像は使わない。unicode emoji または CSS の幾何。
+- ユーザー提供の内容を使う; タイトル + 本文はユーザー入力からはっきり取る。
+- 単ファイル HTML。`backdrop-filter` は Safari で `-webkit-` 接頭辞が必要。

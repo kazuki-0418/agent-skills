@@ -1,9 +1,9 @@
 ---
 name: frame-logo-outro
-zh_name: "品牌 Logo 收尾帧"
+zh_name: "ブランド Logo アウトロフレーム"
 en_name: "Logo Outro Frame"
 emoji: "🎬"
-description: "Logo 分块组装入场 + glow bloom + tagline 揭示, 适合视频片尾 / 品牌闭幕"
+description: "Logo をブロック組み立てで入場 + glow bloom + tagline の開示。動画エンディング / ブランドクローズ向け"
 category: video
 scenario: video
 aspect_hint: "1920×1080 (16:9)"
@@ -11,37 +11,37 @@ featured: 40
 recommended: 8
 tags: ["logo", "outro", "branding", "end-card", "frame"]
 example_id: sample-frame-logo-outro
-example_name: "品牌 Logo 收尾 · HTML Anything"
+example_name: "ブランド Logo アウトロ · HTML Anything"
 example_format: markdown
 example_tagline: "Midnight Indigo + glow bloom"
-example_desc: "Logo 装配 + 品牌名 + tagline + CTA, 视频片尾用"
+example_desc: "Logo 組み立て + ブランド名 + tagline + CTA。動画エンディング用"
 example_source_url: "https://hyperframes.heygen.com/catalog"
 example_source_label: "hyperframes · logo-outro"
 ---
 
-【模板: Logo 收尾帧 (Logo Outro)】
-【意图】视频结尾的品牌 reveal 帧 —— logo 分块拼装 + glow bloom + tagline 上浮 + CTA。Inspired by hyperframes logo-outro。
+【テンプレート: Logo アウトロフレーム (Logo Outro)】
+【意図】動画末尾のブランド reveal フレーム —— logo をブロック組み立て + glow bloom + tagline 浮上 + CTA。Inspired by hyperframes logo-outro。
 
-【画布】1920×1080, 黑色 `#08090c` 或品牌深色背景; 加微妙 vignette `radial-gradient(...)` 让中心更亮。
+【キャンバス】1920×1080, 黒 `#08090c` またはブランドの暗い背景; 微妙な vignette `radial-gradient(...)` で中心を明るく。
 
-【布局】
-- **中心 Logo**: 用 CSS / 内联 SVG 绘制; 由 4-8 个几何块 (圆 / 方 / 三角 / hairline) 组成。
-  - 入场动画: 每个块从屏幕外滑入 (±100px 不同方向) + scale 1.4→1.0 + opacity 0→1, 错峰 80ms; 总时长 1.2s。
-  - 入场完成后, 整个 logo 加 glow bloom: `filter: drop-shadow(0 0 24px <accent>40)`; 同时一道 shimmer `mask-image` 横扫 logo (500ms)。
-- **品牌名**: logo 下方 6-8% 位置, 大字 (Inter Tight / SF Pro Display, 48-72px, weight 700, letter-spacing -0.02em), 入场: typewriter or fade-up after logo bloom (1.4s 开始)。
-- **Tagline**: 品牌名下方一行 (24-28px, weight 400, opacity 0.7), fade in (1.8s)。
-- **底部 CTA + 元数据**: 双行底部 row, 例如 `htmlanything.dev · @htmlanything · 2026`, 11px uppercase letter-spacing 0.16em, 颜色 opacity 0.4, hairline 分隔。
+【レイアウト】
+- **中心 Logo**: CSS / インライン SVG で描く; 幾何ブロック 4-8 個 (円 / 四角 / 三角 / hairline) で構成。
+  - 入場アニメーション: 各ブロックが画面外からスライドイン (±100px で方向が違う) + scale 1.4→1.0 + opacity 0→1, 80ms ずらす; 総時間 1.2s。
+  - 入場完了後、logo 全体に glow bloom: `filter: drop-shadow(0 0 24px <accent>40)`; 同時に shimmer `mask-image` が logo を横に一掃 (500ms)。
+- **ブランド名**: logo の下 6-8% 位置, 大きな字 (Inter Tight / SF Pro Display, 48-72px, weight 700, letter-spacing -0.02em), 入場: typewriter or fade-up after logo bloom (1.4s 開始)。
+- **Tagline**: ブランド名の下 1 行 (24-28px, weight 400, opacity 0.7), fade in (1.8s)。
+- **下部 CTA + メタデータ**: 2 行の下部 row, 例 `htmlanything.dev · @htmlanything · 2026`, 11px uppercase letter-spacing 0.16em, 色 opacity 0.4, hairline 区切り。
 
-【调色 — 4 选 1, 不混用】
-- 🌌 **Midnight Indigo** — bg `#08090c`, accent `#7c5cff` (霓虹紫蓝 glow)。
+【カラー — 4 から 1 つ, 混ぜない】
+- 🌌 **Midnight Indigo** — bg `#08090c`, accent `#7c5cff` (ネオン紫青 glow)。
 - 🌅 **Solar Amber** — bg `#0e0a08`, accent `#ffb547` (暖琥珀)。
-- 🌿 **Forest Mint** — bg `#0a1410`, accent `#5fb38a` (薄荷绿)。
-- ⚪ **Bone & Ink** — bg `#f1efea`, accent `#0a0a0b` (无 neon, 走 editorial 风, glow 改成阴影)。
+- 🌿 **Forest Mint** — bg `#0a1410`, accent `#5fb38a` (ミント緑)。
+- ⚪ **Bone & Ink** — bg `#f1efea`, accent `#0a0a0b` (neon なし, editorial 寄り, glow は影に変える)。
 
-【设计细节】
-- **绝不**: 用外链 logo 图片; logo 必须用纯 CSS / 内联 SVG 几何绘制。
-- 入场动画用 `@keyframes` + `animation-delay`; 可被 `prefers-reduced-motion` 关闭。
-- 字体: 西文 `Inter Tight` / `SF Pro Display` / `Manrope`; 中文 `Noto Sans SC` weight 700。
-- 必须用用户提供的品牌名 + tagline; 若没有, 跑 fallback "HTML Anything" / "Anything → beautiful HTML"。
-- 单文件 HTML; 整个动画完成后 freeze (不要 loop, 这是视频结尾帧)。
-- 顶部可选 5px ribbon (accent 色) 增加品牌识别。
+【デザインの要点】
+- **絶対に**: 外部リンクの logo 画像は使わない; logo は純 CSS / インライン SVG の幾何で描く。
+- 入場アニメーションは `@keyframes` + `animation-delay`; `prefers-reduced-motion` でオフ可。
+- フォント: 欧文 `Inter Tight` / `SF Pro Display` / `Manrope`; 中国語 `Noto Sans SC` weight 700。
+- ユーザー提供のブランド名 + tagline を使う; 無ければ fallback "HTML Anything" / "Anything → beautiful HTML"。
+- 単ファイル HTML; アニメーション完了後は freeze (loop しない。動画末尾フレーム)。
+- 上部は任意で 5px ribbon (accent 色) を足してブランド識別を上げる。

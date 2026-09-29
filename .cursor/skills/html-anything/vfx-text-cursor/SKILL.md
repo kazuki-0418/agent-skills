@@ -1,9 +1,9 @@
 ---
 name: vfx-text-cursor
-zh_name: "VFX 文字光标"
+zh_name: "VFX テキストカーソル"
 en_name: "VFX Text Cursor"
 emoji: "✨"
-description: "光标拖光 + 彩色像散射线 + 定向光斑, 适合视频片头逐字揭示金句"
+description: "カーソルの引き光 + 色収差の光線 + 指向性フレア。動画オープニングで一字ずつ名言を出す用"
 category: video
 scenario: video
 aspect_hint: "1920×1080 (16:9)"
@@ -11,37 +11,37 @@ featured: 38
 recommended: 7
 tags: ["vfx", "text", "cursor", "chromatic", "reveal", "frame"]
 example_id: sample-vfx-text-cursor
-example_name: "VFX 光标 · 开场金句"
+example_name: "VFX カーソル · オープニング名言"
 example_format: markdown
-example_tagline: "逐字揭示 + chromatic 拖光"
-example_desc: "光标打字 hot pink + cyan 像散, 视频开场用"
+example_tagline: "一字ずつ開示 + chromatic 引き光"
+example_desc: "カーソル打ち hot pink + cyan 色収差。動画オープニング用"
 example_source_url: "https://hyperframes.heygen.com/catalog"
 example_source_label: "hyperframes · vfx-text-cursor"
 ---
 
-【模板: VFX 文字光标 (Text Cursor)】
-【意图】视频开场/Hero 帧 —— 光标在画布上"打字", 文字逐字浮现, 后面拖着彩色像散尾迹 + 定向光斑。Inspired by hyperframes vfx-text-cursor。
+【テンプレート: VFX テキストカーソル (Text Cursor)】
+【意図】動画オープニング/Hero フレーム —— カーソルがキャンバス上で「タイプ」し、文字が一字ずつ現れ、後ろに色収差の尾 + 指向性フレアを引く。Inspired by hyperframes vfx-text-cursor。
 
-【画布】1920×1080, 背景 `#06070a` 暗哑黑 或 `#0a0d12` (有暖偏蓝); 加微妙 vignette。
+【キャンバス】1920×1080, 背景 `#06070a` マットな黒 または `#0a0d12` (暖色寄りの青); 控えめな vignette。
 
 【内容】
-- 一句金句 (中英不限), 居中, 字号 6-8vw, weight 700, 字体 `Inter Tight` / `Source Sans 3` / `Noto Sans SC`。
-- 逐字揭示, 每个字符 80ms 间隔; 当前字符后面跟着一个 cursor `▍` (或细 vertical bar)。
-- 已揭示文字默认白色 `#f5f5f7`, opacity 1; 即将揭示位置加 chromatic ghost: 一份 `text-shadow: 2px 0 #ff3b6f, -2px 0 #00d4ff` 在 reveal 瞬间, 200ms 内收敛回正常。
-- 光标本身: 16px 宽矩形, 颜色 = accent (取 1: hot pink `#ff3b6f` / cyan `#00d4ff` / amber `#ffb547`), 闪烁 `@keyframes` 1.0s 周期; 后面拖一条 60-120px 的 motion blur trail (径向渐变到透明)。
+- 名言 1 文 (日英どちらでも), 中央揃え, サイズ 6-8vw, weight 700, フォント `Inter Tight` / `Source Sans 3` / `Noto Sans SC`。
+- 一字ずつ開示, 各文字 80ms 間隔; 現在の文字の後ろに cursor `▍` (または細い vertical bar)。
+- 出た文字はデフォルト白 `#f5f5f7`, opacity 1; これから出る位置に chromatic ghost: `text-shadow: 2px 0 #ff3b6f, -2px 0 #00d4ff` を reveal の瞬間に足し, 200ms で通常に戻る。
+- カーソル本体: 幅 16px の矩形, 色 = accent (1 つ取る: hot pink `#ff3b6f` / cyan `#00d4ff` / amber `#ffb547`), 点滅 `@keyframes` 1.0s 周期; 後ろに 60-120px の motion blur trail (放射グラデーションで透明へ)。
 
-【光斑 / 射线】
-- 在打字位置附近随机生成 3-5 道**定向光斑** (light leak): 用 `linear-gradient(45deg, transparent, accent20, transparent)` 的细长矩形 + `mix-blend-mode: screen`, 不规则角度。
-- 当文字打完, 整段文字加 0.5s shimmer sweep (光带横扫)。
+【フレア / 光線】
+- タイプ位置の近くに **指向性フレア** (light leak) を 3-5 本ランダムに: `linear-gradient(45deg, transparent, accent20, transparent)` の細長い矩形 + `mix-blend-mode: screen`, 不規則な角度。
+- 打ち終わったら、全文に 0.5s shimmer sweep (光の帯が横切る)。
 
-【字段】
-- 顶部 caption (uppercase letterspace 0.18em, 11px, opacity 0.5): "FRAME 01 · OPENING"。
-- 文字底下副标 (24-28px, opacity 0.6): 来源 / 章节。
-- 右下角 timecode (`00:03:21` mono)。
+【フィールド】
+- 上部 caption (uppercase letterspace 0.18em, 11px, opacity 0.5): "FRAME 01 · OPENING"。
+- 文字の下のサブタイトル (24-28px, opacity 0.6): 出典 / 章。
+- 右下 timecode (`00:03:21` mono)。
 
-【设计细节】
-- **绝不**: 多色彩虹 chromatic (只用 1 个 hot pink + cyan 这种二元像散, 不要 R/G/B 全色)。
-- 字体: 西文 `Inter Tight` Bold; 中文 `Noto Sans SC` Bold; 严禁衬线。
-- 动效用 `@keyframes` + JS 计时器 (`setTimeout` 逐字), 可被 `prefers-reduced-motion` 关闭 (直接显示所有字)。
-- 必须用用户提供的金句; 不要捏造。
-- 单文件 HTML, 不要外链字体以外的资源。
+【デザインの要点】
+- **禁止**: 多色虹の chromatic (hot pink + cyan のような二色の色収差 1 組だけ。R/G/B 全色は使わない)。
+- フォント: 欧文 `Inter Tight` Bold; 日本語 `Noto Sans SC` Bold; セリフは禁止。
+- モーションは `@keyframes` + JS タイマー (`setTimeout` で一字ずつ)。`prefers-reduced-motion` でオフにできる (全文字をすぐ出す)。
+- ユーザーが渡した名言を使う; 捏造しない。
+- 単ファイル HTML。フォント以外の外部リソースは使わない。

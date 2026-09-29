@@ -1,20 +1,20 @@
 ---
 name: meeting-notes
-zh_name: "会议纪要"
+zh_name: "会議議事録"
 en_name: "Meeting Notes"
 emoji: "🗒️"
-description: "标题 + 出席 + 议程 + 决议 + action items + 下次"
+description: "タイトル + 出席 + アジェンダ + 決議 + action items + 次回"
 category: doc
 scenario: operations
-aspect_hint: "长页面"
-tags: ["minutes", "meeting", "1:1", "纪要"]
+aspect_hint: "縦長ページ"
+tags: ["minutes", "meeting", "1:1", "議事録"]
 ---
 
-【模板: 会议纪要】
-【意图】现代会议纪要, 强 action items。
-【布局】
-- Title bar (会议名 + 时间 + 出席 avatars)
+【テンプレート: 会議議事録】
+【意図】現代の会議議事録。action items を強く。
+【レイアウト】
+- Title bar (会議名 + 時刻 + 出席 avatars)
 - Agenda checklist
-- Decisions block (圆角卡片)
+- Decisions block (角丸カード)
 - Action items table (Owner / Due / Status)
 - Next meeting footer

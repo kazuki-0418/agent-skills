@@ -1,55 +1,55 @@
 ---
 name: competitive-teardown
-zh_name: "竞品拆解"
+zh_name: "競合分解"
 en_name: "Competitive Teardown"
 emoji: "🧩"
-description: "定位图 + 功能矩阵 + 价格对比 + 机会窗口, 把竞品资料转成产品决策报告"
+description: "ポジショニング図 + 機能マトリクス + 価格比較 + 機会の窓。競合資料をプロダクト意思決定レポートにする"
 category: doc
 scenario: product
-aspect_hint: "战略长页面"
+aspect_hint: "戦略の縦長ページ"
 featured: 8
-tags: ["competitive", "teardown", "strategy", "product", "竞品", "拆解"]
+tags: ["competitive", "teardown", "strategy", "product", "競合", "分解"]
 example_id: sample-competitive-teardown
-example_name: "竞品拆解 · AI Meeting Assistants"
+example_name: "競合分解 · AI Meeting Assistants"
 example_format: markdown
-example_tagline: "比较矩阵 + 定位象限 + 我们的应对"
-example_desc: "把三家竞品的定位、价格、功能、评价转成产品团队可行动的拆解报告。"
+example_tagline: "比較マトリクス + ポジショニング象限 + 私たちの対応"
+example_desc: "3 社の競合のポジショニング、価格、機能、評価を、プロダクトチームが動ける分解レポートにする。"
 ---
 
-【模板: 竞品拆解 / Competitive Teardown】
-【意图】这不是文章、不是 PRD、不是 pitch deck。目标是把多个竞品的杂乱资料转成一份可决策的产品战略报告, 帮团队回答: "我们和它们到底差在哪里, 下一步该怎么打?"
+【テンプレート: 競合分解 / Competitive Teardown】
+【意図】これは記事ではない、PRD ではない、pitch deck ではない。目標は複数競合の雑多な資料を、意思決定できるプロダクト戦略レポートに変え、チームが答えるのを助ける: 「私たちとそれらとの差はどこにあり、次はどう打つか?」
 
-【适合输入】
-- 竞品官网 / 定价页 / changelog / 用户评论 / 销售反馈 / 内部调研笔记
-- 2-6 个竞品最合适; 如果用户只给一个竞品, 输出单竞品 deep dive
-- 可以包含表格、bullet、链接摘录、访谈记录、截图说明
+【向いている入力】
+- 競合の公式サイト / 価格ページ / changelog / ユーザーレビュー / 営業フィードバック / 内部リサーチメモ
+- 2-6 社の競合が最適; ユーザーが競合を 1 社しか出さない場合は、単一競合の deep dive を出す
+- 表、bullet、リンク抜粋、インタビュー記録、スクリーンショット説明を含んでよい
 
-【必须输出的结构】
-1. Header: 市场 / 产品类别 / 报告日期 / 结论一句话。
-2. Executive takeaway: 3 条最重要判断, 每条必须包含 "so what"。
-3. Positioning map: 用 2×2 象限或坐标图表现竞品定位。坐标轴必须来自用户内容, 不要套模板词。
-4. Competitor cards: 每个竞品一张卡, 包含 target user、core promise、pricing signal、primary strength、visible weakness。
-5. Feature matrix: 行是关键能力, 列是竞品 + "Us / Opportunity"; 用 ✓ / △ / — 表达覆盖度, 并用短注释说明。
-6. Pricing / packaging read: 价格层级、免费试用、限制项、企业销售动作。
-7. UX / messaging notes: 从用户材料中抽取 4-6 条可观察细节, 不要泛泛而谈。
-8. Opportunity windows: 3 个机会窗口, 每个包含 why now、target segment、first move、risk。
-9. Recommended moves: 近期 30 天 / 90 天 / 180 天行动建议。
+【必ず出す構造】
+1. Header: 市場 / プロダクトカテゴリ / レポート日付 / 結論を 1 文。
+2. Executive takeaway: 最も重要な判断 3 条, 各条は "so what" を必ず含む。
+3. Positioning map: 2×2 象限または座標図で競合のポジショニングを示す。座標軸は必ずユーザーの素材から取る, テンプレート語を当てはめない。
+4. Competitor cards: 競合ごとに 1 枚のカード, target user、core promise、pricing signal、primary strength、visible weakness を含む。
+5. Feature matrix: 行はキー能力, 列は競合 + "Us / Opportunity"; ✓ / △ / — でカバー度を表し、短い注で説明する。
+6. Pricing / packaging read: 価格階層、無料トライアル、制限項、企業向け営業の動き。
+7. UX / messaging notes: ユーザー材料から観察できるディテール 4-6 条を抜き出す, 漠然と語らない。
+8. Opportunity windows: 機会の窓 3 つ, それぞれ why now、target segment、first move、risk を含む。
+9. Recommended moves: 直近 30 日 / 90 日 / 180 日の行動提案。
 
-【设计要求】
-- 战略咨询 + 产品战情室风格: 信息密度高、扫描快、图表清楚。
-- 使用 restrained palette: ink / paper / muted blue / signal amber 或类似专业色。
-- Feature matrix 必须横向可读; 小屏可变成 stacked cards。
-- 不要做成营销落地页, 不要做成普通文章。
+【デザイン要件】
+- 戦略コンサル + プロダクト戦情室スタイル: 情報密度は高く、スキャンは速く、図表は明瞭。
+- restrained palette を使う: ink / paper / muted blue / signal amber または類似のプロ色。
+- Feature matrix は横方向に読めること; 小画面では stacked cards にしてよい。
+- マーケティングのランディングページにしない, 普通の記事にしない。
 
-【可选风格模板 — 参考 assets/】
-根据用户内容选择最贴合的一种, 不要三种混用:
-- `assets/war-room-grid.html`: 默认风格。浅色战情室 / 咨询报告, 适合产品团队、PM、普通商业读者。
-- `assets/radar-map.html`: 深色雷达图 / market intelligence console, 适合安全、AI、开发者工具、平台型竞品。
-- `assets/analyst-dossier.html`: 纸质分析档案 / investment research dossier, 适合投研、行业分析、正式战略备忘。
+【任意のスタイルテンプレート — assets/ を参照】
+ユーザーの素材に最も合う 1 種を選ぶ, 3 種を混ぜない:
+- `assets/war-room-grid.html`: 既定スタイル。明るい戦情室 / コンサルレポート, プロダクトチーム、PM、一般のビジネス読者向き。
+- `assets/radar-map.html`: 暗いレーダー図 / market intelligence console, セキュリティ、AI、開発者ツール、プラットフォーム型競合向き。
+- `assets/analyst-dossier.html`: 紙の分析アーカイブ / investment research dossier, 投資リサーチ、業界分析、正式な戦略メモ向き。
 
-如果用户没有指定风格, 优先使用 `war-room-grid`; 如果输入强调市场格局、技术雷达、攻防态势, 使用 `radar-map`; 如果输入像研究笔记、投资备忘或行业报告, 使用 `analyst-dossier`。
+ユーザーがスタイルを指定しなければ、優先して `war-room-grid` を使う; 入力が市場の構図、技術レーダー、攻防の態勢を強調するなら `radar-map`; 入力が研究メモ、投資メモ、業界レポートに近いなら `analyst-dossier`。
 
-【内容真实性】
-- 只使用用户提供的竞品、价格、功能、评论。缺失信息用 "not found in source" 或 "unknown" 标注。
-- 不要发明市场份额、ARR、客户名、定价数字。
-- 如果用户资料明显不足, 仍然输出报告, 但在 "Evidence gaps" 中列出缺口。
+【内容の真実性】
+- ユーザーが提供した競合、価格、機能、レビューだけを使う。欠ける情報は "not found in source" または "unknown" で印を付ける。
+- 市場シェア、ARR、顧客名、価格の数字を発明しない。
+- ユーザー資料が明らかに不足していてもレポートは出すが、"Evidence gaps" に欠落を列挙する。

@@ -1,9 +1,9 @@
 ---
 name: deck-safety-alert
-zh_name: "安全 / 风险红色 Deck"
+zh_name: "安全 / リスク赤 Deck"
 en_name: "Testing / Safety Alert Deck"
 emoji: "⚠️"
-description: "红琥珀警示色 + hazard 条纹 + L1/L2/L3 tier 卡片 + 删除线标题"
+description: "赤琥珀の警告色 + hazard ストライプ + L1/L2/L3 tier カード + 取り消し線タイトル"
 category: slides
 scenario: engineering
 aspect_hint: "16:9"
@@ -11,12 +11,12 @@ featured: 32
 tags: ["safety", "security", "policy", "incident"]
 ---
 
-【模板: Safety Alert Deck】
-【意图】安全 / 风险 / 事故复盘 / red team / policy-as-code 用 deck。
-【布局】
-- 顶/底 45° 红黑 hazard 条纹
-- 红色删除线否定标题
-- L1/L2/L3 绿 / 琥珀 / 红 tier 卡片
-- 圆点状态 alert box
-- policy-yaml 代码块 (红左边框 + bad 关键词高亮)
-- 红绿 checklist + 事故堆叠柱状图
+【テンプレート: Safety Alert Deck】
+【意図】安全 / リスク / 事故の振り返り / red team / policy-as-code 用の deck。
+【レイアウト】
+- 上/下 45° 赤黒 hazard ストライプ
+- 赤の取り消し線による否定タイトル
+- L1/L2/L3 緑 / 琥珀 / 赤 tier カード
+- 丸点ステータスの alert box
+- policy-yaml コードブロック (左の赤ボーダー + bad キーワードのハイライト)
+- 赤緑 checklist + 事故の積み上げ棒グラフ

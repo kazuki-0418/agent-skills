@@ -1,19 +1,19 @@
 ---
 name: team-okrs
-zh_name: "团队 OKR 追踪"
+zh_name: "チーム OKR 追跡"
 en_name: "Team OKRs"
 emoji: "🎯"
-description: "季度 banner + 3 个目标 + KR 进度条 + owner + 状态 pill"
+description: "四半期 banner + 目標 3 + KR 進捗バー + owner + 状態 pill"
 category: dashboard
 scenario: product
-aspect_hint: "桌面 1440"
-tags: ["okr", "objectives", "key results", "目标"]
+aspect_hint: "デスクトップ 1440"
+tags: ["okr", "objectives", "key results", "目標"]
 ---
 
-【模板: Team OKRs】
-【意图】OKR 追踪页, 一眼看出进度。
-【布局】
-- Quarter banner (Q? + 主题)
-- 3 个 objectives 列, 每个含一组 KR
-- 每个 KR 一条进度条 + 数值 + owner avatar + 状态 pill
-- 右侧 'this quarter at a glance' 摘要
+【テンプレート: Team OKRs】
+【意図】OKR 追跡ページ。進捗が一目。
+【レイアウト】
+- Quarter banner (Q? + テーマ)
+- objectives 列 3。各々に KR 一式
+- KR ごとに進捗バー 1 + 数値 + owner avatar + 状態 pill
+- 右側 'this quarter at a glance' 要約

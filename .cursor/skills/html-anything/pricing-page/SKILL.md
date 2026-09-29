@@ -1,20 +1,20 @@
 ---
 name: pricing-page
-zh_name: "定价页"
+zh_name: "価格ページ"
 en_name: "Pricing Page"
 emoji: "💳"
-description: "三档定价 + 特性对比表 + FAQ"
+description: "3 段階の価格 + 機能比較表 + FAQ"
 category: prototype
 scenario: sales
-aspect_hint: "桌面 1440"
-tags: ["pricing", "plans", "定价"]
+aspect_hint: "デスクトップ 1440"
+tags: ["pricing", "plans", "価格"]
 ---
 
-【模板: 定价页】
-【意图】标准 SaaS 三档定价页, 一眼对齐价值与价格。
-【布局】
-- Header + monthly/annual 切换
-- 3 档定价卡片 (Free / Pro / Enterprise), 中间档 popular 高亮
-- 完整特性对比表 (✓ / – / 不同档勾)
+【テンプレート: 価格ページ】
+【意図】標準 SaaS の 3 段階価格ページ。価値と価格が一目で揃う。
+【レイアウト】
+- Header + monthly/annual 切替
+- 価格カード 3 段階 (Free / Pro / Enterprise), 中央段階を popular ハイライト
+- 機能比較表一式 (✓ / – / 段階ごとにチェック)
 - FAQ (details/summary)
-- 底部 CTA
+- 下部 CTA

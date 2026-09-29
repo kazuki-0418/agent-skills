@@ -1,43 +1,43 @@
 ---
 name: frame-data-chart-nyt
-zh_name: "NYT 风数据图表帧"
+zh_name: "NYT 風データチャートフレーム"
 en_name: "NYT-Style Data Chart Frame"
 emoji: "📈"
-description: "NYT-newsroom 排版 + 错峰揭示动画 + 编辑级图表 (折线/柱/范围带)"
+description: "NYT-newsroom 組版 + ずらして見せるアニメーション + 編集品質のチャート（折れ線/棒/レンジ帯）"
 category: video
 scenario: video
 aspect_hint: "1920×1080 (16:9)"
 featured: 46
 tags: ["data", "chart", "nyt", "editorial", "frame"]
 example_id: sample-frame-data-chart-nyt
-example_name: "NYT 风折线图 · 全球用户量"
+example_name: "NYT 風折れ線図 · 世界のユーザー数"
 example_format: markdown
-example_tagline: "编辑级图表 + 错峰揭示"
-example_desc: "8 年周活跃用户折线 + NYT red accent + 注释 mono"
+example_tagline: "編集品質のチャート + ずらして見せる"
+example_desc: "8 年の週次アクティブユーザー折れ線 + NYT red accent + 注釈 mono"
 example_source_url: "https://hyperframes.heygen.com/catalog"
 example_source_label: "hyperframes · data-chart"
 ---
 
-【模板: NYT 风数据图表帧】
-【意图】把一段数据 (CSV / JSON / 一句结论) 做成《纽约时报》专栏感的单帧/动画图表, 适合视频片段或推特卡。Inspired by hyperframes data-chart。
+【テンプレート: NYT 風データチャートフレーム】
+【意図】データ (CSV / JSON / 結論 1 文) を『ニューヨーク・タイムズ』コラム感の単フレーム / アニメーションチャートにする。動画クリップやツイートカード向け。Inspired by hyperframes data-chart。
 
-【画布】1920×1080, 暖白底 `#f7f5ee` 或墨黑底 `#0e0e0e` 二选一; 文字色和背景相反。
+【キャンバス】1920×1080, 暖白地 `#f7f5ee` または墨黒地 `#0e0e0e` のどちらか; 文字色は背景の反対。
 
-【布局】
-- **顶部 kicker** (11px uppercase letterspace 0.14em, 颜色 = accent 红 `#a91d1d` 或 mint `#5fb38a`): 数据来源 + 类目, 如 "GLOBAL · WEEKLY ACTIVE USERS · 2018–2026"。
-- **大字标题** (Cheltenham / Playfair / Source Serif Pro, 5.6vw, italic 副标可选): 一句结论。**结论必须从用户数据中提炼**, 不是描述图。
-- **图表区** (占画布 55-65%):
-  - 折线: 1-2 条线, 主线 ink 实心 2.5px, 次线 dashed 1.5px; 数据点用 6px 实心圆; 关键点旁标注 `2024 · 412M` 黑色 mono 小字。
-  - 柱状: 全部 ink 单色或加 1 道 accent 高亮柱; 柱顶大数字; 柱底类目斜体 (Cheltenham italic)。
-  - 范围带 (range band): 浅灰填充 `#e6e2d2` 包络 + 中线 ink。
-- **底部 source + footnote** (10px mono, opacity 0.6): "Source: 用户数据 · Chart by html-anything"。
-- **错峰揭示动画**: 标题 fade-in (0s), kicker (200ms), 折线 stroke-dashoffset 1.2s ease-out (400ms), 数据标签依次 100ms 间隔。可被 `prefers-reduced-motion` 关闭。
+【レイアウト】
+- **上部 kicker** (11px uppercase letterspace 0.14em, 色 = accent 赤 `#a91d1d` または mint `#5fb38a`): データ出典 + カテゴリ, 例 "GLOBAL · WEEKLY ACTIVE USERS · 2018–2026"。
+- **大きなタイトル** (Cheltenham / Playfair / Source Serif Pro, 5.6vw, italic のサブタイトルは任意): 結論 1 文。**結論はユーザーのデータから抽出する**。図の説明ではない。
+- **チャート領域** (キャンバスの 55-65%):
+  - 折れ線: 線 1-2 本, 主線 ink 実線 2.5px, 次線 dashed 1.5px; データ点は 6px の塗り円; 要点の横に `2024 · 412M` 黒 mono 小字。
+  - 棒: すべて ink 単色、または accent のハイライト棒 1 本; 棒の上に大きな数字; 棒の下のカテゴリは斜体 (Cheltenham italic)。
+  - レンジ帯 (range band): 薄い灰の塗り `#e6e2d2` 包絡 + 中線 ink。
+- **下部 source + footnote** (10px mono, opacity 0.6): "Source: ユーザーデータ · Chart by html-anything"。
+- **ずらして見せるアニメーション**: タイトル fade-in (0s), kicker (200ms), 折れ線 stroke-dashoffset 1.2s ease-out (400ms), データラベルは 100ms 間隔で順に。`prefers-reduced-motion` でオフ可。
 
-【设计细节】
-- **绝不**: 使用 chart.js / d3 库 (除非 jsdelivr CDN 引入); 推荐手写 SVG, 不超过 80 行 inline。
-- 字体: 标题 `Source Serif Pro` 或 `Cheltenham` (无则用 `Playfair Display`); body `IBM Plex Sans` 或 `Inter`; 数据标签 `IBM Plex Mono`。
-- 1 个主色 (ink) + 1 个 accent (NYT red `#a91d1d` / 编辑 mint `#5fb38a` / 暖橙 `#d97757` 三选一)。
-- Y 轴刻度仅 hairline + 3-4 个 tick, 标签在轴外侧 mono 字。
-- 严禁 grid 全屏铺线、阴影、3D 立体柱; 严禁 emoji。
-- 必须用用户提供的数据。如果输入是文本结论, 自动估算合理坐标 (但要标注 "schematic"); 如果是 CSV/JSON, 直接绘制。
-- 单文件 HTML; 数据点旁注释格式: `<text class="annot">2024 · 412M</text>`。
+【デザインの要点】
+- **絶対に**: chart.js / d3 ライブラリは使わない (jsdelivr CDN 導入は除く); 手書き SVG を推奨、inline は 80 行以内。
+- フォント: タイトル `Source Serif Pro` または `Cheltenham` (無ければ `Playfair Display`); body `IBM Plex Sans` または `Inter`; データラベル `IBM Plex Mono`。
+- 主色 1 つ (ink) + accent 1 つ (NYT red `#a91d1d` / 編集 mint `#5fb38a` / 暖橙 `#d97757` から 1 つ)。
+- Y 軸目盛りは hairline + tick 3-4 だけ, ラベルは軸の外側の mono 字。
+- 全画面の grid 線、影、3D 立体棒は禁止。emoji は禁止。
+- ユーザー提供のデータを使う。入力がテキストの結論なら、妥当な座標を自動で見積もる (ただし "schematic" と注記); CSV/JSON ならそのまま描く。
+- 単ファイル HTML; データ点横の注釈形式: `<text class="annot">2024 · 412M</text>`。

@@ -1,9 +1,9 @@
 ---
 name: deck-xhs-white
-zh_name: "白底杂志风 Deck"
+zh_name: "白地雑誌風 Deck"
 en_name: "White Editorial Deck"
 emoji: "🌈"
-description: "纯白 + 顶部彩虹 bar + 渐变文字 + 马卡龙软卡片 + 黑底 pill"
+description: "純白 + 上部レインボー bar + グラデーション文字 + マカロンの柔らかいカード + 黒地 pill"
 category: slides
 scenario: marketing
 aspect_hint: "16:9 / 3:4"
@@ -11,10 +11,10 @@ featured: 27
 tags: ["editorial", "rainbow", "macaron"]
 ---
 
-【模板: 白底杂志风 Deck】
-【意图】可同时发小红书图文与横版 PPT 双用的白底杂志风。
-【布局】
-- 纯白背景 + 顶部 10 色彩虹 bar
-- 80-110px display 标题 + 紫→蓝→绿→橙→粉渐变文字
-- 马卡龙软卡片组 (粉 / 紫 / 蓝 / 绿 / 橙)
-- 黑底白字 .focus pill + 引用大块
+【テンプレート: 白地雑誌風 Deck】
+【意図】Xiaohongshu 図文と横 PPT の両方に出せる白地雑誌風。
+【レイアウト】
+- 純白背景 + 上部 10 色レインボー bar
+- 80-110px display タイトル + 紫→青→緑→橙→ピンクのグラデーション文字
+- マカロンの柔らかいカード組 (ピンク / 紫 / 青 / 緑 / 橙)
+- 黒地白字 .focus pill + 引用の大きな塊

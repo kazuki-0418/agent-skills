@@ -1,65 +1,65 @@
 ---
 name: deck-ljg-present
-zh_name: "宣言式演讲（Outline-Faithful）"
+zh_name: "宣言型スピーチ（Outline-Faithful）"
 en_name: "Outline-Faithful Manifesto Deck"
 emoji: "✊"
-description: "把 outline 1:1 铸成色块大字宣言 deck, 原文不动只做美化。三档主题 black / red / yellow"
+description: "outline を 1:1 で色面・大文字の宣言 deck にする。原文は動かさず見た目だけ。テーマ 3 種 black / red / yellow"
 category: slides
 scenario: creator
-aspect_hint: "16:9 横向翻页"
-tags: ["deck", "manifesto", "slogan", "outline", "宣言", "演讲", "色块", "大字", "ultra-bold"]
+aspect_hint: "16:9 横スライド"
+tags: ["deck", "manifesto", "slogan", "outline", "宣言", "スピーチ", "色面", "大文字", "ultra-bold"]
 example_id: sample-ljg-present-ai
-example_name: "宣言式演讲 · AI 革命"
+example_name: "宣言型スピーチ · AI 革命"
 example_format: markdown
-example_tagline: "Red 宣言 · 错位大字 · 左对齐"
-example_desc: "8 页 outline-faithful 演讲, 一级标题封面 + 列表错位 + 分隔符休止页 + 收束反问, 全程不重写原文"
+example_tagline: "Red 宣言 · ずらし大文字 · 左揃え"
+example_desc: "8 ページ outline-faithful スピーチ。一級タイトルのカバー + リストのずらし + 区切りの休止ページ + 締めの反問。原文は最後まで書き換えない"
 example_source_url: "https://github.com/lijigang/ljg-skills/tree/md/skills/ljg-present"
 example_source_label: "lijigang/ljg-skills · ljg-present"
 ---
 
-【模板: 宣言式演讲（Outline-Faithful）】
+【テンプレート: 宣言型スピーチ（Outline-Faithful）】
 
-【意图】把用户的 outline / markdown 1:1 视觉化为色块大字 manifesto deck。**不抽提、不重写、不重排、不浓缩**——只决定每一行/每一节渲染为哪一页。审美参考：Felipe Franco / BIG STUDIOS 的 manifesto 大字海报。
+【意図】ユーザーの outline / markdown を 1:1 で色面・大文字の manifesto deck にする。**抽出しない、書き換えない、並べ替えない、圧縮しない**——決めるのは各行/各節をどのページに描くかだけ。見た目の参照：Felipe Franco / BIG STUDIOS の manifesto 大文字ポスター。
 
-【铁律 — 全部违反必须重做】
-- 标题不改字, 段落不改字, 列表不改字, 顺序不重排
-- 唯一允许的"动"是**物理分页**（一段太长拆成多页）
-- 不抽 manifesto / 不写新句子 / 不删内容 / 不放图片图标 / 不用过渡动画
-- 一篇只用一个主题色（black / red / yellow 三选一）
+【絶対ルール — 1 つでも破ったら作り直す】
+- タイトルの字は変えない。段落の字は変えない。リストの字は変えない。順序は並べ替えない
+- 許される「動かし」は**物理的な改ページ**だけ（段落が長すぎるとき複数ページに割る）
+- manifesto を抽出しない / 新しい文を書かない / 内容を消さない / 画像やアイコンを置かない / トランジションアニメは使わない
+- 1 本につきテーマ色は 1 つ（black / red / yellow から 1）
 
-【outline → 页面映射】
+【outline → ページ対応】
 
-| 输入元素 | 输出页 |
+| 入力要素 | 出力ページ |
 |---|---|
-| `# 一级标题` | 独占 **emphasis** 封面页（accent 底色, 通常单字/单短词） |
-| `## 二级标题` | 独占 **theme** 页（大字标题独占一页） |
-| `### 三级标题`+ | 独占 theme 页（字号自动降一档） |
-| 段落（≤30字） | 单 theme 页 |
-| 段落（30-80字, 多句号） | 每句一页（medium 档） |
-| 段落（>80字） | 按 ~30 字一页拆, 末尾加 `⋯` |
-| `- 列表项`（≤4） | 一页全展示, indent 按嵌套深度 0/1/2 |
-| 列表 5-8 项 | 拆 2 页, 每页 3-4 项, 项数接近 |
-| 列表 >8 项 | 拆多页, 每页 4 项 |
-| 表格 ≤6 行 | 单页 |
-| 表格 >6 行 | 拆多页, 每页保留表头 |
-| `**强调**` / `` `code` `` | 自动 `hl: true` |
-| `---` 分隔符 | 独立 **emphasis 休止页**（空 emphasis, 纯色块） |
+| `# 一級見出し` | 独占 **emphasis** カバーページ（accent 地色。多くは 1 字/短い語） |
+| `## 二級見出し` | 独占 **theme** ページ（大文字タイトルが 1 ページを独占） |
+| `### 三級見出し`+ | 独占 theme ページ（字サイズは自動で 1 段下げる） |
+| 段落（≤30字） | theme ページ 1 枚 |
+| 段落（30-80字, 句点が多い） | 1 文 1 ページ（medium 段） |
+| 段落（>80字） | 約 30 字で 1 ページに割り、末尾に `⋯` |
+| `- リスト項目`（≤4） | 1 ページにすべて出す。indent は入れ子の深さ 0/1/2 |
+| リスト 5-8 項 | 2 ページに割る。各ページ 3-4 項。項数は近づける |
+| リスト >8 項 | 複数ページに割る。各ページ 4 項 |
+| 表 ≤6 行 | 1 ページ |
+| 表 >6 行 | 複数ページに割る。各ページで表頭を残す |
+| `**強調**` / `` `code` `` | 自動 `hl: true` |
+| `---` 区切り | 独立 **emphasis 休止ページ**（空の emphasis。純色面） |
 
-**首末页自动 emphasis**：文档首段（如已是 `#` 则合并）+ 文档末段 = emphasis 开场 / 收束页。一级标题就是天然的章节断点, 不要为了凑节奏强行加 emphasis。
+**先頭と末尾は自動 emphasis**：文書の先頭段（すでに `#` なら結合）+ 文書の末段 = emphasis の開き / 締めページ。一級見出しは天然の章の区切り。リズム合わせのために emphasis を足さない。
 
-【主题色推断 — 一篇只能一个】
+【テーマ色の推定 — 1 本につき 1 つだけ】
 
-| 文档调性 / 标签 | theme | 默认页 | emphasis 页 | hl 色（仅 theme 页生效） |
+| 文書の調子 / タグ | theme | 既定ページ | emphasis ページ | hl 色（theme ページでのみ効く） |
 |---|---|---|---|---|
-| 沉思 / 论证 / 笔记（默认） | **black** | 黑底白字 | 红底白字 | 红 `#E63956` |
-| 宣言 / 号召 / 演讲（含 `share` / `manifesto` / `keynote` / `talk` 标签或语气） | **red** | 红底白字 | 黑底白字 | 柔金黄 `#FFE082` |
-| 反讽 / 警觉 / 批判（含 `critique` / `warn` / `rant`） | **yellow** | 黄底黑字 | 黑底白字 | 红 `#E63956` |
+| 思索 / 論証 / ノート（既定） | **black** | 黒地白字 | 赤地白字 | 赤 `#E63956` |
+| 宣言 / 呼びかけ / スピーチ（`share` / `manifesto` / `keynote` / `talk` タグまたは口調を含む） | **red** | 赤地白字 | 黒地白字 | 柔金黄 `#FFE082` |
+| 皮肉 / 警戒 / 批判（`critique` / `warn` / `rant` を含む） | **yellow** | 黄地黒字 | 黒地白字 | 赤 `#E63956` |
 
-显式覆盖：用户写"用 red / 用 yellow / 用黑底"即按指令。无任何线索时默认 black。
+明示の上書き：ユーザーが「red を使う / yellow を使う / 黒地を使う」と書けば指示どおり。手がかりがなければ既定は black。
 
-【视觉规范 — 数值锁死】
+【見た目の規定 — 数値は固定】
 
-色板（仅 4 色, 不许改 hex）：
+パレット（4 色のみ。hex は変えない）：
 ```
 --c-black:  #1A1A1A
 --c-red:    #E63956
@@ -68,15 +68,15 @@ example_source_label: "lijigang/ljg-skills · ljg-present"
 --c-gold:   #FFE082
 ```
 
-字体栈（必须用 ultra-bold 900, letter-spacing `-0.05em`）：
+フォントスタック（ultra-bold 900 必須, letter-spacing `-0.05em`）：
 ```
 "Helvetica Neue", "Arial Black", "Inter", "PingFang SC", "Heiti SC", "STHeiti", -apple-system, sans-serif
 font-weight: 900
 ```
 
-字号档位（按本页**最长那一行**字符数, CJK 按 1.8 计权, 多行页降一档）：
+字サイズの段（そのページの**いちばん長い行**の文字数。CJK は 1.8 で重み付け。複数行ページは 1 段下げる）：
 
-| 档位 | 字符数 | font-size |
+| 段 | 文字数 | font-size |
 |---|---|---|
 | single | ≤2 | `clamp(320px, 80vmin, 1100px)` |
 | short | 3-6 | `clamp(240px, 55vmin, 780px)` |
@@ -84,38 +84,38 @@ font-weight: 900
 | long | 15-26 | `clamp(100px, 22vmin, 320px)` |
 | xlong | 27+ | `clamp(64px, 14vmin, 200px)` |
 
-排版：
-- padding `6vmin 7vmin`, 让大字撑满边缘
-- `.lines` 块在屏幕内水平居中, 但块内每行 **left-aligned**（消除右侧空白同时保 indent 错位）
-- line-height `1.05`, 行间 gap `0.15em`
-- 内容垂直居中
-- 页脚：左下页码（`01 / 08`）+ 右下副标题, 13px monospace, opacity 0.5, uppercase, letter-spacing `0.12em`
-- emphasis 页：背景换 `--acc-bg`, 字色换 `--acc-fg`, 行内 `.hl` 自动 `color: inherit`（emphasis 整页就是高亮）
-- indent 档位：0 = `0`, 1 = `7vmin`, 2 = `16vmin`
+組版：
+- padding `6vmin 7vmin`。大文字を端まで張る
+- `.lines` ブロックは画面内で水平中央。ブロック内の各行は **left-aligned**（右の空きを消しつつ indent のずらしは残す）
+- line-height `1.05`, 行間 gap `0.15em`
+- 内容は垂直中央
+- フッター：左下ページ番号（`01 / 08`）+ 右下サブタイトル, 13px monospace, opacity 0.5, uppercase, letter-spacing `0.12em`
+- emphasis ページ：背景は `--acc-bg`、字色は `--acc-fg`。行内 `.hl` は自動で `color: inherit`（emphasis のページ全体がハイライト）
+- indent の段：0 = `0`, 1 = `7vmin`, 2 = `16vmin`
 
-【输出契约】
+【出力の約束】
 
-输出**单文件 HTML**, 完全自包含, inline CSS + inline JS, 直接在 iframe sandbox 里能跑。骨架照下面这个模板, 把 `SLIDES` 数组、`<title>`、`{{SUBTITLE}}`、`body[data-theme]` 填好即可。**不要外链 CDN, 不要外部资源**。
+出力は**単ファイル HTML**。完全に自己完結。inline CSS + inline JS。iframe sandbox の中でそのまま動く。骨格はこのテンプレートどおり。`SLIDES` 配列、`<title>`、`{{SUBTITLE}}`、`body[data-theme]` を埋めればよい。**CDN の外リンクは使わない。外部リソースは使わない**。
 
-SLIDES 数组每项形态：
+SLIDES 配列の各要素の形：
 ```js
-// 默认 theme 页
-{ lines: [ { indent: 0, chunks: [ {t: "前段"}, {t: "高亮词", hl: true}, {t: "后段"} ] } ] }
-// emphasis 页（accent 底色, inline hl 自动忽略）
+// 既定の theme ページ
+{ lines: [ { indent: 0, chunks: [ {t: "前段"}, {t: "ハイライト語", hl: true}, {t: "後段"} ] } ] }
+// emphasis ページ（accent 地色。inline hl は自動で無視）
 { emphasis: true, lines: [ { indent: 0, chunks: [ {t: "AI"} ] } ] }
-// 休止页 = emphasis + 空 lines
+// 休止ページ = emphasis + 空の lines
 { emphasis: true, lines: [] }
 ```
 
-完整 HTML 骨架（agent 应**复用 CSS 与 JS 不要改**, 只填 SLIDES / title / subtitle / data-theme）：
+完全な HTML 骨格（agent は **CSS と JS を再利用し、変えない**。埋めるのは SLIDES / title / subtitle / data-theme だけ）：
 
 ```html
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title><!-- 文档标题 --></title>
+<title><!-- 文書タイトル --></title>
 <style>
   :root {
     --c-black: #1A1A1A; --c-red: #E63956; --c-yellow: #FFD400;
@@ -170,9 +170,9 @@ SLIDES 数组每项形态：
 <body data-theme="red"><!-- black|red|yellow -->
 <div class="stage" id="stage"></div>
 <div class="pager" id="pager">01 / 01</div>
-<div class="subtitle" id="subtitle"><!-- 副标题 / 品牌, 可空 --></div>
+<div class="subtitle" id="subtitle"><!-- サブタイトル / ブランド。空でも可 --></div>
 <script>
-  const SLIDES = [ /* 填入按 outline 映射出的 slides 数组 */ ];
+  const SLIDES = [ /* outline から対応させた slides 配列を入れる */ ];
   const stage = document.getElementById('stage');
   const pager = document.getElementById('pager');
   const body = document.body;
@@ -260,29 +260,29 @@ SLIDES 数组每项形态：
 </html>
 ```
 
-【调用流程 — agent 内部】
-1. 读用户内容（markdown / outline / 纯文本）
-2. 按上面表格做 **outline → slides 数组** 映射, 不抽提不重写
-3. 推断 theme（标签 > 语气 > 默认 black）
-4. 复用骨架, 替换 `<title>` / `data-theme` / `<div id="subtitle">` 内容 / `SLIDES` 数组
-5. 一次性输出整个 HTML 文档
+【手順 — agent 内部】
+1. ユーザーの素材を読む（markdown / outline / プレーンテキスト）
+2. 上の表で **outline → slides 配列** を対応させる。抽出せず書き換えない
+3. theme を推定する（タグ > 口調 > 既定 black）
+4. 骨格を再利用し、`<title>` / `data-theme` / `<div id="subtitle">` の中身 / `SLIDES` 配列を差し替える
+5. HTML 文書全体を一度に出す
 
-【品味准则】
-- outline 是真理, skill 是渲染器
-- 一级标题 = emphasis 封面（天然章节断点）
-- 二级标题 = 独占 theme 页（给标题应有的重量）
-- 列表错位靠 indent 0/1/2 体现嵌套深度
-- `**强调**` 自动 hl
-- 拆页保持视觉一致性（同源块字号/缩进对齐）
-- 左对齐不居中——这是 manifesto 美学的灵魂
+【品位の基準】
+- outline が真理。skill はレンダラ
+- 一級見出し = emphasis カバー（天然の章の区切り）
+- 二級見出し = 独占 theme ページ（タイトルに見合う重みを与える）
+- リストのずらしは indent 0/1/2 で入れ子の深さを出す
+- `**強調**` は自動 hl
+- 改ページしても見た目は揃える（同じ塊の字サイズ/インデントを揃える）
+- 左揃えであり中央ではない——これが manifesto 美学の核
 
-【禁区】
-- 不抽 manifesto（不要"找钉子", 作者已经写好了 outline）
-- 不写新句子、不重组顺序、不删内容
-- 不放图片 / 不放图标 / 不加过渡动画
-- 不在 emphasis 页用 inline hl（emphasis 整页就是高亮）
-- 不混用多个 theme（一篇一个气质）
-- 不擅自加 emphasis（只有一级标题 / 首末页 / 分隔符）
+【やってはいけないこと】
+- manifesto を抽出しない（「釘を探すな」。著者はすでに outline を書いている）
+- 新しい文を書かない。順序を組み直さない。内容を消さない
+- 画像を置かない / アイコンを置かない / トランジションアニメを足さない
+- emphasis ページで inline hl を使わない（emphasis のページ全体がハイライト）
+- theme を複数混ぜない（1 本につき 1 つの気配）
+- 勝手に emphasis を足さない（一級見出し / 先頭と末尾 / 区切りだけ）
 
-【致谢】
-本 skill 改编自 [lijigang/ljg-skills · ljg-present](https://github.com/lijigang/ljg-skills/tree/md/skills/ljg-present)（v3.0.0）。原版输出多主题包含 cyber-hacker 模式与 PNG 投影; html-anything 版只保留 3 主题 + 单文件 HTML 输出。审美灵感继续指向 Felipe Franco / BIG STUDIOS 的 manifesto 字体海报。
+【クレジット】
+この skill は [lijigang/ljg-skills · ljg-present](https://github.com/lijigang/ljg-skills/tree/md/skills/ljg-present)（v3.0.0）からの改編。原版は複数テーマを出し、cyber-hacker モードと PNG 投影を含む; html-anything 版はテーマ 3 + 単ファイル HTML 出力だけ残す。見た目の着想は引き続き Felipe Franco / BIG STUDIOS の manifesto 書体ポスター。

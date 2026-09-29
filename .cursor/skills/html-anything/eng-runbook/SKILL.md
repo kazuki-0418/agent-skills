@@ -1,21 +1,21 @@
 ---
 name: eng-runbook
-zh_name: "工程 Runbook"
+zh_name: "エンジニアリング Runbook"
 en_name: "Engineering Runbook"
 emoji: "📕"
-description: "服务概述 + alerts 表 + dashboards + 操作命令 + on-call + 事故清单"
+description: "サービス概要 + alerts 表 + dashboards + 操作コマンド + on-call + 事故リスト"
 category: doc
 scenario: engineering
-aspect_hint: "长页面"
+aspect_hint: "縦長ページ"
 tags: ["runbook", "ops", "oncall", "sre"]
 ---
 
-【模板: Engineering Runbook】
-【意图】工程 oncall 用的可拷贝命令的 runbook 单页。
-【布局】
-- Service overview (拓扑 + 依赖)
+【テンプレート: Engineering Runbook】
+【意図】エンジニアリング oncall 用の、コマンドをコピーできる runbook 単ページ。
+【レイアウト】
+- Service overview (トポロジ + 依存)
 - Alerts table (severity / threshold / runbook link)
-- Dashboards links 卡片
-- Common procedures (mono 代码块, 一键复制)
-- On-call rotation (本周 + 下周)
+- Dashboards links カード
+- Common procedures (mono コードブロック, ワンクリックコピー)
+- On-call rotation (今週 + 来週)
 - Incident response checklist

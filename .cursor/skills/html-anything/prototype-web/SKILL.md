@@ -1,24 +1,24 @@
 ---
 name: prototype-web
-zh_name: "Web 产品原型"
+zh_name: "Web プロダクトプロトタイプ"
 en_name: "Web Prototype"
 emoji: "🛠️"
-description: "可点击的功能性 Web 原型, 含导航、英雄区、特性区、CTA"
+description: "クリックできる機能的な Web プロトタイプ。ナビ、ヒーロー、機能、CTA を含む"
 category: prototype
 scenario: design
-aspect_hint: "1440×900 桌面"
-tags: ["prototype", "landing", "原型"]
+aspect_hint: "1440×900 デスクトップ"
+tags: ["prototype", "landing", "プロトタイプ"]
 example_id: sample-prototype-inkstack
-example_name: "Web 原型 · SaaS Landing"
+example_name: "Web プロトタイプ · SaaS Landing"
 example_format: markdown
-example_tagline: "完整可点击的 SaaS 落地页"
-example_desc: "Hero / Features / How / Voices / Pricing / Footer 一步到位"
+example_tagline: "クリックできる SaaS ランディング一式"
+example_desc: "Hero / Features / How / Voices / Pricing / Footer を一度に"
 ---
 
-【模板: Web 产品原型】
-- 输出一个完整的产品 landing page。
-- Sections: Top Nav (logo + 导航 + CTA 按钮) → Hero (大标题 + 副标 + 双 CTA + 可视化占位) → Features (3-6 个特性卡) → How it works (步骤) → Social proof (logo wall / 评价) → Pricing (可选) → Footer。
-- 使用现代 SaaS 设计趋势: 大字号、柔和渐变、glassmorphism 卡片、滚动到视图入场动画 (pure CSS 即可)。
-- 响应式: 移动端单栏, 桌面多栏; 至少处理 `md:` 断点。
-- 添加交互: nav 滚动变色; 特性卡 hover 浮起; FAQ 可手风琴展开 (用 `<details>`)。
-- 这是高保真原型, 应该让人觉得"明天就能上线"。
+【テンプレート: Web プロダクトプロトタイプ】
+- 完成した製品 landing page を出す。
+- Sections: Top Nav (logo + ナビ + CTA ボタン) → Hero (大タイトル + サブタイトル + 双 CTA + 可視化プレースホルダ) → Features (特性カード 3-6) → How it works (ステップ) → Social proof (logo wall / 評価) → Pricing (任意) → Footer。
+- 現代 SaaS のデザイン傾向: 大サイズ、柔らかいグラデーション、glassmorphism カード、スクロールで入る入場アニメーション (pure CSS でよい)。
+- レスポンシブ: モバイルは 1カラム, デスクトップは複数カラム; 少なくとも `md:` ブレークポイントを処理。
+- インタラクション: nav スクロールで色が変わる; 特性カード hover で浮く; FAQ はアコーディオン (`<details>`)。
+- 高忠実度プロトタイプ。"明日リリースできる" と感じさせる。

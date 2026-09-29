@@ -1,25 +1,25 @@
 ---
 name: card-twitter
-zh_name: "Twitter 分享卡"
+zh_name: "Twitter シェアカード"
 en_name: "Twitter Share Card"
 emoji: "🐦"
-description: "推特金句 / 数据卡, 适合配推文"
+description: "ツイートの名言 / データカード。投稿に添える用"
 category: card
 scenario: marketing
 aspect_hint: "1600×900 (16:9)"
-tags: ["twitter", "x", "quote", "金句"]
+tags: ["twitter", "x", "quote", "名言"]
 example_id: sample-twitter-quote
-example_name: "推特卡 · 金句"
+example_name: "ツイートカード · 名言"
 example_format: text
-example_tagline: "16:9 暗色金句卡, 截图直接配推文"
-example_desc: "高对比金句模板, 含 grid 网格 + 渐变光晕背景"
+example_tagline: "16:9 暗色の名言カード, スクリーンショットしてそのまま投稿に添える"
+example_desc: "高コントラストの名言テンプレート, grid グリッド + グラデーション光暈の背景を含む"
 ---
 
-【模板: Twitter 分享卡】
-- 容器 `w-[1600px] h-[900px]`, 暗色 / 亮色二选一根据内容情绪。
-- 中央一句 hero 金句 (text-6xl, font-semibold, 限 2-3 行)。
-- 下方作者署名 + 头像占位 + handle。
-- 左上角小标签 (类型: "Insight" / "Data" / "Quote")。
-- 右下角品牌水印。
-- 整张卡片有微妙的纹理 (grid 网格 / noise / dot pattern)。
-- 截图后可直接配推文发出, 视觉简洁有力。
+【テンプレート: Twitter シェアカード】
+- 容器 `w-[1600px] h-[900px]`, 暗色 / 明色は内容のムードでどちらか。
+- 中央に hero 名言 1 文 (text-6xl, font-semibold, 2-3 行に限る)。
+- 下に著者クレジット + アバタープレースホルダ + handle。
+- 左上の小さなラベル (タイプ: "Insight" / "Data" / "Quote")。
+- 右下のブランド透かし。
+- カード全体に微妙なテクスチャ (grid グリッド / noise / dot pattern)。
+- スクリーンショット後にそのままツイートに添えて出せる, 視覚は簡潔で力強い。

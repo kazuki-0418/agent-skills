@@ -1,55 +1,55 @@
 ---
 name: frame-liquid-bg-hero
-zh_name: "流体背景 Hero 帧"
+zh_name: "流体背景 Hero フレーム"
 en_name: "Liquid Background Hero"
 emoji: "🌊"
-description: "WebGL 风流体置换背景 + 顶部叠加金句, 适合视频片头 / landing hero / 海报"
+description: "WebGL 風の流体ディスプレースメント背景 + 上に名言。動画オープニング / landing hero / ポスター向け"
 category: poster
 scenario: video
-aspect_hint: "1920×1080 (16:9) 或 1080×1920 (9:16)"
+aspect_hint: "1920×1080 (16:9) または 1080×1920 (9:16)"
 featured: 39
 tags: ["liquid", "fluid", "background", "hero", "html-in-canvas", "vfx"]
 example_id: sample-frame-liquid-bg-hero
-example_name: "流体背景 Hero · 金句"
+example_name: "流体背景 Hero · 名言"
 example_format: markdown
 example_tagline: "Aurora Violet 流体"
-example_desc: "多层 radial-gradient 呼吸背景 + difference 文字"
+example_desc: "多層 radial-gradient の呼吸背景 + difference 文字"
 example_source_url: "https://hyperframes.heygen.com/catalog"
 example_source_label: "hyperframes · vfx-liquid-background"
 ---
 
-【模板: 流体背景 Hero】
-【意图】可作为视频片头帧、SaaS landing 顶部 hero、海报底图。WebGL 流体感, 但用 CSS / canvas 退化绘制, 确保单文件可双击打开。Inspired by hyperframes vfx-liquid-background。
+【テンプレート: 流体背景 Hero】
+【意図】動画オープニングフレーム、SaaS landing 上部 hero、ポスター下地に使える。WebGL の流体感を、CSS / canvas のフォールバックで描き、単ファイルをダブルクリックで開けるようにする。Inspired by hyperframes vfx-liquid-background。
 
-【画布】1920×1080 (横) 或 1080×1920 (竖), 二选一。背景占满。
+【キャンバス】1920×1080 (横) または 1080×1920 (縦)、どちらか。背景は全面。
 
-【流体背景 — 3 种实现, 按用户偏好选】
-1. **CSS 多层 radial-gradient 错位呼吸** (最稳, 默认推荐):
-   - 3-5 个大椭圆 `radial-gradient(...)`, 颜色取自调色板。
-   - 每个椭圆套 `@keyframes` 平移 + scale + hue-rotate, 周期 8-14s, 错峰; 整个画面叠 `mix-blend-mode: screen` 或 `overlay`。
-   - 顶层加 1 层 `backdrop-filter: blur(80px)` 让边缘更糊。
-2. **Canvas + simple perlin noise** (中阶):
-   - 80 行 inline JS, 用 `requestAnimationFrame` 画 metaballs 或 simplex noise field。
-   - 性能允许时启用, `prefers-reduced-motion` 时降回静态截图。
-3. **WebGL fragment shader** (高阶, 慎用):
-   - 用 jsdelivr CDN 引 `regl` 或 inline plain WebGL。
-   - shader 写 domain-warp noise; 单个 quad, 一个 uniform `u_time`。
+【流体背景 — 実装 3 種, ユーザーの好みで選ぶ】
+1. **CSS 多層 radial-gradient のずれた呼吸** (最も安定, 既定の推奨):
+   - 大きな楕円 `radial-gradient(...)` を 3-5 個、色はパレットから。
+   - 各楕円に `@keyframes` の平行移動 + scale + hue-rotate、周期 8-14s、ずらす; 画面全体に `mix-blend-mode: screen` または `overlay`。
+   - 最前面に `backdrop-filter: blur(80px)` 1 層で端をさらにぼかす。
+2. **Canvas + simple perlin noise** (中級):
+   - inline JS 80 行、`requestAnimationFrame` で metaballs または simplex noise field を描く。
+   - 性能が許すとき有効。`prefers-reduced-motion` では静的スクリーンショットに落とす。
+3. **WebGL fragment shader** (上級, 慎重に):
+   - jsdelivr CDN で `regl` を引くか inline plain WebGL。
+   - shader は domain-warp noise; quad 1 つ、uniform `u_time` 1 つ。
 
-【顶层文字层】
-- 居中或左下: 一句巨型金句 (5-7vw, 衬线或粗 sans), 字体: `Source Serif Pro` / `Inter Tight` / `Manrope Black`。
-- 文字色用 paper white `#fafaf8` 或 ink, 取决于背景明暗; 加 `mix-blend-mode: difference` 让它在任何流体颜色上都可读。
-- 副标 (小 sans, opacity 0.7) 一行。
-- 底部可选 CTA chip 或 hairline + 元数据 row。
+【最前面の文字レイヤー】
+- 中央または左下: 巨大な名言 1 句 (5-7vw, セリフまたは太い sans), フォント: `Source Serif Pro` / `Inter Tight` / `Manrope Black`。
+- 文字色は paper white `#fafaf8` または ink、背景の明暗による; `mix-blend-mode: difference` でどの流体色でも読めるようにする。
+- サブタイトル (小さな sans, opacity 0.7) 1 行。
+- 下部は任意で CTA chip または hairline + メタデータ row。
 
-【调色 — 4 选 1, 不要彩虹】
-- 🌅 **Solar Peach** — `#ffb18a` + `#f78b4c` + `#d97757`, 暖橙桃。
-- 🌊 **Ocean Aqua** — `#5ac8fa` + `#0a84ff` + `#1e3a8a`, 海蓝。
-- 🌌 **Aurora Violet** — `#a78bfa` + `#7c5cff` + `#1e1b4b`, 极光紫。
-- 🌿 **Forest Mint** — `#86efac` + `#34d399` + `#065f46`, 苔森林。
+【カラー — 4 から 1 つ, 虹は使わない】
+- 🌅 **Solar Peach** — `#ffb18a` + `#f78b4c` + `#d97757`, 暖かい橙と桃。
+- 🌊 **Ocean Aqua** — `#5ac8fa` + `#0a84ff` + `#1e3a8a`, 海の青。
+- 🌌 **Aurora Violet** — `#a78bfa` + `#7c5cff` + `#1e1b4b`, オーロラ紫。
+- 🌿 **Forest Mint** — `#86efac` + `#34d399` + `#065f46`, 苔の森。
 
-【设计细节】
-- 严禁: 多色彩虹 (>4 个色相)、PowerPoint 渐变、霓虹荧光叠加。
-- 字体: 中文用 `Noto Serif SC` (display) / `Noto Sans SC` (副标)。
-- 严禁外链图片; 全部 CSS + SVG + 可选 canvas。
-- 必须用用户提供的金句 / 标题; 如果用户输入是数据 → 提炼一句 ≤ 18 字的金句。
-- 单文件 HTML, 可被 `prefers-reduced-motion` 关动效。
+【デザインの要点】
+- 禁止: 多色の虹 (>4 色相)、PowerPoint グラデーション、ネオン蛍光の重ね。
+- フォント: 中国語は `Noto Serif SC` (display) / `Noto Sans SC` (サブタイトル)。
+- 外部画像は禁止; すべて CSS + SVG + 任意 canvas。
+- ユーザー提供の名言 / タイトルを使う; 入力がデータなら ≤ 18 字の名言 1 句に抽出。
+- 単ファイル HTML, `prefers-reduced-motion` でモーションを切れる。

@@ -1,20 +1,20 @@
 ---
 name: social-media-dashboard
-zh_name: "社媒创作者仪表板"
+zh_name: "SNS クリエイターダッシュボード"
 en_name: "Social Media Dashboard"
 emoji: "📡"
-description: "平台切换 + 粉丝/互动 KPI + 增长曲线 + Top post + 热门话题"
+description: "プラットフォーム切替 + フォロワー/エンゲージメント KPI + 成長曲線 + Top post + トレンドトピック"
 category: dashboard
 scenario: creator
-aspect_hint: "桌面 1440"
+aspect_hint: "デスクトップ 1440"
 tags: ["social", "creator", "analytics", "x", "linkedin", "tiktok"]
 ---
 
-【模板: 社媒创作者仪表板】
-【意图】面向博主 / 创作者的社媒数据看板。
-【布局】
-- 顶部平台 switcher (X / LinkedIn / YouTube / Instagram / TikTok)
-- KPI 卡片 (followers / engagement / likes / reposts)
+【テンプレート: SNS クリエイターダッシュボード】
+【意図】ブロガー / クリエイター向けの SNS データボード。
+【レイアウト】
+- 上部プラットフォーム switcher (X / LinkedIn / YouTube / Instagram / TikTok)
+- KPI カード (followers / engagement / likes / reposts)
 - Follower-growth chart
-- Top post this week 预览
+- Top post this week プレビュー
 - Side: trending topics / top comments

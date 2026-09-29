@@ -1,23 +1,23 @@
 ---
 name: motion-frames
-zh_name: "动效英雄帧"
+zh_name: "モーション hero フレーム"
 en_name: "Motion Frames"
 emoji: "🌀"
-description: "可循环 CSS 动效组合: 旋转环、地球仪、计时器、视差标签"
+description: "ループできる CSS モーション一式: 回転リング、地球儀、タイマー、パララックスラベル"
 category: video
 scenario: marketing
-aspect_hint: "桌面 hero"
+aspect_hint: "デスクトップ hero"
 featured: 6
 tags: ["motion", "title card", "loop", "video poster"]
 ---
 
-【模板: Motion 帧 / Hero Loop】
-【意图】一帧带循环动效的 hero, 可作为视频片头或落地页大图。
-【布局】
+【テンプレート: Motion フレーム / Hero Loop】
+【意図】ループモーション付き hero 1 フレーム。動画オープニングやランディングの大図に使える。
+【レイアウト】
 - Rotating type ring (SVG + transform)
-- Animated globe / 抽象几何
-- Ticking timer (mono 字体, JS 可有可无)
-- Parallax labels 浮动
-【设计细节】
-- 纯 CSS 动效, 流畅可循环
-- 电影感调色 + 1 个霓虹 accent
+- Animated globe / 抽象ジオメトリ
+- Ticking timer (mono フォント, JS はあってもなくても)
+- Parallax labels が浮かぶ
+【デザインの要点】
+- 純 CSS モーション。滑らかにループ
+- 映画的な調色 + neon accent 1 つ

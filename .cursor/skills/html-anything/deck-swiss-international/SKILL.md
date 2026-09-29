@@ -1,63 +1,63 @@
 ---
 name: deck-swiss-international
-zh_name: "瑞士国际主义 Deck"
+zh_name: "スイス国際主義 Deck"
 en_name: "Swiss International Deck"
 emoji: "🟦"
-description: "16 列网格 + 单一饱和 accent + 22 个锁死版面 (Klein Blue / Lemon / Mint / Safety Orange)"
+description: "16 列グリッド + 単一の鮮やかな accent + 固定版面 22 (Klein Blue / Lemon / Mint / Safety Orange)"
 category: slides
 scenario: marketing
-aspect_hint: "16:9 横向翻页"
+aspect_hint: "16:9 横スライド"
 featured: 50
 recommended: 2
 tags: ["swiss", "grid", "international", "ikb", "editorial", "facts"]
 example_id: sample-swiss-international
-example_name: "Swiss International · 产品路线"
+example_name: "Swiss International · 製品ロードマップ"
 example_format: markdown
-example_tagline: "Klein Blue IKB + 16 列网格"
-example_desc: "S01 Cover + S06 KPI Tower 两页预览, IKB 全屏标题 + 4 柱状 KPI"
+example_tagline: "Klein Blue IKB + 16 列グリッド"
+example_desc: "S01 Cover + S06 KPI Tower の 2 ページプレビュー。IKB 全画面タイトル + 4 本の棒 KPI"
 example_source_url: "https://github.com/op7418/guizang-ppt-skill"
 example_source_label: "op7418/guizang-ppt-skill"
 ---
 
-【模板: 瑞士国际主义 Deck (Swiss International)】
-【意图】事实、产品、分析、方法论表达。极度冷静、理性、学院派, 没有任何手绘 / 噪点 / 装饰。Inspired by op7418/guizang-ppt-skill Style B。
+【テンプレート: スイス国際主義 Deck (Swiss International)】
+【意図】事実、製品、分析、方法論の表現。極度に冷静、理性、アカデミック。手描き / ノイズ / 装飾は一切なし。Inspired by op7418/guizang-ppt-skill Style B。
 
-【主题】**只能从下面 4 套二选一, 不许混用、不许改 hex**:
-- 🔵 **Klein Blue (IKB)** — accent `#002FA7`, paper `#fafaf8`, ink `#0a0a0a`. 商业 / AI / 设计场景。
-- 🟡 **Lemon Yellow** — accent `#FFD500`, paper `#f7f5ee` (淡奶油), ink `#0a0a0a`. 年轻 / 零售 / 体育。文字必须用黑色 (不能白色)。
-- 🟢 **Lemon Green / Neon** — accent `#C5E803`, paper `#f7f5ee`, ink `#0a0a0a`. 可持续 / 科技初创 / Gen-Z 品牌。文字必须用黑色。
-- 🟠 **Safety Orange** — accent `#FF6B35`, paper `#f7f5ee`, ink `#0a0a0a`. 工业 / 汽车 / 紧急消息。文字用白色 + bold ≥ 600。
+【テーマ】**下の 4 セットから 1 つ。混用禁止、hex 変更禁止**:
+- 🔵 **Klein Blue (IKB)** — accent `#002FA7`, paper `#fafaf8`, ink `#0a0a0a`. ビジネス / AI / デザインの場面。
+- 🟡 **Lemon Yellow** — accent `#FFD500`, paper `#f7f5ee` (淡クリーム), ink `#0a0a0a`. 若年 / リテール / スポーツ。文字は黒必須 (白は不可)。
+- 🟢 **Lemon Green / Neon** — accent `#C5E803`, paper `#f7f5ee`, ink `#0a0a0a`. サステナブル / テックスタートアップ / Gen-Z ブランド。文字は黒必須。
+- 🟠 **Safety Orange** — accent `#FF6B35`, paper `#f7f5ee`, ink `#0a0a0a`. 工業 / 自動車 / 緊急メッセージ。文字は白 + bold ≥ 600。
 
-【布局 — 22 个可复用版式池, 不许新增或改造版式; **数量由内容决定**, 把【用户内容】完整覆盖完为止 (短内容 6-10 张起步, 长内容应远超此范围, 同一版式可在不同章节重复使用)】
-- **S01 Cover** — 全屏 accent + ASCII 呼吸点阵 + 反白标题 + 元数据 chrome (date / № / topic)。
-- **S02 Vertical Timeline** — 左侧虚线轴 + 圆点; 右侧节点 = 年份 + KPI + 描述。
-- **S03 Statement** — 9.6vw 居中巨字 + 左侧大段留白 + 底部 hairline + 注释。
-- **S04 Six Cells** — 2×3 网格, 每格: icon + 编号 + 短标题 + 单行描述。
-- **S05 Three Sub-cards** — 左侧 hero 标题 + 右侧 3 张水平堆叠的灰色卡。
-- **S06 KPI Tower** — 4 列变高蓝色柱状; 柱顶 icon; 柱底大数字 + 标签。
-- **S07 H-Bar Chart** — 水平排名横条, 宽度反映数据, 末端标数字。
-- **S08 Duo Compare** — 垂直分割线; 左 Before / 右 After。
-- **S09 Closing Manifesto** — 左 IKB 块 + ASCII 点阵 + 宣言; 右白底 + 3 条要点。
-- **S10 Dot Matrix Statement** — 居中宣言 + 角落几何点矩阵 / 圆环矩阵。
-- **S11 Horizontal Timeline** — 顶部 headline, 中部 hairline 轴, 等距节点, 节点下方步骤名。
-- **S12 Manifesto + Ink Banner** — 上半 headline + 解释; 下半全宽黑色横幅 + 反白小字。
-- **S13 Three Forces Cards** — 左 ink hero 块; 右 3 张灰色卡, 每卡: 大数字 + 文本。
-- **S14 Loop Diagram** — 左编号步骤; 右 SVG 同心环; 中心 "LOOP" 标签。
-- **S15 Image Matrix + Hero Stat** — 4×3 等高卡片 (12 项) + 底部 summary 大数字 + 标签。
-- **S16 Multi-card Brief** — 3×2 微卡; 主文左上, 注脚右下, 单卡 accent 高亮。
-- **S17 System Diagram** — 左 headline + 3 段描述; 右 SVG 三同心圆 + 外部标签。
-- **S18 Why Now** — 3 列, 每列: category label + headline + 描述 + 底部数字 (最后一列 accent)。
-- **S19 Four Cards** — 顶部 accent hairline + headline + 4 张等宽卡 (元数据 / 标题 / 正文)。
-- **S20 Stacked KPI Ledger** — 垂直行 + hairline 分隔; 左大数字 / 中标签 / 右 icon。
-- **S21 Tech Spec Sheet** — 左标题块 / 中 3 个 KPI hairline / 右变高柱 / 底数据。
-- **S22 Image Hero** — 上 60% 全宽图 + 白色标题块覆盖; 下 40% 解释 + 3 列 KPI。
+【レイアウト — 再利用できる版面プール 22。版面の追加や改造は禁止; **枚数は内容で決める**, 【ユーザーの素材】をすべて覆い終わるまで (短い素材は 6-10 から。長い素材はこの範囲を大きく超える。同じ版面を別の章で繰り返してよい)】
+- **S01 Cover** — 全画面 accent + ASCII の呼吸ドットマトリクス + 反転タイトル + メタデータ chrome (date / № / topic)。
+- **S02 Vertical Timeline** — 左の破線軸 + 丸点; 右のノード = 年 + KPI + 説明。
+- **S03 Statement** — 9.6vw 中央揃えの巨大字 + 左の大きな余白 + 下部 hairline + 注釈。
+- **S04 Six Cells** — 2×3 グリッド。各マス: icon + 番号 + 短いタイトル + 1 行の説明。
+- **S05 Three Sub-cards** — 左 hero タイトル + 右に水平積みの灰色カード 3 枚。
+- **S06 KPI Tower** — 4 列の高さの違う青の棒; 柱の上に icon; 柱の下に大きな数字 + ラベル。
+- **S07 H-Bar Chart** — 水平ランキングの横棒。幅がデータを表す。末端に数字。
+- **S08 Duo Compare** — 垂直の分割線; 左 Before / 右 After。
+- **S09 Closing Manifesto** — 左 IKB ブロック + ASCII ドットマトリクス + 宣言; 右白地 + 要点 3。
+- **S10 Dot Matrix Statement** — 中央揃えの宣言 + 角の幾何ドットマトリクス / 円環マトリクス。
+- **S11 Horizontal Timeline** — 上部 headline、中部 hairline 軸、等間隔ノード、ノード下にステップ名。
+- **S12 Manifesto + Ink Banner** — 上半分 headline + 説明; 下半分全幅の黒バナー + 反転の小さい字。
+- **S13 Three Forces Cards** — 左 ink hero ブロック; 右 灰色カード 3 枚。各カード: 大きな数字 + テキスト。
+- **S14 Loop Diagram** — 左 番号付きステップ; 右 SVG 同心円; 中心 "LOOP" ラベル。
+- **S15 Image Matrix + Hero Stat** — 4×3 等高カード (12 項) + 下部 summary の大きな数字 + ラベル。
+- **S16 Multi-card Brief** — 3×2 の小さなカード; 本文は左上、脚注は右下、1 枚を accent ハイライト。
+- **S17 System Diagram** — 左 headline + 説明 3 段; 右 SVG 三重同心円 + 外側ラベル。
+- **S18 Why Now** — 3 列。各列: category label + headline + 説明 + 下部の数字 (最後の列は accent)。
+- **S19 Four Cards** — 上部 accent hairline + headline + 等幅カード 4 枚 (メタデータ / タイトル / 本文)。
+- **S20 Stacked KPI Ledger** — 垂直の行 + hairline 区切り; 左 大きな数字 / 中 ラベル / 右 icon。
+- **S21 Tech Spec Sheet** — 左 タイトルブロック / 中 KPI hairline 3 / 右 高さの違う柱 / 下 データ。
+- **S22 Image Hero** — 上 60% 全幅図 + 白のタイトルブロックを重ねる; 下 40% 説明 + 3 列 KPI。
 
-【设计细节 — 绝对铁律】
-- **只用直角**: 全程 `border-radius: 0`。圆角 = 立刻违反。
-- **1px hairline borders**, 黑色或 accent; 严禁阴影 / 渐变 / blur。
-- **16 列网格**: `grid-template-columns: repeat(16, 1fr); gap: 0`。
-- **字体**: Inter Tight (Latin display) / Inter (body) / Noto Sans SC (中文) / JetBrains Mono (数据); 严禁衬线、严禁装饰字体。
-- **字号极端反差**: cover 用 9.6vw display, body 14-16px, label 11px uppercase letterspacing 0.08em。
-- **键盘 ← / → 切换 + hash 同步**; 角标固定: `№N/N` 右下, topic 标签左下。
-- **不许编造**: 数字必须来自用户输入, 图表柱高 = 真实数据按比例。
-- 输出单文件 HTML, 不用任何外部图片 URL; 装饰几何 (ASCII 矩阵 / 同心圆) 用纯 CSS 或内联 SVG。
+【デザインの要点 — 絶対ルール】
+- **直角だけ**: 最後まで `border-radius: 0`。角丸 = 即違反。
+- **1px hairline borders**, 黒または accent; 影 / グラデーション / blur は禁止。
+- **16 列グリッド**: `grid-template-columns: repeat(16, 1fr); gap: 0`。
+- **書体**: Inter Tight (Latin display) / Inter (body) / Noto Sans SC (中国語) / JetBrains Mono (データ); セリフ禁止、装飾書体禁止。
+- **字サイズの極端な対比**: cover は 9.6vw display, body 14-16px, label 11px uppercase letterspacing 0.08em。
+- **キーボード ← / → 切替 + hash 同期**; 角の標は固定: `№N/N` 右下, topic ラベル左下。
+- **捏造は禁止**: 数字はユーザー入力から。チャートの柱の高さ = 実データを比率どおり。
+- 単ファイル HTML を出す。外部画像 URL は使わない; 装飾の幾何 (ASCII マトリクス / 同心円) は純 CSS またはインライン SVG。

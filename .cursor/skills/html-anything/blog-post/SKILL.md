@@ -1,24 +1,24 @@
 ---
 name: blog-post
-zh_name: "博客长文"
+zh_name: "ブログ長文"
 en_name: "Blog Post"
 emoji: "📰"
-description: "杂志感长文, 含 masthead、hero、figures、pull quote、作者署名"
+description: "雑誌感の長文。masthead、hero、figures、pull quote、著者クレジットを含む"
 category: article
 scenario: marketing
-aspect_hint: "长页面"
-tags: ["blog", "essay", "case study", "长文"]
+aspect_hint: "縦長ページ"
+tags: ["blog", "essay", "case study", "長文"]
 ---
 
-【模板: 博客长文 / Blog Post】
-【意图】≥ 600 字的真正的长文章, 排版以 typography 为主, 70% 文字 20% 图 10% chrome。
-【布局】
+【テンプレート: ブログ長文 / Blog Post】
+【意図】≥ 600 字の本当の長文章, 組版は typography を主に, 70% 文字 20% 図 10% chrome。
+【レイアウト】
 - Masthead (publication name + date)
-- Hero (大标题 + 副标 + 作者署名 + 阅读时间)
-- 正文 (单栏 65ch, 含 figures, pull quotes, 行内引用)
-- Author bio 卡片
-- Related posts (3 张卡)
-【设计细节】
-- Pull quote 用大号 serif 斜体 + 左侧色条
-- Figures 自带 caption (italic, smaller)
-- 代码块: 圆角 + 深色 + 语言标签
+- Hero (大タイトル + サブタイトル + 著者クレジット + 読了時間)
+- 本文 (1カラム 65ch, figures, pull quotes, 行内引用を含む)
+- Author bio カード
+- Related posts (3 枚のカード)
+【デザインの要点】
+- Pull quote は大きな serif 斜体 + 左側の色バー
+- Figures は caption を自前で持つ (italic, smaller)
+- コードブロック: 角丸 + 暗色 + 言語ラベル

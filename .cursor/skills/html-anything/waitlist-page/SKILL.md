@@ -1,23 +1,23 @@
 ---
 name: waitlist-page
-zh_name: "等候名单页"
+zh_name: "ウェイトリストページ"
 en_name: "Waitlist Page"
 emoji: "✉️"
-description: "极简产品预发布落地页, 含邮箱捕获、logo、装饰图层"
+description: "極簡の製品プレローンチランディング。メール取得、logo、装飾レイヤーを含む"
 category: prototype
 scenario: marketing
-aspect_hint: "桌面 1440"
+aspect_hint: "デスクトップ 1440"
 featured: 1
-tags: ["waitlist", "launch", "预发布"]
+tags: ["waitlist", "launch", "プレローンチ"]
 ---
 
-【模板: 等候名单页 / Waitlist】
-【意图】为新产品 / 早鸟内测做一张极简等候页。
-【布局】
-- 居中布局: brand logo + 一行 tagline + 大字 hero (说清楚做什么)
-- 邮箱捕获 input + submit 按钮 (合并成一个 pill)
-- 下方 3 个小卖点 (icon + 一行字)
-- 底部 founders note + 社交链接
-【设计细节】
-- 装饰: SVG 渐变 mesh / 噪点纹理 / 一颗星轨
-- 成功提交后给一个微动效 (✓ + 文案变化)
+【テンプレート: ウェイトリストページ / Waitlist】
+【意図】新製品 / アーリーバードのクローズドベータ向けの極簡ウェイトリストページ。
+【レイアウト】
+- 中央揃え: brand logo + tagline 1 行 + 大きな hero (何をするか言い切る)
+- メール取得 input + submit ボタン (1 つの pill にまとめる)
+- 下に小さな売り 3 つ (icon + 1 行)
+- 下部 founders note + ソーシャルリンク
+【デザインの要点】
+- 装飾: SVG グラデーション mesh / ノイズテクスチャ / 星の軌跡 1
+- 送信成功後に小さなモーション (✓ + 文言の変化)

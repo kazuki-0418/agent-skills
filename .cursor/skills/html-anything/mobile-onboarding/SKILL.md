@@ -1,19 +1,19 @@
 ---
 name: mobile-onboarding
-zh_name: "App 引导多屏"
+zh_name: "App オンボーディング複数画面"
 en_name: "Mobile Onboarding"
 emoji: "🪂"
-description: "三个手机框并排: splash / value-prop / sign-in"
+description: "スマホ枠 3 つ横並び: splash / value-prop / sign-in"
 category: mobile
 scenario: design
 aspect_hint: "3 × iPhone"
 featured: 13
-tags: ["onboarding", "ios", "signup", "引导"]
+tags: ["onboarding", "ios", "signup", "オンボーディング"]
 ---
 
-【模板: App 引导三屏】
-【意图】并排展示三个 mobile onboarding 关键屏。
-【布局】
+【テンプレート: App オンボーディング 3画面】
+【意図】mobile onboarding の要の画面 3 つを横並びに。
+【レイアウト】
 - Phone 1: Splash (logo + tagline)
-- Phone 2: Value-prop (illustration + 1 句 + dot indicators)
+- Phone 2: Value-prop (illustration + 1 文 + dot indicators)
 - Phone 3: Sign-in (email / Apple / Google + 主 CTA)

@@ -1,26 +1,26 @@
 ---
 name: resume-modern
-zh_name: "极简简历"
+zh_name: "ミニマル履歴書"
 en_name: "Modern Resume"
 emoji: "📄"
-description: "现代极简简历, A4 单页, 适合打印或导出 PDF"
+description: "現代のミニマル履歴書。A4 1 ページ。印刷や PDF 向け"
 category: resume
 scenario: personal
 aspect_hint: "A4 (210×297mm)"
 recommended: 12
-tags: ["resume", "cv", "简历"]
+tags: ["resume", "cv", "履歴書"]
 example_id: sample-resume-frontend
-example_name: "极简简历 · 前端工程师"
+example_name: "ミニマル履歴書 · フロントエンドエンジニア"
 example_format: markdown
-example_tagline: "A4 单页, 可打印 / 导出 PDF"
-example_desc: "高级前端工程师简历, 两栏布局, 数字成就高亮"
+example_tagline: "A4 1 ページ。印刷 / PDF 出力できる"
+example_desc: "シニアフロントエンドエンジニアの履歴書。2 カラム。数字の実績をハイライト"
 ---
 
-【模板: 现代极简简历】
-- 容器宽度模拟 A4: `w-[210mm] min-h-[297mm] mx-auto`, 内边距 16-20mm。
-- 顶部姓名巨大 (text-4xl), 底下一行 contact (邮箱 / 电话 / 城市 / GitHub / LinkedIn), 中间用细竖线分隔。
-- 主体两栏可选: 左 60% 主线（经历/项目/教育）, 右 40% 副线（技能/语言/获奖）。
-- 章节标题: small caps 风格, 上方一条短 accent 线 (w-8 h-0.5)。
-- 经历每条: 公司 + 职位 + 时间区间 (右对齐), 下方 1-3 条 bullet 用动词开头。
-- 不使用花哨颜色, 黑白灰 + 1 个 accent (深蓝 / 墨绿)。
-- 添加 @media print 样式, 隐藏不必要的元素, 颜色保留。
+【テンプレート: 現代ミニマル履歴書】
+- コンテナ幅は A4 相当: `w-[210mm] min-h-[297mm] mx-auto`, 内側余白 16-20mm。
+- 上部の氏名は大きく (text-4xl), 下に 1 行 contact (メール / 電話 / 都市 / GitHub / LinkedIn), 間は細い縦線で区切る。
+- 本体は 2 カラム任意: 左 60% 主線（経歴/プロジェクト/学歴）, 右 40% 副線（スキル/言語/受賞）。
+- 章タイトル: small caps スタイル, 上に短い accent 線 (w-8 h-0.5)。
+- 経歴の各条: 会社 + 職位 + 期間 (右揃え), 下に bullet 1-3 を動詞始まりで。
+- 派手な色は使わない。黒白灰 + accent 1 (濃い青 / 濃い緑)。
+- @media print スタイルを足す。不要な要素は隠す。色は残す。

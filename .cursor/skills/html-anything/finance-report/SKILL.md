@@ -1,22 +1,22 @@
 ---
 name: finance-report
-zh_name: "季度财报"
+zh_name: "四半期決算"
 en_name: "Finance Report"
 emoji: "💼"
-description: "Masthead + KPI + 收入/烧钱图 + P&L 表 + 重点 + 展望"
+description: "Masthead + KPI + 売上/バーンの図 + P&L 表 + 重点 + 見通し"
 category: finance
 scenario: finance
-aspect_hint: "长页面"
+aspect_hint: "縦長ページ"
 featured: 10
-tags: ["financial", "p&l", "mrr", "财报"]
+tags: ["financial", "p&l", "mrr", "財報"]
 ---
 
-【模板: 季度财报 / Finance Report】
-【意图】财务向单页报告, 数字 + 图表 + 文字洞察。
-【布局】
-- Masthead (公司 + Q + 报告标题) + 4 个 hero KPI
+【テンプレート: 四半期決算 / Finance Report】
+【意図】財務向け単ページレポート。数字 + チャート + テキストの洞察。
+【レイアウト】
+- Masthead (会社 + Q + レポートタイトル) + hero KPI 4 つ
 - Revenue chart + Burn chart (Chart.js / ECharts)
 - P&L 概要表 (zebra + sticky header)
-- Top-line highlights (5 条 bullet)
+- Top-line highlights (bullet 5 本)
 - Outlook 段落
-- Methodology 折叠区
+- Methodology 折りたたみ

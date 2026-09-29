@@ -1,52 +1,52 @@
 ---
 name: doc-kami-parchment
-zh_name: "Kami 羊皮纸文档"
+zh_name: "Kami 羊皮紙ドキュメント"
 en_name: "Kami Parchment Document"
 emoji: "📜"
-description: "暖羊皮纸底 (#f5f4ed) + 墨蓝单色 accent (#1B365D) + 单一衬线字体, 编辑级排印"
+description: "暖色の羊皮紙地 (#f5f4ed) + 墨藍の単色 accent (#1B365D) + セリフ 1 書体。編集品質の組版"
 category: doc
 scenario: personal
-aspect_hint: "A4 / Letter 长页"
+aspect_hint: "A4 / Letter の縦長ページ"
 featured: 48
 recommended: 3
 tags: ["kami", "parchment", "serif", "editorial", "report", "letter", "one-pager"]
 example_id: sample-kami-parchment
-example_name: "Kami 羊皮纸 · One-Pager"
+example_name: "Kami 羊皮紙 · One-Pager"
 example_format: markdown
-example_tagline: "暖羊皮纸 + 墨蓝单色 + 单一衬线"
-example_desc: "一页 Open Design Studio Issue №26 编辑级 one-pager"
+example_tagline: "暖色羊皮紙 + 墨藍単色 + セリフ 1 つ"
+example_desc: "1 ページの Open Design Studio Issue №26 編集品質 one-pager"
 example_source_url: "https://github.com/tw93/kami"
 example_source_label: "tw93/kami"
 ---
 
-【模板: Kami 羊皮纸文档】
-【意图】严肃排版文档: one-pager / 长报告 / 信函 / 简历 / 财报 / changelog / portfolio。Inspired by tw93/kami。强调"写得像被排过版的纸", 不是 dashboard, 不是网页。
+【テンプレート: Kami 羊皮紙ドキュメント】
+【意図】本格的な組版ドキュメント: one-pager / 長文レポート / 手紙 / 履歴書 / 決算 / changelog / portfolio。Inspired by tw93/kami。「組版された紙のように書く」ことが要点。dashboard ではない。ウェブページではない。
 
-【硬性视觉签名 — 不许改】
-- **画布**: 暖羊皮纸 `#f5f4ed` (永远不用纯白 `#fff`)。次级背景 `#efeee5`。
-- **墨色**: 主文字 `#1f1d18` (近黑暖灰, 不用纯黑 `#000`)。次文字 `#6b665b`。
-- **唯一色彩**: 墨蓝 `#1B365D` ——所有 accent (链接、tag 描边、重点数字、引用左 rule) 只能用这一个色, 严禁多色。
-- **字体**: 一种语言一种衬线, 全文不混用:
-  - 英文: `Charter` (fallback: `Source Serif Pro`, `Iowan Old Style`)
-  - 中文: `TsangerJinKai02 W04` (fallback: `Noto Serif SC`)
-  - 日文: `YuMincho` (fallback: `Noto Serif JP`)
-  - Body 400, Heading 500 (不要 700/800/900)。
-- **行高**: 标题 1.1–1.3, 紧凑正文 1.4–1.45, 阅读型正文 1.5–1.55。
-- **绝不**: drop-shadow / blur / 圆角 ≥ 8px / 渐变 / 霓虹色 / rgba (用 solid hex)。
-- **细节**: tag 用 solid hex 背景方块 (因为 WeasyPrint 不渲染 rgba 好); 单线几何 icon; 边缘 1px hairline `#d4d1c5` rule, 长度受控不到边。
+【必須の視覚シグネチャ — 変更禁止】
+- **キャンバス**: 暖色羊皮紙 `#f5f4ed` (純白 `#fff` は使わない)。副背景 `#efeee5`。
+- **墨色**: 主文字 `#1f1d18` (ほぼ黒の暖色グレー。純黒 `#000` は使わない)。副文字 `#6b665b`。
+- **唯一の色彩**: 墨藍 `#1B365D` ——すべての accent (リンク、tag の線、重点数字、引用の左 rule) はこの色だけ。多色は禁止。
+- **フォント**: 言語ごとにセリフ 1 つ。全文で混ぜない:
+  - 英語: `Charter` (fallback: `Source Serif Pro`, `Iowan Old Style`)
+  - 中国語: `TsangerJinKai02 W04` (fallback: `Noto Serif SC`)
+  - 日本語: `YuMincho` (fallback: `Noto Serif JP`)
+  - Body 400, Heading 500 (700/800/900 は使わない)。
+- **行高**: タイトル 1.1–1.3, コンパクトな本文 1.4–1.45, 読み物の本文 1.5–1.55。
+- **絶対に**: drop-shadow / blur / 角丸 ≥ 8px / グラデーション / ネオン色 / rgba (solid hex を使う)。
+- **細部**: tag は solid hex 背景の四角 (WeasyPrint は rgba の描画が弱いため); 単線の幾何 icon; 端の 1px hairline `#d4d1c5` rule, 長さは端まで届かないよう抑える。
 
-【可选文档类型 — 按用户内容判断】
-- **One-Pager** — 顶 logotype (Charter italic) + 标题 + lede + 3 列要点 + 底脚 metadata。
-- **Long Doc** — 封面页 (大标题 + 副标 + 作者 + 日期) → 目录 (kicker + page no.) → 章节 (folio 顶角 + section rule + body) → 注释脚注 + 文末 colophon。
-- **Letter** — 抬头地址 + 日期 + 收件人 + 正文 (左对齐, 段间空 1.5em) + 署名 + 签名占位线。
-- **Portfolio** — 项目 hero (大标题 + sub) + 1 张全幅图 (用 CSS 块绘制占位) + 项目描述 + 角色 / 时间 / stack 元数据 row。
-- **Resume** — 顶部姓名 (大字) + tagline 一行 + contact row + 主要 section: experience (公司 / 时间 / 职位 / bullets) + skills + education。
-- **Slides** — keynote 风, 页数由【用户内容】决定 (短内容 6 页起步, 长内容应更多), 每页满铺羊皮纸, 大标题 + lede + 角标 page no., 简洁到只有"被印出来"的感觉。
-- **Equity Report** — 公司名 + ticker + Q × 年份 + key metrics row (revenue / margin / yoy) + body 分析 + 图表 (SVG 单色折线)。
-- **Changelog** — 版本号 (Charter italic 大字) + 日期 + 改动列表 (Added / Changed / Fixed), 单 rule 分隔。
+【任意のドキュメントタイプ — ユーザーの素材で判断】
+- **One-Pager** — 上の logotype (Charter italic) + タイトル + lede + 3 列の要点 + フッター metadata。
+- **Long Doc** — カバーページ (大タイトル + サブタイトル + 著者 + 日付) → 目次 (kicker + page no.) → 章 (folio を角上 + section rule + body) → 注釈の脚注 + 末尾 colophon。
+- **Letter** — レターヘッド住所 + 日付 + 宛先 + 本文 (左揃え, 段落間 1.5em) + 署名 + サインのプレースホルダ線。
+- **Portfolio** — プロジェクト hero (大タイトル + sub) + 全幅図 1 枚 (CSS ブロックでプレースホルダ) + プロジェクト説明 + ロール / 時期 / stack のメタデータ row。
+- **Resume** — 上部の氏名 (大きな字) + tagline 1 行 + contact row + 主要 section: experience (会社 / 時期 / 職位 / bullets) + skills + education。
+- **Slides** — keynote 風。ページ数は【ユーザーの素材】で決める (短い素材は 6 ページから。長い素材は枚数を増やす)。各ページは羊皮紙で全面。大タイトル + lede + 角の page no.。「印刷された紙」だけが残る簡潔さ。
+- **Equity Report** — 会社名 + ticker + Q × 年 + key metrics row (revenue / margin / yoy) + body の分析 + チャート (SVG 単色折れ線)。
+- **Changelog** — バージョン番号 (Charter italic の大きな字) + 日付 + 変更リスト (Added / Changed / Fixed), 単一 rule で区切る。
 
-【设计准则】
-- "Composed pages, not dashboards." 不要堆 KPI 卡, 不要堆 emoji 图标, 不要 hero gradient。
-- "Ring or whisper only, no hard drop shadows." 阴影只能是 `0 0 0 1px #d4d1c5` 这种 hairline 描边。
-- 文字层级靠**衬线对比 + 字号 + 留白**, 不靠颜色。
-- 单文件 HTML, 用 Tailwind CDN; 全文中英混排时加盘古之白; 不要外链图片, 占位用 paper-tint 色块 + 1px ink 描边。
+【デザイン基準】
+- "Composed pages, not dashboards." KPI カードを積まない。emoji アイコンを積まない。hero gradient は使わない。
+- "Ring or whisper only, no hard drop shadows." 影は `0 0 0 1px #d4d1c5` のような hairline の線だけ。
+- 文字の階層は**セリフの対比 + 字サイズ + 余白**で作る。色では作らない。
+- 単ファイル HTML, Tailwind CDN を使う; 全文が CJK と英字の混在のときは和欧間スペースを入れる; 外部画像は使わない。プレースホルダは paper-tint の色ブロック + 1px ink の線。

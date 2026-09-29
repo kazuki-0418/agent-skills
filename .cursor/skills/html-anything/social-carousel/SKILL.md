@@ -1,22 +1,22 @@
 ---
 name: social-carousel
-zh_name: "社交媒体三联"
+zh_name: "SNS 3枚組"
 en_name: "Social Carousel"
 emoji: "🎠"
-description: "三张方形卡片轮播, 标题串联, 品牌 mark + 编号"
+description: "正方形カード 3 枚のカルーセル。見出しが連なる。ブランド mark + 番号"
 category: card
 scenario: marketing
 aspect_hint: "1080×1080 ×3"
 featured: 7
-tags: ["instagram", "linkedin", "thread", "carousel", "三联"]
+tags: ["instagram", "linkedin", "thread", "carousel", "3枚組"]
 ---
 
-【模板: 三联社交轮播 / Social Carousel】
-【意图】3 张 1080×1080 方形卡片, headline 跨张串联。
-【布局】
-- Card 1: display headline (开头) + 品牌 mark + 1/3
-- Card 2: display headline (中段) + 视觉重点 + 2/3
-- Card 3: display headline (结尾) + CTA + loop icon + 3/3
-【设计细节】
-- 颜色统一一套调色板, 卡片之间渐进切换
-- 三个 headline 拼起来是完整一句话
+【テンプレート: 3枚組 SNS カルーセル / Social Carousel】
+【意図】1080×1080 正方形カード 3 枚。headline が枚をまたいで連なる。
+【レイアウト】
+- Card 1: display headline (冒頭) + ブランド mark + 1/3
+- Card 2: display headline (中段) + 視覚の重点 + 2/3
+- Card 3: display headline (結び) + CTA + loop icon + 3/3
+【デザインの要点】
+- 色は 1 セットのパレット。カード間は段階的に切替
+- headline 3 つを繋ぐと完全な 1 文

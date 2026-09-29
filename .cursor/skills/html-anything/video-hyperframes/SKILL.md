@@ -1,29 +1,29 @@
 ---
 name: video-hyperframes
-zh_name: "Hyperframes 视频脚本"
+zh_name: "Hyperframes 動画スクリプト"
 en_name: "Hyperframes Video"
 emoji: "🎞️"
-description: "Hyperframes / Remotion 兼容的连续帧动画, 可自动播放"
+description: "Hyperframes / Remotion 互換の連続フレームアニメーション。自動再生できる"
 category: video
 scenario: video
 aspect_hint: "1920×1080 (16:9)"
 recommended: 5
-tags: ["video", "hyperframes", "remotion", "视频"]
+tags: ["video", "hyperframes", "remotion", "動画"]
 example_id: sample-hyperframes-workflow
-example_name: "Hyperframes · AI workflow 视频"
+example_name: "Hyperframes · AI workflow 動画"
 example_format: markdown
-example_tagline: "8 帧自动播放, 含进度条 + 元数据"
-example_desc: "电影感动画脚本, 可直接喂给 Remotion 做成 mp4"
+example_tagline: "8 フレーム自動再生。進捗バー + メタデータ"
+example_desc: "映画的なアニメーションスクリプト。そのまま Remotion に渡して mp4 にできる"
 example_source_url: "https://github.com/heygen-com/hyperframes"
 example_source_label: "heygen-com/hyperframes"
 ---
 
-【模板: Hyperframes 视频帧】
-- 输出 N 个连续 `<section class="frame">`, 每个 `w-[1920px] h-[1080px]`; N 由【用户内容】信息密度决定 (短脚本 6-10 帧起步, 长脚本应更多, 每帧只承载一个镜头/概念)。
-- 每帧表达一个镜头/概念: 文字 + 视觉构图 (中央构图 / 黄金分割 / 三分法)。
-- 每帧底部隐藏标记 `<!-- frame:N duration:3000 transition:fade -->` 供后续 Remotion / Hyperframes 渲染脚本读取。
-- 顶部加一段 JavaScript 自动播放: 每 3 秒切换到下一帧, 也支持点击 / 方向键控制; 角落显示进度条。
-- 第 1 帧是 hook (一个数据 / 一个反常识 / 一个问题), 第 2-N 是论证, 最后是结论 + CTA。
-- 字号巨大 (text-9xl), 一句话即可, 不要堆砌。
-- 配色统一一套电影感 (深色背景 + 1 个霓虹强调色)。
-- 输出最后包含一段简短注释 `<!-- HYPERFRAMES_META: ... -->`, 包含每帧 duration / transition / sceneSummary 的 JSON 元数据, 用于后续转 Remotion。
+【テンプレート: Hyperframes 動画フレーム】
+- 連続する `<section class="frame">` を N 個出す。各 `w-[1920px] h-[1080px]`; N は【ユーザーの素材】の情報密度で決める (短いスクリプトは 6-10 フレームから。長いスクリプトは枚数を増やす。1 フレームはショット/概念 1 つだけ)。
+- 各フレームはショット/概念 1 つ: テキスト + 視覚構図 (中央構図 / 黄金分割 / 三分割)。
+- 各フレーム下部に隠しマーク `<!-- frame:N duration:3000 transition:fade -->`。後続の Remotion / Hyperframes レンダスクリプトが読む。
+- 上部に JavaScript 自動再生: 3 秒ごとに次フレーム。クリック / 矢印キーも可; 隅に進捗バー。
+- 1 フレーム目は hook (データ 1 / 反常識 1 / 問い 1), 2-N は論証, 最後は結論 + CTA。
+- サイズは巨大 (text-9xl)。1 文で足りる。詰め込まない。
+- 配色は映画的な 1 セット (暗い背景 + neon 強調色 1)。
+- 出力の最後に短いコメント `<!-- HYPERFRAMES_META: ... -->`。各フレームの duration / transition / sceneSummary の JSON メタデータ。後で Remotion に渡す用。

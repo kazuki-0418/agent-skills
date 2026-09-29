@@ -1,28 +1,28 @@
 ---
 name: data-report
-zh_name: "数据可视化报告"
+zh_name: "データ可視化レポート"
 en_name: "Data Visualization Report"
 emoji: "📊"
-description: "把 CSV/Excel/JSON 数据转成漂亮的可视化报告页"
+description: "CSV/Excel/JSON のデータを、きれいな可視化レポートページにする"
 category: data
 scenario: finance
-aspect_hint: "桌面长页面"
+aspect_hint: "デスクトップ縦長ページ"
 featured: 10
-tags: ["data", "report", "chart", "数据", "报告"]
+tags: ["data", "report", "chart", "データ", "レポート"]
 example_id: sample-data-weekly-report
-example_name: "数据报告 · 周报"
+example_name: "データレポート · 週報"
 example_format: csv
-example_tagline: "KPI 卡 + Chart.js 图表 + 表格"
-example_desc: "9 个月增长数据自动渲染成可视化报告, 内联 Chart.js"
+example_tagline: "KPI カード + Chart.js チャート + 表"
+example_desc: "9 か月の成長データを自動で可視化レポートにレンダー, Chart.js をインライン"
 ---
 
-【模板: 数据可视化报告】
-- 头部: 报告标题 + 时间区间 + 数据来源说明。
-- KPI 卡片网格: 3-5 个最重要指标, 每个卡片显示数值 + 同比变化 + 微型趋势线。
-- 主图表区: 至少 2 个图表 (柱状 / 折线 / 饼 / 散点), 使用 Chart.js 或 ECharts (jsdelivr CDN 引入), 数据从用户输入解析得到。
-- **图表容器必须有固定高度**: 每个 `<canvas>` 外层包一个 `<div style="position:relative;height:NNNpx">` (KPI 迷你图 ~40px, 主图表 ~240–280px)。Chart.js 用 `responsive:true, maintainAspectRatio:false` 时若父容器没有显式高度, 会陷入 ResizeObserver 死循环, 图表无限增高直至卡死浏览器。**绝对不要**直接给 canvas 写 `height=` 属性当布局, 那个只是初始值。
-- 数据表格: 用户原始数据节选, 使用 `<table>` + 现代化样式 (zebra stripe, hover, sticky header)。
-- 洞察块: 3-5 条文字洞察, 用 emoji 开头, 像产品周报。
-- 底部"方法论"折叠区。
-- 配色克制专业: 主色 1 + 中性色阶, 图表用调色板。
-- **必须解析用户提供的实际数据**, 不要捏造。
+【テンプレート: データ可視化レポート】
+- 頭部: レポートタイトル + 期間 + データ出典の説明。
+- KPI カードグリッド: 最も重要な指標 3-5, 各カードは数値 + 前年同期変化 + ミニトレンド線を表示。
+- 主チャートエリア: 少なくともチャート 2 つ (棒 / 折れ線 / 円 / 散布), Chart.js または ECharts を使う (jsdelivr CDN で導入), データはユーザー入力から解析する。
+- **チャート容器には固定高さが必須**: 各 `<canvas>` の外側を `<div style="position:relative;height:NNNpx">` で包む (KPI ミニ図 ~40px, 主チャート ~240–280px)。Chart.js が `responsive:true, maintainAspectRatio:false` のとき、親容器に明示高さが無いと ResizeObserver の無限ループに入り、チャートが無限に高くなってブラウザが固まる。**canvas に `height=` 属性をレイアウトとして直接書いてはいけない**, それは初期値にすぎない。
+- データ表: ユーザー原データの抜粋, `<table>` + 現代的なスタイル (zebra stripe, hover, sticky header)。
+- 洞察ブロック: 文章の洞察 3-5 条, emoji で始め, プロダクト週報のように。
+- 下部「方法論」折りたたみエリア。
+- 配色は抑制しプロらしく: 主色 1 + 中性の色階, チャートはパレットを使う。
+- **ユーザーが提供した実データを必ず解析する**, 捏造しない。

@@ -1,20 +1,20 @@
 ---
 name: dashboard
-zh_name: "管理后台仪表板"
+zh_name: "管理画面ダッシュボード"
 en_name: "Admin Dashboard"
 emoji: "🎛️"
-description: "固定侧栏 + 顶栏 + KPI 网格 + 1-2 张图"
+description: "固定サイドバー + トップバー + KPI グリッド + 図 1-2 枚"
 category: dashboard
 scenario: operations
-aspect_hint: "桌面 1440"
+aspect_hint: "デスクトップ 1440"
 tags: ["dashboard", "admin", "analytics"]
 ---
 
-【模板: 管理后台 Dashboard】
-【意图】标准 admin/analytics 仪表板单页。
-【布局】
-- Fixed left sidebar (logo + 导航 + 用户 footer)
+【テンプレート: 管理画面 Dashboard】
+【意図】標準の admin/analytics ダッシュボード単ページ。
+【レイアウト】
+- Fixed left sidebar (logo + ナビ + ユーザー footer)
 - Top bar (search + 通知 + avatar)
-- Main: KPI cards 网格 (3-5 个)
-- 1-2 张主图表 (折线 / 柱 / 区域)
-- 底部 recent activity 列表
+- Main: KPI cards グリッド (3-5 個)
+- 主チャート 1-2 枚 (折れ線 / 棒 / エリア)
+- 下部 recent activity リスト

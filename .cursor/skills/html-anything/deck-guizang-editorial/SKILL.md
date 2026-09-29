@@ -1,49 +1,49 @@
 ---
 name: deck-guizang-editorial
-zh_name: "贵赞编辑墨水 Deck"
+zh_name: "貴賛編集インク Deck"
 en_name: "Guizang Editorial E-Ink Deck"
 emoji: "🖋️"
-description: "电子杂志 × 电子墨水; 10 个版面 + 5 套调色板 (墨水/靛蓝瓷/森林墨/牛皮纸/沙丘)"
+description: "電子雑誌 × 電子インク。版面 10 + パレット 5（インク / 藍磁 / 森の墨 / クラフト紙 / 砂丘）"
 category: slides
 scenario: marketing
-aspect_hint: "16:9 横向翻页"
+aspect_hint: "16:9 横スライド"
 featured: 49
 recommended: 1
 tags: ["editorial", "e-ink", "magazine", "narrative", "guizang"]
 example_id: sample-guizang-editorial
-example_name: "贵赞编辑墨水 · 章节封页"
+example_name: "貴賛編集インク · 章の扉"
 example_format: markdown
-example_tagline: "墨水经典调色板 + 衬线 display"
-example_desc: "L02 Act Divider 章节封页 + L03 Big Numbers Grid 数据格, 纸感印刷"
+example_tagline: "インククラシックパレット + セリフ display"
+example_desc: "L02 Act Divider 章の扉 + L03 Big Numbers Grid データグリッド, 紙の印刷感"
 example_source_url: "https://github.com/op7418/guizang-ppt-skill"
 example_source_label: "op7418/guizang-ppt-skill"
 ---
 
-【模板: 贵赞编辑墨水 Deck (Editorial × E-Ink)】
-【意图】叙事、观点、分享、个人风格表达。墨纸印刷感, 不要科技感。Inspired by op7418/guizang-ppt-skill Style A。
+【テンプレート: 貴賛編集インク Deck (Editorial × E-Ink)】
+【意図】物語、視点、共有、個人のスタイル表現。墨と紙の印刷感。テック感は使わない。Inspired by op7418/guizang-ppt-skill Style A。
 
-【调色板 — 5 选 1, 严禁改 hex、严禁混用】
-- 🖋 **墨水经典 Monocle** — ink `#0a0a0b`, paper `#f1efea`, paper-tint `#e8e5de`, ink-tint `#18181a`. 默认 / 通用商业 / 科技。
-- 🌊 **靛蓝瓷 Indigo Porcelain** — ink `#0a1f3d`, paper `#f1f3f5`, paper-tint `#e4e8ec`, ink-tint `#152a4a`. 科技 / 研究 / 数据。
-- 🌿 **森林墨 Forest Ink** — ink `#1a2e1f`, paper `#f5f1e8`, paper-tint `#ece7da`, ink-tint `#253d2c`. 自然 / 可持续 / 文化。
-- 🍂 **牛皮纸 Kraft Paper** — ink `#2a1e13`, paper `#eedfc7`, paper-tint `#e0d0b6`, ink-tint `#3a2a1d`. 怀旧 / 人文 / 文学。
-- 🌙 **沙丘 Dune** — ink `#1f1a14`, paper `#f0e6d2`, paper-tint `#e3d7bf`, ink-tint `#2d2620`. 艺术 / 设计 / 时尚。
+【パレット — 5 から 1 つ。hex の変更は禁止、混用は禁止】
+- 🖋 **インククラシック Monocle** — ink `#0a0a0b`, paper `#f1efea`, paper-tint `#e8e5de`, ink-tint `#18181a`. 既定 / 汎用ビジネス / テック。
+- 🌊 **藍磁 Indigo Porcelain** — ink `#0a1f3d`, paper `#f1f3f5`, paper-tint `#e4e8ec`, ink-tint `#152a4a`. テック / 研究 / データ。
+- 🌿 **森の墨 Forest Ink** — ink `#1a2e1f`, paper `#f5f1e8`, paper-tint `#ece7da`, ink-tint `#253d2c`. 自然 / サステナブル / 文化。
+- 🍂 **クラフト紙 Kraft Paper** — ink `#2a1e13`, paper `#eedfc7`, paper-tint `#e0d0b6`, ink-tint `#3a2a1d`. ノスタルジー / 人文 / 文学。
+- 🌙 **砂丘 Dune** — ink `#1f1a14`, paper `#f0e6d2`, paper-tint `#e3d7bf`, ink-tint `#2d2620`. アート / デザイン / ファッション。
 
-【布局 — 10 个磁带式版式池, 可复用; **数量由【用户内容】决定**, 完整覆盖每个要点; 短内容 6-12 张起步, 长内容应更多 (同一版式可在不同章节重复使用)】
-- **L01 Hero Cover** — 居中大字 hero typography + kicker + subtitle + lead paragraph + 底部元数据 row。
-- **L02 Act Divider** — kicker + 8.5-10vw 巨大 headline + 一句引言; 章节切换可反色 (ink ↔ paper)。
-- **L03 Big Numbers Grid** — 3×2 数据卡 (label / 大数字 / 注释)。
-- **L04 Quote + Image** — 左 kicker + headline + body + callout; 右 16:10 图 (基线对齐 baseline 不是 top)。
-- **L05 Image Grid** — 3×2 或 3×1 等高图网格 (26vh 或 22vh); 严格统一高度。
-- **L06 Pipeline / Flow** — 横向编号步骤组, 每步: №X + 标题 + 描述; 支持键盘逐步推进。
-- **L07 Hero Question** — 7vw 全屏单一问句, 按语义断行, 周围极简。
-- **L08 Big Quote** — 5.8vw 巨大衬线引文 + 英文翻译 + 署名 + 日期。
+【レイアウト — カセット式の版面プール 10。再利用可; **枚数は【ユーザーの素材】で決める**, 要点をすべて覆う; 短い素材は 6-12 から。長い素材は枚数を増やす (同じ版面を別の章で繰り返してよい)】
+- **L01 Hero Cover** — 中央揃えの大きな字 hero typography + kicker + subtitle + lead paragraph + 下部メタデータ row。
+- **L02 Act Divider** — kicker + 8.5-10vw の巨大 headline + 引用 1 文; 章の切替では反転色にしてよい (ink ↔ paper)。
+- **L03 Big Numbers Grid** — 3×2 データカード (label / 大きな数字 / 注釈)。
+- **L04 Quote + Image** — 左 kicker + headline + body + callout; 右 16:10 図 (ベースライン揃え。baseline であり top ではない)。
+- **L05 Image Grid** — 3×2 または 3×1 の等高図グリッド (26vh または 22vh); 高さは厳密に揃える。
+- **L06 Pipeline / Flow** — 横方向の番号付きステップ群。各ステップ: №X + タイトル + 説明; キーボードで段階送りできる。
+- **L07 Hero Question** — 7vw 全画面の問い 1 文。意味で改行。周囲は極簡。
+- **L08 Big Quote** — 5.8vw 巨大セリフ引用 + 英語訳 + 署名 + 日付。
 - **L09 Before / After** — 1:1 split; 左列 opacity .55 (旧/before); 右列 full brightness (新/after)。
-- **L10 Mixed Media** — 8:4 比例; 左大段文字 (kicker / headline / body / callout) + 右 3:4 竖图作辅助。
+- **L10 Mixed Media** — 8:4 比率; 左に長文 (kicker / headline / body / callout) + 右 3:4 縦図を補助に。
 
-【设计细节】
-- **严禁**: 渐变 / drop-shadow / 圆角 / 圆形装饰 / blur / SVG 图标库 / emoji 装饰。
-- **字体**: Display 用 `Playfair Display` (英) / `Noto Serif SC` (中); Body 用 `Inter` / `Noto Sans SC`; 编号 / 数字偶尔可用 italic 衬线。
-- **杂志感细节**: kicker 用 11px uppercase letterspacing 0.12em; folio 右下角 `01 / 12`; 顶部细 hairline rule + 期刊 logo / topic。
-- **不许**: 数据捏造、Lorem ipsum、占位图片 URL。所有图请用纯 CSS / SVG 内联描绘 (色块 + 简笔)。
-- 键盘 ← / → 切换; hash 同步; 单文件 HTML。
+【デザインの要点】
+- **禁止**: グラデーション / drop-shadow / 角丸 / 円の装飾 / blur / SVG アイコンライブラリ / emoji 装飾。
+- **書体**: Display は `Playfair Display` (英) / `Noto Serif SC` (中); Body は `Inter` / `Noto Sans SC`; 番号 / 数字は italic セリフを時々使ってよい。
+- **雑誌感のディテール**: kicker は 11px uppercase letterspacing 0.12em; folio は右下 `01 / 12`; 上部の細い hairline rule + 誌の logo / topic。
+- **禁止**: データの捏造、Lorem ipsum、プレースホルダ画像 URL。図はすべて純 CSS / SVG のインラインで描く (色面 + 簡筆)。
+- キーボード ← / → で切替; hash 同期; 単ファイル HTML。

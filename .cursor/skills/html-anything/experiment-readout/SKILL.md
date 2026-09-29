@@ -1,53 +1,53 @@
 ---
 name: experiment-readout
-zh_name: "实验复盘"
+zh_name: "実験振り返り"
 en_name: "Experiment Readout"
 emoji: "🧪"
-description: "假设 + 指标 + 结果 + 解释 + 决策, 把 A/B 或产品实验转成行动建议"
+description: "仮説 + 指標 + 結果 + 解釈 + 意思決定。A/B やプロダクト実験を次のアクションにする"
 category: data
 scenario: product
-aspect_hint: "产品实验报告"
+aspect_hint: "プロダクト実験レポート"
 featured: 8
-tags: ["experiment", "ab-test", "growth", "product", "data", "实验", "复盘"]
+tags: ["experiment", "ab-test", "growth", "product", "data", "実験", "振り返り"]
 example_id: sample-experiment-readout
-example_name: "实验复盘 · Onboarding Checklist"
+example_name: "実験振り返り · Onboarding Checklist"
 example_format: markdown
-example_tagline: "不是展示数据, 而是判断上线/停止/继续"
-example_desc: "把实验假设、样本、指标和结果转成产品决策报告。"
+example_tagline: "データを見せるのではなく、リリース / 停止 / 継続を判断する"
+example_desc: "実験の仮説、サンプル、指標、結果をプロダクトの意思決定レポートにする。"
 ---
 
-【模板: 实验复盘 / Experiment Readout】
-【意图】这不是普通数据报告、不是 dashboard。目标是回答: "这个实验说明了什么, 我们下一步应该上线、停止、继续跑, 还是重新设计?"
+【テンプレート: 実験振り返り / Experiment Readout】
+【意図】これは普通のデータレポートでも dashboard でもない。答えるべきは: 「この実験は何を示したか。次はリリース、停止、継続、それとも再設計か?」
 
-【适合输入】
-- A/B test、增长实验、定价实验、onboarding 改版、功能灰度、邮件实验
-- 可以是 markdown、CSV、表格粘贴或混合记录
+【向いている入力】
+- A/B test、グロース実験、価格実験、onboarding 改版、機能の段階公開、メール実験
+- markdown、CSV、表の貼り付け、または混在記録でよい
 
-【必须输出的结构】
-1. Header: 实验名称、owner、日期、实验状态、decision。
-2. Hypothesis: 原始假设, 必须改写成可验证句式。
+【必ず出す構造】
+1. Header: 実験名、owner、日付、実験状態、decision。
+2. Hypothesis: 元の仮説。検証可能な文に書き直す。
 3. Setup: audience、variant、duration、sample size、primary metric、guardrail metrics。
 4. Result snapshot: primary metric lift、absolute delta、sample、confidence / caveat。
 5. Metric table: Control vs Variant, primary + secondary + guardrail。
-6. Interpretation: 解释结果为什么发生, 区分 signal、noise、unknown。
-7. Decision: Ship / iterate / extend / stop 四选一, 并给理由。
-8. Follow-up experiments: 2-4 个下一步实验, 每个包含 hypothesis、expected impact、effort。
-9. Instrumentation notes: 数据缺口、埋点问题、样本偏差。
+6. Interpretation: 結果が起きた理由を説明する。signal、noise、unknown を分ける。
+7. Decision: Ship / iterate / extend / stop から 1 つ、理由付き。
+8. Follow-up experiments: 次の実験 2-4。それぞれ hypothesis、expected impact、effort。
+9. Instrumentation notes: データの欠落、計測の問題、サンプル偏り。
 
-【设计要求】
-- 产品数据团队风格: 清楚、可信、行动导向。
-- 首屏必须有大号 decision badge 和 primary metric delta。
-- 图表可以用 CSS/SVG/Chart.js; 如果用 Chart.js, canvas 外层必须固定高度。
-- 不要把结果包装得过度确定; 小样本或缺少显著性时必须明确 caveat。
+【デザイン要件】
+- プロダクトデータチームのスタイル: 明快、信頼できる、行動指向。
+- 最初の画面に大きな decision badge と primary metric delta が必須。
+- チャートは CSS/SVG/Chart.js 可; Chart.js を使うなら canvas の外側は高さを固定。
+- 結果を過度に確定的に包まない; 小サンプルや有意性不足のときは caveat を明示する。
 
-【可选风格模板 — 参考 assets/】
-根据实验语境选择一种, 不要三种混用:
-- `assets/product-readout.html`: 默认风格。浅色产品实验复盘, 适合 PM / growth / leadership readout。
-- `assets/lab-notebook.html`: 研究实验室 notebook, 适合 early-stage experiment、定性 + 定量混合、需要保留 caveat 的探索实验。
-- `assets/growth-console.html`: 深色 growth analytics console, 适合增长团队、实时指标、漏斗 / activation / conversion readout。
+【任意のスタイルテンプレート — assets/ を参照】
+実験の文脈で 1 つ選ぶ。3 種を混ぜない:
+- `assets/product-readout.html`: 既定スタイル。ライトなプロダクト実験振り返り。PM / growth / leadership readout 向け。
+- `assets/lab-notebook.html`: 研究ラボ notebook。early-stage experiment、定性 + 定量の混在、caveat を残す探索実験向け。
+- `assets/growth-console.html`: 暗い growth analytics console。グロースチーム、リアルタイム指標、ファネル / activation / conversion readout 向け。
 
-如果用户没有指定风格, 优先使用 `product-readout`; 如果材料强调研究过程和不确定性, 使用 `lab-notebook`; 如果材料强调增长指标、漏斗、实时监控或运营节奏, 使用 `growth-console`。
+ユーザーがスタイルを指定しなければ `product-readout` を優先; 材料が研究過程と不確実性を強調するなら `lab-notebook`; グロース指標、ファネル、リアルタイム監視、運用リズムなら `growth-console`。
 
-【内容真实性】
-- 只使用用户提供的数据。不要捏造 p-value、confidence、样本量。
-- 如果没有统计显著性信息, 用 "directional" / "inconclusive" / "needs more data" 表达。
+【内容の真実性】
+- ユーザー提供のデータだけを使う。p-value、confidence、サンプルサイズを捏造しない。
+- 統計的有意性の情報が無ければ "directional" / "inconclusive" / "needs more data" で書く。

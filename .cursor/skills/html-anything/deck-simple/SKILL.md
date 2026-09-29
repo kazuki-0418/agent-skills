@@ -1,20 +1,20 @@
 ---
 name: deck-simple
-zh_name: "通用 Simple Deck"
+zh_name: "汎用 Simple Deck"
 en_name: "Simple Deck"
 emoji: "▫️"
-description: "通用 horizontal-swipe HTML deck, 不要 magazine 调"
+description: "汎用の horizontal-swipe HTML deck。magazine 調は使わない"
 category: slides
 scenario: product
 aspect_hint: "16:9"
 tags: ["deck", "simple", "swipe"]
 ---
 
-【模板: Simple Deck】
-【意图】干净通用的 horizontal-swipe deck (pitch / overview / study)。
-【布局】
-- Cover + N 个 content 页 + 收尾 (N 由【用户内容】长度决定, 完整覆盖每个要点; 短内容 6-10 起步, 长内容应更多)
-- 每页一个核心信息 + 1 张图 / 1 个图表
-- 顶部 progress bar
-【设计细节】
-- 键盘 ← / → 切换 + hash 同步
+【テンプレート: Simple Deck】
+【意図】きれいな汎用 horizontal-swipe deck (pitch / overview / study)。
+【レイアウト】
+- Cover + content ページ N + 締め (N は【ユーザーの素材】の長さで決める。要点をすべて覆う; 短い素材は 6-10 から。長い素材は枚数を増やす)
+- 各ページに核となる情報 1 つ + 図 1 枚 / チャート 1 つ
+- 上部 progress bar
+【デザインの要点】
+- キーボード ← / → 切替 + hash 同期

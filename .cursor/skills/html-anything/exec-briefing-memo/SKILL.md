@@ -1,53 +1,53 @@
 ---
 name: exec-briefing-memo
-zh_name: "高管决策简报"
+zh_name: "経営向け意思決定ブリーフィング"
 en_name: "Executive Briefing Memo"
 emoji: "⚖️"
-description: "Decision needed + recommendation + evidence + tradeoffs, 把复杂材料压成可拍板的一页"
+description: "Decision needed + recommendation + evidence + tradeoffs, 複雑な材料をその場で決裁できる 1 ページに圧縮する"
 category: doc
 scenario: operations
-aspect_hint: "一页决策 memo"
+aspect_hint: "1ページの意思決定 memo"
 featured: 8
-tags: ["executive", "briefing", "memo", "decision", "strategy", "简报", "决策"]
+tags: ["executive", "briefing", "memo", "decision", "strategy", "ブリーフィング", "意思決定"]
 example_id: sample-exec-briefing-memo
-example_name: "高管简报 · 是否进入 Enterprise Plan"
+example_name: "経営ブリーフィング · Enterprise Plan に入るか"
 example_format: markdown
-example_tagline: "推荐动作 + 权衡 + 风险 + 下一步"
-example_desc: "把产品、销售、财务反馈压缩成一页高管可拍板 memo。"
+example_tagline: "推奨アクション + トレードオフ + リスク + 次の一手"
+example_desc: "プロダクト、セールス、財務のフィードバックを 1 ページの、経営が決裁できる memo に圧縮する。"
 ---
 
-【模板: 高管决策简报 / Executive Briefing Memo】
-【意图】这不是会议纪要、不是周报、不是 PRD。它的唯一目标是帮助决策者在 3 分钟内理解问题并拍板。
+【テンプレート: 経営向け意思決定ブリーフィング / Executive Briefing Memo】
+【意図】これは議事録でも週報でも PRD でもない。唯一の目的は、意思決定者が 3 分で問題を理解して決裁できるようにすること。
 
-【适合输入】
-- 长会议记录、调研材料、战略讨论、销售反馈、产品数据、投资备忘
-- 用户可能给很多碎片信息; 你要提炼成一个明确 decision frame
+【向いている入力】
+- 長い会議記録、調査材料、戦略議論、セールスフィードバック、プロダクトデータ、投資メモ
+- ユーザーは断片を多く渡すことがある; 明確な decision frame に抽出する
 
-【必须输出的结构】
-1. Memo header: 主题、owner、audience、date、decision deadline。
-2. Decision needed: 用一句话写清楚需要拍板的问题。
-3. Recommendation: 明确建议, 不要写 "可以考虑"。必须包含 confidence level。
-4. Why now: 为什么现在需要决定, 不决定的代价是什么。
-5. Key facts: 5-7 个事实证据, 每条标注来源类型 (sales / product / finance / customer / ops)。
-6. Tradeoff table: Option A / Option B / Option C, 对比 upside、cost、risk、reversibility。
-7. Risks & mitigations: 3-5 个风险, 每个给缓解动作。
-8. Decision path: approve / reject / ask for more evidence 三种路径各自下一步。
+【必ず出す構造】
+1. Memo header: テーマ、owner、audience、date、decision deadline。
+2. Decision needed: 決裁が必要な問題を 1 文で書く。
+3. Recommendation: 明確な提案。"検討してもよい" は書かない。confidence level を必ず含める。
+4. Why now: なぜ今決める必要があるか、決めない代償は何か。
+5. Key facts: 事実証拠 5-7。各条に出典タイプ (sales / product / finance / customer / ops) を付ける。
+6. Tradeoff table: Option A / Option B / Option C。upside、cost、risk、reversibility を比較。
+7. Risks & mitigations: リスク 3-5。それぞれに緩和アクション。
+8. Decision path: approve / reject / ask for more evidence の 3 経路それぞれの次の一手。
 9. Next actions: owner、due date、expected artifact。
 
-【设计要求】
-- 像顶级咨询公司的 one-page decision memo: 克制、清楚、密度高。
-- 首屏必须直接呈现 decision + recommendation, 不要先铺陈背景。
-- 使用强层级: 大号结论、紧凑证据卡、对比表、状态 pill。
-- 不要做成长文章; 不要做成 deck; 不要写空泛商业黑话。
+【デザイン要件】
+- トップコンサルの one-page decision memo のように: 抑制、明快、密度が高い。
+- 最初の画面で decision + recommendation を直接出す。背景の前置きは先に置かない。
+- 強い階層を使う: 大きな結論、コンパクトな証拠カード、比較表、状態 pill。
+- 長文記事にしない; deck にしない; 空疎なビジネス隠語は書かない。
 
-【可选风格模板 — 参考 assets/】
-根据决策场景选择一种, 不要三种混用:
-- `assets/board-memo.html`: 默认风格。浅色高管 memo, 适合 CEO/CFO/CRO、运营、产品决策。
-- `assets/decision-command.html`: 深色 command center, 适合紧急决策、风险处置、incident、go/no-go、launch gate。
-- `assets/board-paper.html`: 正式 board paper / 董事会纸质议案, 适合董事会、投资人、合规、预算审批。
+【任意のスタイルテンプレート — assets/ を参照】
+意思決定の場面に合わせて 1 つ選ぶ。3 種を混ぜない:
+- `assets/board-memo.html`: 既定スタイル。ライトな経営 memo。CEO/CFO/CRO、運用、プロダクト意思決定向け。
+- `assets/decision-command.html`: 暗い command center。緊急意思決定、リスク対応、incident、go/no-go、launch gate 向け。
+- `assets/board-paper.html`: 正式な board paper / 取締役会の紙議案。取締役会、投資家、コンプライアンス、予算承認向け。
 
-如果用户没有指定风格, 优先使用 `board-memo`; 如果材料强调紧急、风险、行动指挥, 使用 `decision-command`; 如果材料面向董事会或正式审批, 使用 `board-paper`。
+ユーザーがスタイルを指定しなければ `board-memo` を優先; 材料が緊急・リスク・行動指揮なら `decision-command`; 取締役会や正式承認向けなら `board-paper`。
 
-【内容真实性】
-- 不要捏造数字、客户、预算、日期。
-- 如果缺少关键信息, 在 Evidence gaps 中列出, 但仍给出基于现有证据的 provisional recommendation。
+【内容の真実性】
+- 数字、顧客、予算、日付を捏造しない。
+- 重要情報が欠けていれば Evidence gaps に列挙しつつ、現在の証拠に基づく provisional recommendation は出す。

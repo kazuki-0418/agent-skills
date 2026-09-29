@@ -1,24 +1,24 @@
 ---
 name: flowai-team-dashboard
-zh_name: "FlowAI 团队管理"
+zh_name: "FlowAI チーム管理"
 en_name: "FlowAI Team Dashboard"
 emoji: "🌊"
-description: "三个 tab 的团队管理后台: 成员、详情、活动日志, 含图表 + CSV 导出"
+description: "tab 3 つのチーム管理画面: メンバー、詳細、活動ログ。チャート + CSV エクスポートあり"
 category: dashboard
 scenario: operations
-aspect_hint: "桌面 1440"
+aspect_hint: "デスクトップ 1440"
 tags: ["flowai", "team", "members"]
 ---
 
-【模板: FlowAI 团队管理 Dashboard】
-【意图】FlowAI 美学的团队管理 admin 单页。
-【布局】
+【テンプレート: FlowAI チーム管理 Dashboard】
+【意図】FlowAI 美学のチーム管理 admin 単ページ。
+【レイアウト】
 - Tabs: Team Members / Team Details / Activity Log
 - KPI stat row
-- Member table (avatar + 角色 + 状态)
+- Member table (avatar + ロール + ステータス)
 - Role distribution bar chart
 - Online presence + activity sparklines
 - Top contributors panel
-【设计细节】
-- light/dark 切换, hover tooltip, click-to-zoom panels
-- CSV export 按钮 (前端实现)
+【デザインの要点】
+- light/dark 切替, hover tooltip, click-to-zoom panels
+- CSV export ボタン (フロントエンド実装)

@@ -1,24 +1,24 @@
 ---
 name: sprite-animation
-zh_name: "像素动画解说"
+zh_name: "ピクセルアニメ解説"
 en_name: "Sprite Animation"
 emoji: "🕹️"
-description: "像素美术 + kinetic 字体的解说帧, 纯 CSS 循环, 可录视频"
+description: "ピクセルアート + kinetic フォントの解説フレーム。純 CSS ループ。動画収録できる"
 category: poster
 scenario: marketing
-aspect_hint: "竖版/横版均可"
+aspect_hint: "縦/横どちらでも"
 featured: 8
-tags: ["pixel", "8-bit", "复古", "explainer"]
+tags: ["pixel", "8-bit", "レトロ", "explainer"]
 ---
 
-【模板: 像素 / 8-bit 动画解说】
-【意图】教育型动画的单帧海报, 纯 CSS keyframes 循环, 不用 JS。
-【布局】
+【テンプレート: ピクセル / 8-bit アニメ解説】
+【意図】教育アニメの 1 フレームポスター。純 CSS keyframes ループ。JS は使わない。
+【レイアウト】
 - Full-bleed cream stage
-- Bold display year / 大字数字
-- 中心一个像素艺术 mascot (SVG 或纯 CSS 绘制)
-- kinetic 中文 / 日文 display 字
-- 底部 timeline ribbon 一直走
-【设计细节】
-- 动画用 @keyframes, 不依赖 JS
-- 复古调色板: 红 / 米 / 墨绿
+- Bold display year / 大きな数字
+- 中央にピクセルアート mascot 1 体 (SVG または純 CSS)
+- kinetic 中国語 / 日本語 display 文字
+- 下部 timeline ribbon が走り続ける
+【デザインの要点】
+- アニメーションは @keyframes。JS に依存しない
+- レトロパレット: 赤 / ベージュ / 濃い緑

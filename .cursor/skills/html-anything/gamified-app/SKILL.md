@@ -1,9 +1,9 @@
 ---
 name: gamified-app
-zh_name: "游戏化 App 多屏"
+zh_name: "ゲーム化 App 複数画面"
 en_name: "Gamified App"
 emoji: "🕹️"
-description: "三屏: 封面 / 今日任务带 XP / 任务详情, 暗色舞台"
+description: "3 画面: カバー / 今日のクエスト（XP 付き） / クエスト詳細。暗いステージ"
 category: mobile
 scenario: personal
 aspect_hint: "3 × iPhone"
@@ -11,11 +11,11 @@ featured: 12
 tags: ["gamified", "habit", "rpg", "quest", "xp"]
 ---
 
-【模板: 游戏化 App / Quest UI】
-【意图】类 RPG 习惯养成 app, dark showcase stage 上三个 phone frame。
-【布局】
+【テンプレート: ゲーム化 App / Quest UI】
+【意図】RPG 風の習慣づくり app。dark showcase stage 上に phone frame 3 つ。
+【レイアウト】
 - Frame 1: Cover / Poster
 - Frame 2: Today's quests + XP ribbon + level bar
-- Frame 3: Quest detail (子任务 + 奖励)
-【设计细节】
-- 醒目的 quest tile 渐变 + 等级 ribbon + 底部 tab bar
+- Frame 3: Quest detail (サブタスク + 報酬)
+【デザインの要点】
+- 目立つ quest tile グラデーション + 等級 ribbon + 下部 tab bar
