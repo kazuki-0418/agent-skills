@@ -19,9 +19,16 @@ Claude Code / Cursor / Grok Bot が同じ手順を読むための正本。
 | `.cursor/skills/landing-page-copy/` | 橋渡し lander。copy-review が読む |
 | `.cursor/skills/copychief/` | コピーチーフのレビュー型。copy-review が読む |
 | `.cursor/skills/compliance-checker/` | 広告ポリシー。copy-review が読む |
+| `.cursor/skills/grill-with-docs/` | 企画の聞き取り。daily-report / weekly-report が読む |
+| `.cursor/skills/grilling/` | grill-with-docs が読む |
+| `.cursor/skills/domain-modeling/` | grill-with-docs が読む |
+| `.cursor/skills/natural-japanese/` | 日本語。daily-report / weekly-report が読む |
+| `.cursor/skills/html-anything/` | HTML テンプレ（81）。daily-report / weekly-report が読む |
 | `.cursor/agents/ad-copy-auditor.md` | 台本の採点役。書き直さない |
 | `.cursor/agents/buzzy-prompt-auditor.md` | プロンプト / 生成物の採点役。書き直さない |
 | `.cursor/agents/copy-auditor.md` | LP / セールスコピーを4レンズで採点。書き直さない |
+| `.cursor/agents/daily-report.md` | 日次のチーム HTML レポート（`exec-briefing-memo` / `doc-kami-parchment`） |
+| `.cursor/agents/weekly-report.md` | 週次のチーム HTML レポート（`weekly-update` / `exec-briefing-memo` / `doc-kami-parchment`） |
 | `knowledge/` | 事実・決定。手順は置かない |
 
 Kivori 固有のリリース手順はここには置かない。それは Kivori リポジトリの `.claude/skills/kivori-release/`。
@@ -57,8 +64,12 @@ Kivori 固有のリリース手順はここには置かない。それは Kivori
 ~/.claude/agents/ad-copy-auditor.md     →  .cursor/agents/ad-copy-auditor.md
 ~/.claude/agents/buzzy-prompt-auditor.md
 ~/.claude/agents/copy-auditor.md
+~/.claude/agents/daily-report.md        →  .cursor/agents/daily-report.md
+~/.claude/agents/weekly-report.md
 ~/.cursor/agents/*.md                   →  同じ auditor
 ```
+
+`grill-with-docs` / `grilling` / `domain-modeling` / `natural-japanese` / `html-anything` は `.cursor/skills/` に実ファイルとして置いてある。`~/.claude/skills/` からの symlink は作らない。
 
 直すときはこのリポジトリを編集して commit する。symlink 側を直接直しても同じファイルになる。
 

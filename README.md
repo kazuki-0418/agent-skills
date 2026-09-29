@@ -19,9 +19,16 @@ Edit procedure text here only. `~/.claude/skills/` and `~/.claude/agents/` are s
 | `.cursor/skills/landing-page-copy/` | Bridge / pre-sell landers. Loaded by copy-review |
 | `.cursor/skills/copychief/` | Copy-chief review format. Loaded by copy-review |
 | `.cursor/skills/compliance-checker/` | Platform policy check. Loaded by copy-review |
+| `.cursor/skills/grill-with-docs/` | Interview + docs. Used by daily-report / weekly-report |
+| `.cursor/skills/grilling/` | Loaded by grill-with-docs |
+| `.cursor/skills/domain-modeling/` | Loaded by grill-with-docs |
+| `.cursor/skills/natural-japanese/` | Japanese prose. Used by daily-report / weekly-report |
+| `.cursor/skills/html-anything/` | HTML templates (81). Used by daily-report / weekly-report |
 | `.cursor/agents/ad-copy-auditor.md` | Scores ad copy. Does not rewrite |
 | `.cursor/agents/buzzy-prompt-auditor.md` | Scores prompts and outputs. Does not rewrite |
 | `.cursor/agents/copy-auditor.md` | Scores LP / sales copy across four lenses. Does not rewrite |
+| `.cursor/agents/daily-report.md` | Daily team HTML report (`exec-briefing-memo` / `doc-kami-parchment`) |
+| `.cursor/agents/weekly-report.md` | Weekly team HTML report (`weekly-update` / `exec-briefing-memo` / `doc-kami-parchment`) |
 | `knowledge/` | Facts and decisions. No procedures |
 
 Kivori-specific release steps do not live here. Those stay in the Kivori repo at `.claude/skills/kivori-release/`.
@@ -57,8 +64,12 @@ After first setup, these paths point at the same directories.
 ~/.claude/agents/ad-copy-auditor.md     →  .cursor/agents/ad-copy-auditor.md
 ~/.claude/agents/buzzy-prompt-auditor.md
 ~/.claude/agents/copy-auditor.md
+~/.claude/agents/daily-report.md        →  .cursor/agents/daily-report.md
+~/.claude/agents/weekly-report.md
 ~/.cursor/agents/*.md                   →  same auditors
 ```
+
+`grill-with-docs`, `grilling`, `domain-modeling`, `natural-japanese`, and `html-anything` are real copies in `.cursor/skills/`. They are not linked from `~/.claude/skills/`.
 
 Edit this repository and commit. Changing the symlink side edits the same files.
 
