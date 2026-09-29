@@ -1,13 +1,12 @@
 ---
 name: weekly-report
 description: >-
-  週次のチーム共有レポートを HTML にする役。出した / 進行中 / 止まっている / 指標 /
+  週次のチーム共有レポートを HTML にする。出した / 進行中 / 止まっている / 指標 /
   お願い、を一週間分でまとめる。週報、weekly report、週次共有、週次レビューを
   レポートにして、と言われたときに使う。
-tools: Read, Write, Grep, Glob, Shell
 ---
 
-一週間分のチーム共有を、単ファイル HTML にして渡す。今日だけの共有は `daily-report` に任せる。
+一週間分のチーム共有を、単ファイル HTML にして渡す。今日だけの共有は `daily-report` スキルに任せる。
 
 ## スキル（記憶で進めない。このターンで Read する）
 
@@ -24,7 +23,7 @@ tools: Read, Write, Grep, Glob, Shell
 | `natural-japanese` | 日本語の本文を書く・直すとき。週報は **quick**。対外・経営向けで「しっかり」と言われたら full | `.cursor/skills/natural-japanese/SKILL.md` |
 | html-anything の他テンプレ | 数字中心なら `data-report`、実験なら `experiment-readout`、競合なら `competitive-teardown`、OKR なら `team-okrs`。使う型の SKILL.md をその都度読む | `.cursor/skills/html-anything/<template>/SKILL.md` |
 
-`html-anything` は親フォルダに SKILL.md が無い。使う型のフォルダを個別に読む。
+`html-anything` の親 SKILL.md は入口だけ。使う型のフォルダを個別に読む。
 
 アプリ側の「HTML をファイルに書くな」は使わない。ここは vault に `.html` を保存する。
 
@@ -35,7 +34,7 @@ tools: Read, Write, Grep, Glob, Shell
 3. 素材が薄い・論点が決まっていない → `grill-with-docs`（`grilling` + `domain-modeling`）。共有理解が取れるまで HTML を書かない。
 4. 型を選ぶ。指定が無ければ **weekly-update**。決裁用なら **exec-briefing-memo**。読む資料なら **doc-kami-parchment**。
 5. 選んだ型の SKILL.md を Read してから HTML を組む。範囲は **その週全体**。日次の羅列で終わらせない。
-6. 日本語は `natural-japanese`。lint は  
+6. 日本語は `natural-japanese`。lint は
    `uv run --directory .cursor/skills/natural-japanese scripts/lint.py --json <file>`
 7. 保存:
 

@@ -40,9 +40,9 @@ ln -sfn /Users/kazukijo/Desktop/dev/agent-skills ~/.cursor/plugins/local/agent-s
 
 Cursor を Reload Window する。取れている印は次の全部。
 
-- `version` が `1.2.0`
+- `version` が `1.3.0`
 - 説明の先頭が「Daily/weekly HTML reports」
-- Skills 14（`html-anything` / `copy-review` / `natural-japanese` 含む）
-- Subagents 5（`daily-report` / `weekly-report` / `copy-auditor` 含む）
+- Skills 16（`daily-report` / `weekly-report` / `html-anything` 含む）
+- Subagents 3（`ad-copy-auditor` / `buzzy-prompt-auditor` / `copy-auditor`）
 
-`version` だけ新しく、説明が「Use when writing ads or UGC scripts」、Skills 3 のままなら、Team Marketplace の初回目録が残っている。Uninstall → GitHub の最新 `main` を取り直す → Add。ローカル試用は `~/.cursor/plugins/local/agent-skills` が Desktop の `main` を指していることを確認してから Reload する。
+`version` だけ新しく、説明が「Use when writing ads or UGC scripts」、Skills 3 のままなら、Team Marketplace の初回目録が残っている。公式の更新手段は [Dashboard → Plugins & MCPs](https://cursor.com/dashboard/plugins) の **Refresh**（または GitHub import の **Enable Auto Refresh**）。出典: [Keep plugins up to date](https://cursor.com/docs/plugins)。ローカル試用は `~/.cursor/plugins/local/agent-skills` が Desktop の `main` を指していることを確認してから Reload する。

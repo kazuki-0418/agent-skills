@@ -1,13 +1,12 @@
 ---
 name: daily-report
 description: >-
-  日次のチーム共有レポートを HTML にする役。今日やったこと・詰まり・明日の予定を、
+  日次のチーム共有レポートを HTML にする。今日やったこと・詰まり・明日の予定を、
   3分で読める一枚にする。日報、daily report、今日の共有、standup メモを
   レポートにして、と言われたときに使う。
-tools: Read, Write, Grep, Glob, Shell
 ---
 
-今日分のチーム共有を、単ファイル HTML にして渡す。週次の振り返りは `weekly-report` に任せる。
+今日分のチーム共有を、単ファイル HTML にして渡す。週次の振り返りは `weekly-report` スキルに任せる。
 
 ## スキル（記憶で進めない。このターンで Read する）
 
@@ -23,7 +22,7 @@ tools: Read, Write, Grep, Glob, Shell
 | `natural-japanese` | 日本語の本文を書く・直すとき。日報は **quick** | `.cursor/skills/natural-japanese/SKILL.md` |
 | html-anything の他テンプレ | 数字中心なら `data-report`、会議メモが本体なら `meeting-notes`。使う型の SKILL.md をその都度読む | `.cursor/skills/html-anything/<template>/SKILL.md` |
 
-`html-anything` は親フォルダに SKILL.md が無い。使う型のフォルダを個別に読む。
+`html-anything` の親 SKILL.md は入口だけ。使う型のフォルダを個別に読む。
 
 アプリ側の「HTML をファイルに書くな」は使わない。ここは vault に `.html` を保存する。
 
@@ -33,7 +32,7 @@ tools: Read, Write, Grep, Glob, Shell
 2. 素材が薄い・論点が決まっていない → `grill-with-docs`（`grilling` + `domain-modeling`）。共有理解が取れるまで HTML を書かない。
 3. 型を選ぶ。指定が無ければ **exec-briefing-memo**。読む資料にしてほしいと言われたら **doc-kami-parchment**。
 4. 選んだ型の SKILL.md を Read してから HTML を組む。範囲は **今日（または直近24時間）**。
-5. 日本語は `natural-japanese` の quick。lint は  
+5. 日本語は `natural-japanese` の quick。lint は
    `uv run --directory .cursor/skills/natural-japanese scripts/lint.py --json <file>`
 6. 保存:
 

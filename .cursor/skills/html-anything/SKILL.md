@@ -22,7 +22,7 @@ description: >-
 | `data-report` | 数字・CSV が本体 |
 | `meeting-notes` | 会議メモが本体 |
 
-日次は `daily-report` エージェント、週次は `weekly-report` エージェントが型を選ぶ。
+日次は `daily-report` スキル、週次は `weekly-report` スキルが型を選ぶ。
 
 ## 手順
 

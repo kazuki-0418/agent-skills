@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Canonical skills for daily/weekly HTML reports, new-project bootstrap, ad copy, sales/LP copy review, Buzzy/Seedance prompts, and UGC assets",
-    "version": "1.2.0"
+    "version": "1.3.0"
   },
   "plugins": [
     {
       "name": "agent-skills",
       "source": "./",
       "description": "Daily/weekly HTML reports, new-project bootstrap, ad copy, sales/LP copy review, Buzzy/Seedance video prompts, UGC assets, and their auditors.",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "author": {
         "name": "kazuki-0418"
       },
