@@ -28,7 +28,7 @@ private なので、そのチームの GitHub App がこの repo を読める必
 1. 下の「ダッシュボードでの足し方」で repo を Import する
 2. Grok Bot アプリ → Settings → Plugins → 検索欄に `agent-skills`
 3. Team plugins に出たら **Add**
-4. チャットで `/new-project` `/ad-copy` `/buzzy-video-prompt` `/ugc-assets` が使えるか確認する
+4. チャットで `/new-project` `/ad-copy` `/copy-review` `/daily-report` `/weekly-report` `/html-anything` が使えるか確認する
 
 出なければ、Plugins の画面をスクショして判断する。項目名は見ていないので書かない。
 
@@ -38,4 +38,6 @@ private なので、そのチームの GitHub App がこの repo を読める必
 ln -sfn /Users/kazukijo/Desktop/dev/agent-skills ~/.cursor/plugins/local/agent-skills
 ```
 
-Cursor を Reload Window し、Customize に `agent-skills` と 3 スキル + 採点役 2 つが出るか見る。
+Cursor を Reload Window する。説明文が「daily/weekly HTML reports」を含み、Skills が 14（`html-anything` 含む）、Subagents が 5（`daily-report` / `weekly-report` / `copy-auditor` 含む）なら取れている。
+
+カードが Skills 3 / Subagents 2 のまま、説明が「Use when writing ads or UGC scripts」なら、初回 Import の目録が残っている。`version` は `1.1.0`。Uninstall して入れ直す。Team Marketplace なら GitHub の最新 `main` を取り直してから Add する。

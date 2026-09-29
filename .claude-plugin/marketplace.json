@@ -5,15 +5,15 @@
     "name": "kazuki-0418"
   },
   "metadata": {
-    "description": "Canonical skills for new-project bootstrap, ad copy, sales/LP copy review, Buzzy/Seedance prompts, and UGC assets",
-    "version": "1.0.0"
+    "description": "Canonical skills for new-project bootstrap, ad copy, sales/LP copy review, daily/weekly HTML reports, Buzzy/Seedance prompts, and UGC assets",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "agent-skills",
       "source": "./",
-      "description": "New-project bootstrap, ad copy, sales/LP copy review, Buzzy/Seedance video prompts, UGC asset intake, and their auditors.",
-      "version": "1.0.0",
+      "description": "New-project bootstrap, ad copy, sales/LP copy review, daily/weekly HTML reports, Buzzy/Seedance video prompts, UGC assets, and their auditors.",
+      "version": "1.1.0",
       "author": {
         "name": "kazuki-0418"
       },
@@ -24,7 +24,11 @@
         "buzzy",
         "seedance",
         "copy-review",
-        "copychief"
+        "copychief",
+        "html-anything",
+        "natural-japanese",
+        "daily-report",
+        "weekly-report"
       ]
     }
   ]

@@ -19,7 +19,7 @@ Memory は Bot ごとに分かれる（会話と learned role は他 Bot と別�
 ## 先に試す順
 
 1. growth-squad の marketplace にこの repo を足す（[docs/plugin.md](plugin.md)）
-2. Settings → Plugins で `agent-skills` を Add
+2. Settings → Plugins で `agent-skills` を Add（`version` 1.1.0。エージェントは `daily-report` / `weekly-report` を含む）
 3. 出てこなければ、下の clone に倒す
 
 ## クラウド PC での初回（プラグインがまだ無いとき）
