@@ -38,6 +38,11 @@ private なので、そのチームの GitHub App がこの repo を読める必
 ln -sfn /Users/kazukijo/Desktop/dev/agent-skills ~/.cursor/plugins/local/agent-skills
 ```
 
-Cursor を Reload Window する。説明文が「daily/weekly HTML reports」を含み、Skills が 14（`html-anything` 含む）、Subagents が 5（`daily-report` / `weekly-report` / `copy-auditor` 含む）なら取れている。
+Cursor を Reload Window する。取れている印は次の全部。
 
-カードが Skills 3 / Subagents 2 のまま、説明が「Use when writing ads or UGC scripts」なら、初回 Import の目録が残っている。`version` は `1.1.0`。Uninstall して入れ直す。Team Marketplace なら GitHub の最新 `main` を取り直してから Add する。
+- `version` が `1.2.0`
+- 説明の先頭が「Daily/weekly HTML reports」
+- Skills 14（`html-anything` / `copy-review` / `natural-japanese` 含む）
+- Subagents 5（`daily-report` / `weekly-report` / `copy-auditor` 含む）
+
+`version` だけ新しく、説明が「Use when writing ads or UGC scripts」、Skills 3 のままなら、Team Marketplace の初回目録が残っている。Uninstall → GitHub の最新 `main` を取り直す → Add。ローカル試用は `~/.cursor/plugins/local/agent-skills` が Desktop の `main` を指していることを確認してから Reload する。

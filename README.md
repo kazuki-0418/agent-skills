@@ -75,7 +75,7 @@ Edit this repository and commit. Changing the symlink side edits the same files.
 
 ## Plugin (growth-squad)
 
-Same Team plugins shelf as honcho. Manifests are `.cursor-plugin/plugin.json` and `.claude-plugin/plugin.json`. Steps: [docs/plugin.md](docs/plugin.md).
+Same Team plugins shelf as honcho. Manifests are `.cursor-plugin/plugin.json` and `.claude-plugin/plugin.json`. Plugin discovery reads `skills/` and `agents/` at the repo root (symlinks into `.cursor/skills` and `.cursor/agents`). Steps: [docs/plugin.md](docs/plugin.md).
 
 ## Grok Bot
 

@@ -75,7 +75,7 @@ Kivori 固有のリリース手順はここには置かない。それは Kivori
 
 ## プラグイン（growth-squad 向け）
 
-honcho と同じく Team plugins に載せられる。manifest は `.cursor-plugin/plugin.json` と `.claude-plugin/plugin.json`。手順は [docs/plugin.md](docs/plugin.md)。
+honcho と同じく Team plugins に載せられる。manifest は `.cursor-plugin/plugin.json` と `.claude-plugin/plugin.json`。プラグインの発見はリポジトリ直下の `skills/` と `agents/`（`.cursor/skills` と `.cursor/agents` への symlink）。手順は [docs/plugin.md](docs/plugin.md)。
 
 ## Grok Bot
 

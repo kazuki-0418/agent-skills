@@ -1,0 +1,1 @@
+../.cursor/agents/copy-auditor.md

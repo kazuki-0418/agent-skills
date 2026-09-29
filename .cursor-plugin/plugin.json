@@ -1,7 +1,7 @@
 {
   "name": "agent-skills",
-  "version": "1.1.0",
-  "description": "New-project bootstrap, ad copy, sales/LP copy review, daily/weekly HTML reports, Buzzy/Seedance video prompts, UGC assets, and their auditors.",
+  "version": "1.2.0",
+  "description": "Daily/weekly HTML reports, new-project bootstrap, ad copy, sales/LP copy review, Buzzy/Seedance video prompts, UGC assets, and their auditors.",
   "author": {
     "name": "kazuki-0418"
   },
@@ -21,6 +21,27 @@
     "daily-report",
     "weekly-report"
   ],
-  "skills": ".cursor/skills",
-  "agents": ".cursor/agents"
+  "skills": [
+    "skills/ad-copy",
+    "skills/buzzy-video-prompt",
+    "skills/ugc-assets",
+    "skills/copy-review",
+    "skills/direct-response-copy",
+    "skills/landing-page-copy",
+    "skills/copychief",
+    "skills/compliance-checker",
+    "skills/new-project",
+    "skills/grill-with-docs",
+    "skills/grilling",
+    "skills/domain-modeling",
+    "skills/natural-japanese",
+    "skills/html-anything"
+  ],
+  "agents": [
+    "agents/ad-copy-auditor.md",
+    "agents/buzzy-prompt-auditor.md",
+    "agents/copy-auditor.md",
+    "agents/daily-report.md",
+    "agents/weekly-report.md"
+  ]
 }
