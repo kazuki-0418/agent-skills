@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
 <meta charset="UTF-8" />
-<title>Hyperframes · AI workflow 三件套</title>
+<title>Hyperframes · AI workflow 三点セット</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;800;900&family=Noto+Sans+SC:wght@600;700;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
@@ -29,70 +29,70 @@
 <section class="frame active hook" data-duration="3000">
   <div class="num">FRAME 01 / 08 · HOOK</div>
   <div class="glow" style="background:#c96442; top:-200px; left:-200px"></div>
-  <div class="label">观察</div>
-  <h1>80% 的 AI 工具用户,<br/>都<span class="em">没用对</span> prompt。</h1>
+  <div class="label">観察</div>
+  <h1>80% の AI ツールユーザーは,<br/>prompt を<span class="em">使いこなせていない</span>。</h1>
 </section>
 
 <section class="frame" data-duration="3000">
   <div class="num">FRAME 02 / 08</div>
-  <h1 style="font-size:128px">不是因为<br/><span class="em">prompt 难写</span>。</h1>
+  <h1 style="font-size:128px">prompt が<br/><span class="em">書きにくい</span>からではない。</h1>
 </section>
 
 <section class="frame" data-duration="3000">
   <div class="num">FRAME 03 / 08</div>
-  <h1 style="font-size:128px">是因为他们<br/>一直在 <span class="em">重写</span>。</h1>
+  <h1 style="font-size:128px">ずっと<br/><span class="em">書き直して</span>いるからだ。</h1>
 </section>
 
 <section class="frame" data-duration="4000">
   <div class="num">FRAME 04 / 08</div>
   <div class="label" style="color:#e9b94a">解</div>
-  <h1 style="font-size:140px">真正高效的人,<br/>用<span class="em">模板</span>。</h1>
+  <h1 style="font-size:140px">本当に速い人は,<br/><span class="em">テンプレート</span>を使う。</h1>
 </section>
 
 <section class="frame grid-bg" data-duration="4000">
   <div class="num">FRAME 05 / 08</div>
   <div class="label">公式</div>
   <h1 style="font-size:88px; max-width:24ch">
-    模板 = <span style="color:#c96442">提示词</span><br/>
-    + <span style="color:#e9b94a">设计 system</span><br/>
-    + <span style="color:#6c3aa6">输出格式</span>
+    テンプレート = <span style="color:#c96442">プロンプト</span><br/>
+    + <span style="color:#e9b94a">デザイン system</span><br/>
+    + <span style="color:#6c3aa6">出力形式</span>
   </h1>
 </section>
 
 <section class="frame" data-duration="5000">
   <div class="num">FRAME 06 / 08</div>
   <div class="glow" style="background:#e9b94a; bottom:-300px; right:-200px"></div>
-  <h1 style="font-size:120px">HTML <span class="em">Anything</span><br/>把这三件事<br/>打包好了。</h1>
+  <h1 style="font-size:120px">HTML <span class="em">Anything</span><br/>この 3 つを<br/>まとめた。</h1>
 </section>
 
 <section class="frame" data-duration="5000">
   <div class="num">FRAME 07 / 08</div>
-  <div class="label" style="color:#e9b94a">行动</div>
-  <h1 style="font-size:160px"><span class="em">9 套模板,</span><br/>一个动作:<br/><span style="font-family:'JetBrains Mono',monospace; font-style:normal; color:#fff">⌘+Enter</span></h1>
+  <div class="label" style="color:#e9b94a">行動</div>
+  <h1 style="font-size:160px"><span class="em">9 セットのテンプレート,</span><br/>動作は 1 つ:<br/><span style="font-family:'JetBrains Mono',monospace; font-style:normal; color:#fff">⌘+Enter</span></h1>
 </section>
 
 <section class="frame" data-duration="3000">
   <div class="num">FRAME 08 / 08 · CTA</div>
   <div class="glow" style="background:#c96442; top:50%; left:50%; transform:translate(-50%,-50%); opacity:0.6"></div>
-  <h1 style="font-size:96px">现在试试 →</h1>
+  <h1 style="font-size:96px">今すぐ試す →</h1>
   <div style="font-family:'JetBrains Mono',monospace; font-size:24px; margin-top:36px; opacity:0.85">github.com/nexu-io/html-anything</div>
 </section>
 
 <div class="controls">
-  <button id="prev" title="上一帧">‹</button>
-  <button id="play" title="播放 / 暂停">⏸</button>
-  <button id="next" title="下一帧">›</button>
+  <button id="prev" title="前のフレーム">‹</button>
+  <button id="play" title="再生 / 一時停止">⏸</button>
+  <button id="next" title="次のフレーム">›</button>
   <span id="counter" style="opacity:0.55">01 / 08</span>
 </div>
 
 <!-- HYPERFRAMES_META: {"frames":[
-  {"i":1,"duration":3000,"transition":"fade","scene":"Hook: 80% 的人没用对 prompt"},
-  {"i":2,"duration":3000,"transition":"fade","scene":"不是因为难写"},
-  {"i":3,"duration":3000,"transition":"fade","scene":"是因为重写"},
-  {"i":4,"duration":4000,"transition":"fade","scene":"真正高效的用模板"},
-  {"i":5,"duration":4000,"transition":"fade","scene":"模板 = 提示词 + 设计 + 格式"},
-  {"i":6,"duration":5000,"transition":"fade","scene":"HTML Anything 打包"},
-  {"i":7,"duration":5000,"transition":"fade","scene":"9 套模板, ⌘+Enter"},
+  {"i":1,"duration":3000,"transition":"fade","scene":"Hook: 80% が prompt を使いこなせていない"},
+  {"i":2,"duration":3000,"transition":"fade","scene":"書きにくいからではない"},
+  {"i":3,"duration":3000,"transition":"fade","scene":"書き直しているからだ"},
+  {"i":4,"duration":4000,"transition":"fade","scene":"本当に速い人はテンプレートを使う"},
+  {"i":5,"duration":4000,"transition":"fade","scene":"テンプレート = プロンプト + デザイン + 形式"},
+  {"i":6,"duration":5000,"transition":"fade","scene":"HTML Anything がまとめた"},
+  {"i":7,"duration":5000,"transition":"fade","scene":"9 セットのテンプレート, ⌘+Enter"},
   {"i":8,"duration":3000,"transition":"fade","scene":"CTA: github.com/nexu-io/html-anything"}
 ]} -->
 

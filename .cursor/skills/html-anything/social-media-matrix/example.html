@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="ja" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -1051,9 +1051,9 @@
           redraw({ hoverIndex: nearest });
           updateInsights({
             focus: `<b>${nameMap[id]}</b><br/>${st.labels[nearest]} = ${st.values[nearest]}${st.unit}`,
-            range: `环比 <b>${mom>=0?'+':''}${mom.toFixed(1)}%</b> · 同比(基线) <b>${yoy>=0?'+':''}${yoy.toFixed(1)}%</b>`
+            range: `前月比 <b>${mom>=0?'+':''}${mom.toFixed(1)}%</b> · 前年比(ベースライン) <b>${yoy>=0?'+':''}${yoy.toFixed(1)}%</b>`
           });
-          showTooltip(`<b>${st.labels[nearest]}</b><br/>Value: ${st.values[nearest]}${st.unit}<br/>环比: ${mom>=0?'+':''}${mom.toFixed(1)}% · 同比(基线): ${yoy>=0?'+':''}${yoy.toFixed(1)}%`, e.clientX, e.clientY);
+          showTooltip(`<b>${st.labels[nearest]}</b><br/>Value: ${st.values[nearest]}${st.unit}<br/>前月比: ${mom>=0?'+':''}${mom.toFixed(1)}% · 前年比(ベースライン): ${yoy>=0?'+':''}${yoy.toFixed(1)}%`, e.clientX, e.clientY);
         });
         c.addEventListener('mouseup',(e)=>{
           const st = chartState[id];

@@ -1,12 +1,12 @@
-# 故障标题帧 · SIGNAL_LOST
+# グリッチタイトルフレーム · SIGNAL_LOST
 
-> Cyan / magenta 像散, CRT 扫描线 + ASCII 噪点
+> Cyan / magenta の色収差, CRT 走査線 + ASCII ノイズ
 
-## 标题
+## タイトル
 SIGNAL_LOST
 
-## 副标
+## サブ
 04 · DATA CORRUPTION · 14:32:08
 
-## 章节标识
-CH-04 / SIGNAL CORRUPTED — 数据失真重组
+## 章の標識
+CH-04 / SIGNAL CORRUPTED — データの歪みと再構成

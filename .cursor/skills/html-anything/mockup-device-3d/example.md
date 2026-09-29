@@ -1,15 +1,15 @@
-# HTML Anything · 移动版界面预览
+# HTML Anything · モバイル画面プレビュー
 
-> iPhone 屏幕展示一个 mock 新建任务页, MacBook 屏幕展示桌面版编辑器
+> iPhone 画面は mock の新規タスクページ, MacBook 画面はデスクトップ版エディタ
 
-## iPhone 内容
+## iPhone の内容
 - App: HTML Anything Mobile
-- 顶部: 选择模板 → 杂志风网页 PPT
-- 中间: 输入框 + ⌘+Enter
-- 底部: Tab bar (任务 / 模板 / 设置)
+- 上部: テンプレート選択 → 雑誌風ウェブ PPT
+- 中間: 入力欄 + ⌘+Enter
+- 下部: Tab bar (タスク / テンプレート / 設定)
 
-## MacBook 内容
-- 桌面版三栏布局: 任务列表 / 编辑器 / 实时预览
+## MacBook の内容
+- デスクトップ版 3 カラム: タスク一覧 / エディタ / リアルタイムプレビュー
 
-## 标签
+## ラベル
 2026 SPRING · CODENAME ATLAS · v0.4

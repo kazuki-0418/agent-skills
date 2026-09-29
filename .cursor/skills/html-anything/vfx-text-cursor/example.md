@@ -1,11 +1,11 @@
-# VFX 光标开场帧
+# VFX カーソル オープニングフレーム
 
-> 逐字揭示 + chromatic 拖光, hot pink + cyan
+> 一字ずつ開示 + chromatic 引き光, hot pink + cyan
 
-## 金句
-Markdown 是给作者的中间过程, HTML 才是给读者的最终形态。
+## 金言
+Markdown は書き手の途中経過, HTML こそが読み手の最終形態。
 
-## 章节标记
+## 章のマーク
 FRAME 01 · OPENING
 
 ## Timecode

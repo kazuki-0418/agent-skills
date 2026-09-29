@@ -1,9 +1,9 @@
-# 流体 Hero · 金句帧
+# 流体 Hero · 金言フレーム
 
-> Aurora Violet 流体背景, mix-blend-mode 文字
+> Aurora Violet の流体背景, mix-blend-mode の文字
 
-## 金句
-最好的 HTML, 是让读者忘了它是 HTML。
+## 金言
+いちばんいい HTML は、読者に HTML だと忘れさせる。
 
-## 副标
-HTML Anything · 75 个世界级模板, 0 个 API key
+## サブ
+HTML Anything · 世界級テンプレート 75個, API key 0個

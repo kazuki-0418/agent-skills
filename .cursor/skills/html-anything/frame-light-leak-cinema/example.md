@@ -1,11 +1,11 @@
-# 胶片漏光帧 · REEL 03
+# フィルムのライトリークフレーム · REEL 03
 
-> 2.39:1 letterbox, 暖橙漏光 + 35mm 颗粒
+> 2.39:1 letterbox, 暖色オレンジのリーク + 35mm 粒状
 
-## 标题
+## タイトル
 A Quiet Year in Berlin
 
-## 副标
+## サブ
 A short film about typesetting, in fourteen reels.
 
 ## Metadata

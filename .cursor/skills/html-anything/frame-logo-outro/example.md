@@ -1,8 +1,8 @@
-# Logo 收尾帧
+# Logo エンドフレーム
 
-> Midnight Indigo 调色, 用作视频结尾的品牌 reveal
+> Midnight Indigo の調色, 動画末尾のブランド reveal に使う
 
-## 品牌
+## ブランド
 HTML Anything
 
 ## Tagline

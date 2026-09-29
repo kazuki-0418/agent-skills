@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -167,7 +167,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 }
 
 </style>
-<style>/* dir-key-nav-minimal — 方向键极简 · 8 种 mono-background 切换 */
+<style>/* dir-key-nav-minimal — 方向キー・ミニマル · 8 種の mono-background 切替 */
 .tpl-dir-key-nav-minimal{
   --dk-font:'Inter','Noto Sans SC','PingFang SC',-apple-system,sans-serif;
   --dk-mono:'JetBrains Mono',monospace;
@@ -244,9 +244,9 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <div class="dk-snum">01 / 08</div>
     <div style="margin:auto 0">
       <div class="dk-eyebrow">Karpathy LLM Wiki</div>
-      <h1 class="dk-h0">为什么笔记<br>治不了 <span class="dk-accent">LLM</span></h1>
+      <h1 class="dk-h0">なぜノートでは<br><span class="dk-accent">LLM</span> は治らない</h1>
       <span class="dk-line"></span>
-      <p class="dk-lede">8 种背景、8 张幻灯，一个关于如何把 AI 变成「长期记忆外挂」的最短陈述。<strong>按 → 继续。</strong></p>
+      <p class="dk-lede">8 種の背景、8 枚のスライド、AI を「長期記憶の外付け」にする方法の最短の説明。<strong>→ で続ける。</strong></p>
     </div>
     <div class="dk-keyhint">nav · <kbd>←</kbd> <kbd>→</kbd> · <kbd>space</kbd></div>
     <div class="dk-page">cover</div>
@@ -259,7 +259,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
       <div class="dk-eyebrow">Chapter 01</div>
       <h1 class="dk-h0">The <span class="dk-accent">Problem</span>.</h1>
       <span class="dk-line"></span>
-      <p class="dk-lede">Token 上限是一个物理事实。你每次和 LLM 说话，它都是一个失忆症患者。</p>
+      <p class="dk-lede">Token 上限は物理的事実だ。LLM と話すたび、それは健忘症の患者だ。</p>
     </div>
     <div class="dk-keyhint">chapter · 01 / 04</div>
     <div class="dk-page">section</div>
@@ -270,12 +270,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <div class="dk-snum">03 / 08</div>
     <div style="margin:auto 0">
       <div class="dk-eyebrow">Symptoms</div>
-      <h2 class="dk-h1">四种你已经<br>受够的<br><span class="dk-accent">遗忘</span>。</h2>
+      <h2 class="dk-h1">もう飽きた<br>四種の<br><span class="dk-accent">忘却</span>。</h2>
       <ul class="dk-list">
-        <li>昨天聊过的项目，今天重新解释一遍</li>
-        <li>上下文窗口一到，它开始「编造记忆」</li>
-        <li>不同 session 之间毫无关联，就像第一次见</li>
-        <li>你的真正偏好从未被记住，每次都要 re-prompt</li>
+        <li>昨日話した案件、今日もう一度説明し直す</li>
+        <li>コンテキストウィンドウが尽きると、「記憶の捏造」が始まる</li>
+        <li>異なる session 同士は無関係、初対面のよう</li>
+        <li>本当の好みは一度も覚えられていない、毎回 re-prompt が要る</li>
       </ul>
     </div>
     <div class="dk-keyhint">content · list</div>
@@ -287,11 +287,11 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <div class="dk-snum">04 / 08</div>
     <div style="margin:auto 0">
       <div class="dk-eyebrow">The Fix</div>
-      <h2 class="dk-h1">答案不是<br><span class="dk-accent">更大</span> 的窗口。</h2>
-      <p class="dk-lede" style="margin-top:10px">而是：把你的知识、偏好、历史都<strong>写进文件系统</strong>。<br>让 LLM 每次对话前，先去读那个系统。</p>
+      <h2 class="dk-h1">答えは<br>より<span class="dk-accent">大きい</span> ウィンドウではない。</h2>
+      <p class="dk-lede" style="margin-top:10px">そうではなく：知識、好み、履歴をすべて<strong>ファイルシステムに書き込む</strong>。<br>LLM に毎回の対話の前に、そのシステムを読ませる。</p>
       <div class="dk-grid-2">
-        <div class="dk-col"><h3>× 窗口 stuffing</h3><p>把所有东西塞 prompt，贵、慢、最终溢出。</p></div>
-        <div class="dk-col"><h3>✓ 文件 + 检索</h3><p>按需加载，永远不溢出，结构化可 diff。</p></div>
+        <div class="dk-col"><h3>× ウィンドウ stuffing</h3><p>すべてを prompt に詰め込む，高い、遅い、やがて溢れる。</p></div>
+        <div class="dk-col"><h3>✓ ファイル + 検索</h3><p>必要に応じて読み込む，溢れない，構造化され diff できる。</p></div>
       </div>
     </div>
     <div class="dk-keyhint">content · compare</div>
@@ -303,12 +303,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <div class="dk-snum">05 / 08</div>
     <div style="margin:auto 0">
       <div class="dk-eyebrow">Minimal Setup</div>
-      <h2 class="dk-h2"><span class="dk-accent">4 行</span> YAML<br>就能开始。</h2>
+      <h2 class="dk-h2"><span class="dk-accent">YAML 4 行</span><br>で始められる。</h2>
       <pre class="dk-code">memory:
   root: ~/.llm-wiki
   format: markdown
   retrieval: hybrid  # embedding + bm25</pre>
-      <p class="dk-lede" style="margin-top:16px;font-size:20px">你现在拥有一个会随时间增长的 <strong>第二大脑</strong>。每次对话它都会被读、被更新。</p>
+      <p class="dk-lede" style="margin-top:16px;font-size:20px">いま、時間とともに増える <strong>第二の脳</strong> を持つ。対話のたびに読まれ、更新される。</p>
     </div>
     <div class="dk-keyhint">content · code</div>
     <div class="dk-page">05</div>
@@ -320,7 +320,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <div style="margin:auto 0">
       <div class="dk-eyebrow">30-day result</div>
       <div class="dk-big dk-accent">87%</div>
-      <p class="dk-lede" style="margin-top:14px;font-size:26px">的 re-explain 被消除。平均每次对话节省 <strong>4.2 分钟</strong> 的 re-context。</p>
+      <p class="dk-lede" style="margin-top:14px;font-size:26px">の re-explain が消えた。対話あたり平均 <strong>4.2 分</strong> の re-context を節約。</p>
       <svg viewBox="0 0 900 80" style="width:100%;max-width:900px;margin-top:30px">
         <rect x="0" y="30" width="900" height="22" rx="11" fill="rgba(255,255,255,.12)"/>
         <rect x="0" y="30" width="783" height="22" rx="11" fill="#c4b5fd"/>
@@ -336,9 +336,9 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <div class="dk-snum">07 / 08</div>
     <div style="margin:auto 0">
       <div class="dk-eyebrow">Start tonight</div>
-      <h2 class="dk-h1">开始<br>你的 <span class="dk-accent">wiki</span>。</h2>
+      <h2 class="dk-h1">あなたの<br><span class="dk-accent">wiki</span> を始める。</h2>
       <span class="dk-line"></span>
-      <p class="dk-lede">不是装又一个插件。是决定：从今晚起，<strong>你的所有 AI 对话都要有一个共同的 vault</strong>。</p>
+      <p class="dk-lede">プラグインをもう一つ入れることではない。決断だ：今夜から、<strong>すべての AI 対話が共通の vault を持つ</strong>。</p>
       <pre class="dk-code" style="font-size:18px">$ mkdir ~/llm-wiki && cd ~/llm-wiki
 $ git init
 $ echo "# my brain" > README.md</pre>
@@ -352,9 +352,9 @@ $ echo "# my brain" > README.md</pre>
     <div class="dk-snum">08 / 08</div>
     <div style="margin:auto 0">
       <div class="dk-eyebrow">End · thanks for staying</div>
-      <h1 class="dk-h0"><span class="dk-accent">謝謝</span>。</h1>
+      <h1 class="dk-h0"><span class="dk-accent">ありがとう</span>。</h1>
       <span class="dk-line"></span>
-      <p class="dk-lede">Karpathy 的原始 thread + 我的 vault 结构都在 <strong>github.com/lewis/llm-wiki</strong>。欢迎按 ← 再看一遍。</p>
+      <p class="dk-lede">Karpathy の元 thread + 私の vault 構造はすべて <strong>github.com/lewis/llm-wiki</strong>。← でもう一度見てほしい。</p>
     </div>
     <div class="dk-keyhint">press <kbd>←</kbd> to rewind · <kbd>F</kbd> for fullscreen</div>
     <div class="dk-page">fin</div>

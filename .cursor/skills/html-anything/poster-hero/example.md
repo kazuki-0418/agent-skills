@@ -1,13 +1,13 @@
-# HTML Anything 0.1 已发布
+# HTML Anything 0.1 公開済み
 
-## 一句话
-任何文档 → 世界级好看的 HTML, 用你本地的 AI agent
+## 一言
+どんな文書でも → 世界級のきれいな HTML, 手元の AI agent で
 
 ## 特性
-- 9 套世界级模板
-- 8 个本地 agent 自动检测
-- 0 API Key, 复用本地登录 session
-- 一键复制到公众号 / 推特 / 知乎
+- 9 セットの世界級テンプレート
+- 8 つのローカル agent を自動検出
+- 0 API Key, 手元のログイン session を再利用
+- 公式アカウント / X / 知乎 へワンクリックコピー
 
 ## CTA
-github.com/nexu-io/html-anything · 一行命令跑起来
+github.com/nexu-io/html-anything · コマンド 1 行で起動

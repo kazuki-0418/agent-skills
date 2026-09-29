@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
 <meta charset="UTF-8" />
-<title>数据周报 · 2025 年 5 月</title>
+<title>データ週報 · 2025 年 5 月</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -27,65 +27,65 @@
     <div class="flex items-baseline justify-between flex-wrap gap-3">
       <div>
         <div class="text-[11px] font-semibold tracking-[0.22em] uppercase text-[#c96442] mb-2">Weekly Report · Week 19</div>
-        <h1 class="text-4xl font-extrabold tracking-tight">数据周报 · 2025 年 5 月</h1>
+        <h1 class="text-4xl font-extrabold tracking-tight">データ週報 · 2025 年 5 月</h1>
       </div>
       <div class="text-xs text-[#5a564e] text-right">
-        <div>来源: <span class="font-semibold text-[#15140f]">内部 BI</span></div>
-        <div>截止 <span class="font-mono text-[#15140f]">2025-05-11</span></div>
+        <div>出典: <span class="font-semibold text-[#15140f]">内部 BI</span></div>
+        <div>時点 <span class="font-mono text-[#15140f]">2025-05-11</span></div>
       </div>
     </div>
-    <p class="mt-3 text-sm text-[#5a564e] max-w-2xl leading-relaxed">本周关键指标全部向好。MAU 同比增长 184%, 付费转化与流失双双改善。</p>
+    <p class="mt-3 text-sm text-[#5a564e] max-w-2xl leading-relaxed">今週の重要指標はすべて上向き。MAU は前年比 184%, 有料転換と離脱はともに改善。</p>
   </header>
 
   <section class="section mb-10">
-    <h2>核心指标 · KPI</h2>
+    <h2>コア指標 · KPI</h2>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
       <div class="rounded-2xl bg-white p-5 border border-[#e7e5e0] shadow-[0_1px_0_#f0ece5]">
-        <div class="text-[11px] font-semibold uppercase tracking-wider text-[#5a564e] mb-2">月活用户 · MAU</div>
+        <div class="text-[11px] font-semibold uppercase tracking-wider text-[#5a564e] mb-2">月間アクティブ · MAU</div>
         <div class="text-3xl font-extrabold num">23,950</div>
-        <div class="text-xs mt-2"><span class="delta-up">▲ 16.0%</span> <span class="text-[#5a564e]">vs 上月</span></div>
+        <div class="text-xs mt-2"><span class="delta-up">▲ 16.0%</span> <span class="text-[#5a564e]">vs 前月</span></div>
         <div class="mt-3" style="position:relative;height:40px"><canvas id="kpi1"></canvas></div>
       </div>
       <div class="rounded-2xl bg-white p-5 border border-[#e7e5e0] shadow-[0_1px_0_#f0ece5]">
-        <div class="text-[11px] font-semibold uppercase tracking-wider text-[#5a564e] mb-2">新增 · Signups</div>
+        <div class="text-[11px] font-semibold uppercase tracking-wider text-[#5a564e] mb-2">新規 · Signups</div>
         <div class="text-3xl font-extrabold num">4,250</div>
-        <div class="text-xs mt-2"><span class="delta-up">▲ 15.5%</span> <span class="text-[#5a564e]">vs 上月</span></div>
+        <div class="text-xs mt-2"><span class="delta-up">▲ 15.5%</span> <span class="text-[#5a564e]">vs 前月</span></div>
         <div class="mt-3" style="position:relative;height:40px"><canvas id="kpi2"></canvas></div>
       </div>
       <div class="rounded-2xl bg-white p-5 border border-[#e7e5e0] shadow-[0_1px_0_#f0ece5]">
-        <div class="text-[11px] font-semibold uppercase tracking-wider text-[#5a564e] mb-2">付费 · Paying</div>
+        <div class="text-[11px] font-semibold uppercase tracking-wider text-[#5a564e] mb-2">有料 · Paying</div>
         <div class="text-3xl font-extrabold num">2,418 <span class="text-base text-[#5a564e]">/ 10.1%</span></div>
-        <div class="text-xs mt-2"><span class="delta-up">▲ 18.5%</span> <span class="text-[#5a564e]">vs 上月</span></div>
+        <div class="text-xs mt-2"><span class="delta-up">▲ 18.5%</span> <span class="text-[#5a564e]">vs 前月</span></div>
         <div class="mt-3" style="position:relative;height:40px"><canvas id="kpi3"></canvas></div>
       </div>
       <div class="rounded-2xl bg-white p-5 border border-[#e7e5e0] shadow-[0_1px_0_#f0ece5]">
-        <div class="text-[11px] font-semibold uppercase tracking-wider text-[#5a564e] mb-2">流失 · Churn</div>
+        <div class="text-[11px] font-semibold uppercase tracking-wider text-[#5a564e] mb-2">離脱 · Churn</div>
         <div class="text-3xl font-extrabold num">1.8%</div>
-        <div class="text-xs mt-2"><span class="delta-up">▼ 0.1pp</span> <span class="text-[#5a564e]">vs 上月</span></div>
+        <div class="text-xs mt-2"><span class="delta-up">▼ 0.1pp</span> <span class="text-[#5a564e]">vs 前月</span></div>
         <div class="mt-3" style="position:relative;height:40px"><canvas id="kpi4"></canvas></div>
       </div>
     </div>
   </section>
 
   <section class="section mb-10">
-    <h2>趋势 · Growth</h2>
+    <h2>トレンド · Growth</h2>
     <div class="grid lg:grid-cols-3 gap-4">
       <div class="lg:col-span-2 rounded-2xl bg-white p-5 border border-[#e7e5e0]">
-        <div class="text-sm font-semibold mb-3">MAU & 付费用户增长</div>
+        <div class="text-sm font-semibold mb-3">MAU & 有料ユーザーの成長</div>
         <div style="position:relative;height:260px"><canvas id="chart-main"></canvas></div>
       </div>
       <div class="rounded-2xl bg-white p-5 border border-[#e7e5e0]">
-        <div class="text-sm font-semibold mb-3">流失率 · 月度</div>
+        <div class="text-sm font-semibold mb-3">離脱率 · 月次</div>
         <div style="position:relative;height:260px"><canvas id="chart-churn"></canvas></div>
       </div>
     </div>
   </section>
 
   <section class="section mb-10">
-    <h2>明细 · Raw data</h2>
+    <h2>明細 · Raw data</h2>
     <div class="rounded-2xl border border-[#e7e5e0] overflow-hidden bg-white">
       <table>
-        <thead><tr><th>月份</th><th class="text-right">MAU</th><th class="text-right">新增</th><th class="text-right">付费</th><th class="text-right">流失率</th></tr></thead>
+        <thead><tr><th>月</th><th class="text-right">MAU</th><th class="text-right">新規</th><th class="text-right">有料</th><th class="text-right">離脱率</th></tr></thead>
         <tbody id="rows"></tbody>
       </table>
     </div>
@@ -96,28 +96,28 @@
     <div class="grid md:grid-cols-3 gap-4">
       <div class="rounded-2xl bg-white p-5 border border-[#e7e5e0]">
         <div class="text-3xl mb-2">📈</div>
-        <div class="font-semibold mb-1.5">MAU 半年增长 184%</div>
-        <div class="text-sm text-[#5a564e] leading-relaxed">主要来自小红书自然流量, 单条爆款笔记带来 8k+ 新增。</div>
+        <div class="font-semibold mb-1.5">MAU 半年で 184% 成長</div>
+        <div class="text-sm text-[#5a564e] leading-relaxed">主因は小紅書の自然流入, バズったノート 1 本で 8k+ の新規。</div>
       </div>
       <div class="rounded-2xl bg-white p-5 border border-[#e7e5e0]">
         <div class="text-3xl mb-2">💰</div>
-        <div class="font-semibold mb-1.5">付费转化 7.3% → 10.1%</div>
-        <div class="text-sm text-[#5a564e] leading-relaxed">团队 Pro 套餐贡献最大。新引导流程 + 30 天试用是关键。</div>
+        <div class="font-semibold mb-1.5">有料転換 7.3% → 10.1%</div>
+        <div class="text-sm text-[#5a564e] leading-relaxed">チーム Pro プランの寄与が最大。新しいオンボーディング + 30 日試用が鍵。</div>
       </div>
       <div class="rounded-2xl bg-white p-5 border border-[#e7e5e0]">
         <div class="text-3xl mb-2">🎯</div>
-        <div class="font-semibold mb-1.5">月流失 3.4% → 1.8%</div>
-        <div class="text-sm text-[#5a564e] leading-relaxed">AI 起草功能上线后, 沉默用户激活率翻倍。</div>
+        <div class="font-semibold mb-1.5">月次離脱 3.4% → 1.8%</div>
+        <div class="text-sm text-[#5a564e] leading-relaxed">AI 起草機能のリリース後, 沈黙ユーザーの活性化率は倍増。</div>
       </div>
     </div>
   </section>
 
   <details class="mt-12 rounded-xl border border-[#e7e5e0] bg-white p-5">
     <summary class="cursor-pointer text-sm font-semibold text-[#5a564e] flex items-center justify-between">
-      方法论 · Methodology <span class="text-[#5a564e]">▾</span>
+      方法論 · Methodology <span class="text-[#5a564e]">▾</span>
     </summary>
     <div class="text-xs text-[#5a564e] leading-relaxed mt-3 max-w-3xl">
-      MAU = 30 天内至少打开一次产品的去重用户。付费 = 当月有效付费订阅。流失率 = 上月付费但本月未续的比例。数据来自内部 BI, 已剔除测试账号与 bot。
+      MAU = 30 日以内に少なくとも 1 回プロダクトを開いた重複排除ユーザー。有料 = 当月の有効有料サブスク。離脱率 = 前月有料だが当月未継続の割合。データは内部 BI, テストアカウントと bot は除外済み。
     </div>
   </details>
 
@@ -158,7 +158,7 @@ new Chart(document.getElementById('chart-main'), {
     labels:data.map(d=>d.month),
     datasets:[
       {label:'MAU', data:data.map(d=>d.mau), backgroundColor:'rgba(201,100,66,0.18)', borderColor:'#c96442', borderWidth:1.5, borderRadius:4, yAxisID:'y'},
-      {label:'付费', type:'line', data:data.map(d=>d.paying), borderColor:'#1f7a3a', backgroundColor:'#1f7a3a', tension:0.35, borderWidth:2.5, pointRadius:3, yAxisID:'y'},
+      {label:'有料', type:'line', data:data.map(d=>d.paying), borderColor:'#1f7a3a', backgroundColor:'#1f7a3a', tension:0.35, borderWidth:2.5, pointRadius:3, yAxisID:'y'},
     ]
   },
   options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'bottom',labels:{usePointStyle:true,boxWidth:8}}}, scales:{x:{grid:{display:false}},y:{grid:{color:'#f0ece5'}, ticks:{callback:v=>v.toLocaleString()}}} }
@@ -166,7 +166,7 @@ new Chart(document.getElementById('chart-main'), {
 
 new Chart(document.getElementById('chart-churn'), {
   type:'line',
-  data:{ labels:data.map(d=>d.month), datasets:[{label:'流失率 %', data:data.map(d=>(d.churn*100).toFixed(2)), borderColor:'#9c2a25', backgroundColor:'rgba(156,42,37,0.08)', tension:0.4, borderWidth:2.5, fill:true, pointRadius:3}] },
+  data:{ labels:data.map(d=>d.month), datasets:[{label:'離脱率 %', data:data.map(d=>(d.churn*100).toFixed(2)), borderColor:'#9c2a25', backgroundColor:'rgba(156,42,37,0.08)', tension:0.4, borderWidth:2.5, fill:true, pointRadius:3}] },
   options:{ responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{x:{grid:{display:false}},y:{grid:{color:'#f0ece5'}, ticks:{callback:v=>v+'%'}, beginAtZero:true}} }
 });
 </script>

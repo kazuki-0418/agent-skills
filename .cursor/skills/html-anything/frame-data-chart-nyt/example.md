@@ -1,11 +1,11 @@
-# 全球 AI agent 月活 · 2018-2026
+# 世界の AI agent 月間アクティブ · 2018-2026
 
-> NYT 风折线图, 一个结论 + 8 个数据点
+> NYT 風の折れ線グラフ, 結論1つ + データ点8つ
 
-## 结论
-**AI agent 月活在 2024 之后呈两段抛物线增长** — 第一段由 Claude / GPT 工作流推动, 第二段由本地 CLI agent (Cursor / Codex / Aider) 普及推动。
+## 結論
+**AI agent の月間アクティブは 2024 以降に二段の放物線で増える** — 第一段は Claude / GPT のワークフローが押し, 第二段はローカル CLI agent (Cursor / Codex / Aider) の普及が押す。
 
-## 数据 (CSV)
+## データ (CSV)
 year,MAU_millions
 2018,12
 2019,28

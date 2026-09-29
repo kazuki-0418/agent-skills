@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rust 异步运行时内部机制 · Tech Sharing</title>
+<title>Rust 非同期ランタイムの内部機構 · Tech Sharing</title>
 <style>/* html-ppt :: shared webfonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@200;300;400;500;600;700;900&display=swap');
@@ -306,7 +306,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 }
 
 </style>
-<style>/* tech-sharing — 技术分享 dark, code-forward */
+<style>/* tech-sharing — 技術共有 dark, code-forward */
 .tpl-tech-sharing{
   --bg:#0d1117;--bg-soft:#161b22;--surface:#161b22;--surface-2:#1c2230;
   --border:rgba(139,148,158,.22);--border-strong:rgba(139,148,158,.4);
@@ -370,8 +370,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 1. Cover -->
   <section class="slide" data-title="Cover">
     <p class="kicker">tech-sharing / 2026-04-15</p>
-    <h1 class="h1 anim-fade-up" data-anim="fade-up">Rust 异步运行时<br>到底在<span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">调度什么</span>?</h1>
-    <p class="lede mt-m">从 <span class="mono">Future::poll</span> 到 tokio 的 work-stealing，一次讲清楚。</p>
+    <h1 class="h1 anim-fade-up" data-anim="fade-up">Rust 非同期ランタイムは<br>いったい何を<span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">スケジューリング</span>している?</h1>
+    <p class="lede mt-m"><span class="mono">Future::poll</span> から tokio の work-stealing まで、一度で説明する。</p>
     <div class="speaker"><div class="av"></div><div><b>@lewis</b><span>platform infra · 45 min + Q&amp;A</span></div></div>
     <div class="deck-footer"><span class="mono">#async #rust #tokio</span><span class="slide-number" data-current="1" data-total="8"></span></div>
   </section>
@@ -379,12 +379,12 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 2. Agenda -->
   <section class="slide" data-title="Agenda">
     <p class="kicker">agenda.toml</p>
-    <h2 class="h2">今天的路线图</h2>
+    <h2 class="h2">今日のロードマップ</h2>
     <div class="stack mt-l">
-      <div class="agenda-row"><span class="num">01</span><span class="t">Context: 为什么需要 async</span><span class="d">~5min</span></div>
+      <div class="agenda-row"><span class="num">01</span><span class="t">Context: なぜ async が要る</span><span class="d">~5min</span></div>
       <div class="agenda-row"><span class="num">02</span><span class="t">Deep dive 1: Future &amp; Waker</span><span class="d">~12min</span></div>
       <div class="agenda-row"><span class="num">03</span><span class="t">Deep dive 2: Tokio scheduler</span><span class="d">~15min</span></div>
-      <div class="agenda-row"><span class="num">04</span><span class="t">Code: 手写一个 mini-runtime</span><span class="d">~8min</span></div>
+      <div class="agenda-row"><span class="num">04</span><span class="t">Code: mini-runtime を手書きする</span><span class="d">~8min</span></div>
       <div class="agenda-row"><span class="num">05</span><span class="t">Takeaways + Q&amp;A</span><span class="d">~5min</span></div>
     </div>
   </section>
@@ -392,21 +392,21 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 3. Context -->
   <section class="slide" data-title="Context">
     <p class="kicker">// context</p>
-    <h2 class="h2">问题：一个线程一个连接，<br>撑不住 10 万并发。</h2>
+    <h2 class="h2">問題：1スレッド1接続では、<br>10万同時接続は支えきれない。</h2>
     <div class="grid g3 mt-l">
-      <div class="card card-accent"><h4>Thread-per-conn</h4><p class="dim">每条连接一根 OS 线程，栈 2–8MB。10 万连接 = 几百 GB RAM。</p><span class="tag mt-s">❌ 不现实</span></div>
-      <div class="card card-accent"><h4>Event loop (C)</h4><p class="dim">epoll/kqueue + 回调地狱。快，但写起来痛苦且容易出 bug。</p><span class="tag mt-s">😩 callback hell</span></div>
-      <div class="card card-accent"><h4>Async / await</h4><p class="dim">看起来像同步代码，编译成状态机。一根线程跑几千任务。</p><span class="tag mt-s">✅ Rust 选这个</span></div>
+      <div class="card card-accent"><h4>Thread-per-conn</h4><p class="dim">接続ごとに OS スレッド1本、スタック 2–8MB。10万接続 = 数百 GB RAM。</p><span class="tag mt-s">❌ 現実的でない</span></div>
+      <div class="card card-accent"><h4>Event loop (C)</h4><p class="dim">epoll/kqueue + コールバック地獄。速いが、書くのが苦痛で bug も出やすい。</p><span class="tag mt-s">😩 callback hell</span></div>
+      <div class="card card-accent"><h4>Async / await</h4><p class="dim">同期コードのように見え、状態機械にコンパイルされる。1スレッドで数千タスクを回す。</p><span class="tag mt-s">✅ Rust はこれを選ぶ</span></div>
     </div>
   </section>
 
   <!-- 4. Deep dive 1 -->
   <section class="slide" data-title="Deep Dive 1">
     <p class="kicker">deep-dive · 1 / 2</p>
-    <h2 class="h2">Future 其实只有一个方法。</h2>
+    <h2 class="h2">Future には実はメソッドが1つしかない。</h2>
     <div class="grid g2 mt-l" style="align-items:start">
       <div>
-        <p class="lede">编译器把 <span class="mono">async fn</span> 变成一个实现了 <span class="mono">Future</span> trait 的匿名状态机。运行时只做一件事：反复 <span class="mono">poll</span> 它，直到返回 <span class="mono">Ready</span>。</p>
+        <p class="lede">コンパイラは <span class="mono">async fn</span> を、<span class="mono">Future</span> trait を実装した匿名の状態機械に変える。ランタイムがやることは1つ：<span class="mono">Ready</span> が返るまで何度も <span class="mono">poll</span> する。</p>
         <div class="mt-l">
           <span class="tag">Pending</span> <span class="tag">Ready(T)</span> <span class="tag">Waker.wake()</span>
         </div>
@@ -421,8 +421,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     ) -&gt; Poll&lt;<span class="kw">Self</span>::Output&gt;;
 }
 
-<span class="cmt">// Poll::Pending   → 挂起，等 waker 唤醒</span>
-<span class="cmt">// Poll::Ready(v)  → 完成，产出 v</span></pre>
+<span class="cmt">// Poll::Pending   → 中断し、waker の起床を待つ</span>
+<span class="cmt">// Poll::Ready(v)  → 完了し、v を出す</span></pre>
       </div>
     </div>
   </section>
@@ -430,10 +430,10 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 5. Deep dive 2 -->
   <section class="slide" data-title="Deep Dive 2">
     <p class="kicker">deep-dive · 2 / 2</p>
-    <h2 class="h2">Tokio 是一个偷任务的小工。</h2>
+    <h2 class="h2">Tokio はタスクを盗む作業員。</h2>
     <div class="grid g2 mt-l" style="align-items:start">
       <div>
-        <p class="lede">Multi-thread runtime = N 个 worker，每个 worker 有自己的本地队列。空闲的 worker 会去别人队列里"偷"任务。</p>
+        <p class="lede">Multi-thread runtime = N 個の worker。各 worker は自分のローカルキューを持つ。暇な worker は他人のキューからタスクを「盗む」。</p>
         <div class="stack mt-m">
           <div class="tag">✦ local queue · 256 slots</div>
           <div class="tag">✦ global injection queue</div>
@@ -457,7 +457,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 6. Code example -->
   <section class="slide" data-title="Code">
     <p class="kicker">mini-runtime.rs · ~40 LOC</p>
-    <h2 class="h2">手写一个最小 runtime。</h2>
+    <h2 class="h2">最小の runtime を手書きする。</h2>
     <div class="terminal mt-m">
       <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>src/main.rs</span></div>
 <pre><span class="kw">use</span> std::collections::VecDeque;
@@ -476,7 +476,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         <span class="kw">let</span> waker = Waker::from(task.clone());
         <span class="kw">let mut</span> cx = Context::from_waker(&amp;waker);
         <span class="kw">let mut</span> fut = task.<span class="num">0</span>.lock().unwrap();
-        <span class="kw">let</span> _ = fut.as_mut().<span class="fn">poll</span>(&amp;<span class="kw">mut</span> cx); <span class="cmt">// 就是这一行</span>
+        <span class="kw">let</span> _ = fut.as_mut().<span class="fn">poll</span>(&amp;<span class="kw">mut</span> cx); <span class="cmt">// まさにこの1行</span>
     }
 }</pre>
     </div>
@@ -485,13 +485,13 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 7. Takeaways -->
   <section class="slide" data-title="Takeaways">
     <p class="kicker">// takeaways</p>
-    <h2 class="h2">三件事带回去。</h2>
+    <h2 class="h2">持ち帰る3つのこと。</h2>
     <div class="grid g3 mt-l">
-      <div class="card card-accent"><h4>1 · async 是零成本抽象</h4><p class="dim">编译成状态机，没有运行时虚表，没有 GC。</p></div>
-      <div class="card card-accent"><h4>2 · Waker 是脉搏</h4><p class="dim">Future 不主动做事，运行时靠 waker 决定"什么时候再 poll"。</p></div>
-      <div class="card card-accent"><h4>3 · 别在 async 里阻塞</h4><p class="dim">一行 <span class="mono">std::fs::read</span> 能让整个 worker 停摆。用 <span class="mono">spawn_blocking</span>。</p></div>
+      <div class="card card-accent"><h4>1 · async はゼロコスト抽象</h4><p class="dim">状態機械にコンパイルされ、ランタイムの vtable も GC もない。</p></div>
+      <div class="card card-accent"><h4>2 · Waker は脈拍</h4><p class="dim">Future は自ら動かない。ランタイムは waker で「いつ再 poll するか」を決める。</p></div>
+      <div class="card card-accent"><h4>3 · async の中でブロックするな</h4><p class="dim"><span class="mono">std::fs::read</span> の1行で worker 全体が止まる。<span class="mono">spawn_blocking</span> を使え。</p></div>
     </div>
-    <p class="lede mt-l">延伸阅读：<span class="mono">tokio.rs/blog/2019-10-scheduler</span> · <span class="mono">rust-lang.github.io/async-book</span></p>
+    <p class="lede mt-l">さらに読む：<span class="mono">tokio.rs/blog/2019-10-scheduler</span> · <span class="mono">rust-lang.github.io/async-book</span></p>
   </section>
 
   <!-- 8. Q&A -->

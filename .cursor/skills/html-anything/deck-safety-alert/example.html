@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -167,7 +167,7 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
 }
 
 </style>
-<style>/* testing-safety-alert — 红/琥珀 警示风 · 白底高对比 */
+<style>/* testing-safety-alert — 赤/琥珀 警告風 · 白地ハイコントラスト */
 .tpl-testing-safety-alert{
   --ts-bg:#fffaf7;
   --ts-ink:#14141a;
@@ -244,13 +244,13 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 1. COVER -->
   <section class="slide is-active">
     <div class="ts-stripe"></div>
-    <div class="ts-chrome"><span class="ts-alert-tag">ai safety · 高优先级</span><span class="ts-page">01 / 08</span></div>
-    <div class="ts-kicker">2026 年最重要的一条判断</div>
-    <h1 class="ts-h1">别再追问<br><span class="strike">AI 会不会干活</span><br>开始问：<span class="red">它出事谁负责</span></h1>
-    <p class="ts-sub">AI 出错的代价，不再是一次 bad response 这么简单 —— 它可能一次性写 300 份工单、提 80 个 PR、发 5000 封邮件。</p>
+    <div class="ts-chrome"><span class="ts-alert-tag">ai safety · 高優先</span><span class="ts-page">01 / 08</span></div>
+    <div class="ts-kicker">2026 年でいちばん重要な判断</div>
+    <h1 class="ts-h1">もう聞くな<br><span class="strike">AI は仕事をするか</span><br>聞き始めろ：<span class="red">事故の責任は誰か</span></h1>
+    <p class="ts-sub">AI が間違う代償は、bad response 1回では済まない —— 一度にチケット 300 件を書き、PR を 80 本出し、メールを 5000 通送るかもしれない。</p>
     <div class="ts-alert-box">
-      <h3>风险已经规模化</h3>
-      <p>「做错」成本 × N；「做对」收益 × N。<br>这就是为什么 <b>测试、验收、安全、风控</b> 会变成未来 3 年最贵的能力。</p>
+      <h3>リスクはすでに規模化した</h3>
+      <p>「失敗」コスト × N；「成功」収益 × N。<br>だから <b>テスト、検収、安全、リスク管理</b> が今後 3 年でいちばん高い能力になる。</p>
     </div>
     <div class="ts-stripe-b"></div>
     <div class="ts-footer"><span>AI SAFETY BRIEF · LEWIS · 2026.04</span><span>01 / 08</span></div>
@@ -259,11 +259,11 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 2. SECTION -->
   <section class="slide">
     <div class="ts-stripe"></div>
-    <div class="ts-chrome"><span class="ts-alert-tag amber">section · risk 分级</span><span class="ts-page">02 / 08</span></div>
+    <div class="ts-chrome"><span class="ts-alert-tag amber">section · risk 等級</span><span class="ts-page">02 / 08</span></div>
     <div style="margin:auto 0">
       <div class="ts-kicker">Chapter One</div>
-      <h1 class="ts-h1" style="font-size:130px">先分 <span class="red">等级</span></h1>
-      <p class="ts-sub" style="font-size:28px">不是所有 AI 行为都同等危险。<br>先把「可撤销」和「不可撤销」分开，再谈流程。</p>
+      <h1 class="ts-h1" style="font-size:130px">まず <span class="red">等級</span>を分ける</h1>
+      <p class="ts-sub" style="font-size:28px">すべての AI 行為が同じ危険ではない。<br>まず「取り消せる」と「取り消せない」を分け、それからフローを話す。</p>
     </div>
     <div class="ts-stripe-b"></div>
     <div class="ts-footer"><span>section · level taxonomy</span><span>02 / 08</span></div>
@@ -272,16 +272,16 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 3. CONTENT risk levels -->
   <section class="slide">
     <div class="ts-stripe"></div>
-    <div class="ts-chrome"><span class="ts-alert-tag">风险分级 · 3 levels</span><span class="ts-page">03 / 08</span></div>
-    <h2 class="ts-h2">三档风险，三种处理</h2>
+    <div class="ts-chrome"><span class="ts-alert-tag">リスク等級 · 3 levels</span><span class="ts-page">03 / 08</span></div>
+    <h2 class="ts-h2">三段階のリスク、三つの処理</h2>
     <div class="ts-grid-3">
-      <div class="ts-card" style="border-top:4px solid var(--ts-green)"><div class="lbl">L1 · 绿色</div><h4>可撤销</h4><p>写 draft、生成图片、起草文档。<br>错了 Ctrl+Z，零代价。<br><b style="color:var(--ts-green)">策略：放开跑</b></p></div>
-      <div class="ts-card" style="border-top:4px solid var(--ts-amber)"><div class="lbl">L2 · 琥珀</div><h4>半可撤销</h4><p>发 draft 邮件、提 PR、改 staging 数据。<br>错了要道歉 / 回滚。<br><b style="color:var(--ts-amber)">策略：人工复核</b></p></div>
-      <div class="ts-card" style="border-top:4px solid var(--ts-red)"><div class="lbl">L3 · 红色</div><h4>不可撤销</h4><p>发真实邮件、付款、删库、删 prod 数据。<br>错了就真错了。<br><b style="color:var(--ts-red)">策略：硬卡 + 双人审</b></p></div>
+      <div class="ts-card" style="border-top:4px solid var(--ts-green)"><div class="lbl">L1 · 緑</div><h4>取り消せる</h4><p>draft を書く、画像を生成、文書を起草。<br>間違えたら Ctrl+Z，コストゼロ。<br><b style="color:var(--ts-green)">戦略：自由に走らせる</b></p></div>
+      <div class="ts-card" style="border-top:4px solid var(--ts-amber)"><div class="lbl">L2 · 琥珀</div><h4>半ば取り消せる</h4><p>draft メールを送る、PR を出す、staging データを変える。<br>間違えたら謝罪 / ロールバックが要る。<br><b style="color:var(--ts-amber)">戦略：人がレビュー</b></p></div>
+      <div class="ts-card" style="border-top:4px solid var(--ts-red)"><div class="lbl">L3 · 赤</div><h4>取り消せない</h4><p>本番メールを送る、支払い、DB削除、prod データを消す。<br>間違えたら本当に間違い。<br><b style="color:var(--ts-red)">戦略：ハードブロック + 二人審査</b></p></div>
     </div>
     <div class="ts-alert-box amber">
-      <h3>绝不要让 agent 自己升级</h3>
-      <p>L1 的任务不能自己变成 L2。授权必须是显式的、可撤销的、带过期时间的。</p>
+      <h3>agent に自分で昇格させるな</h3>
+      <p>L1 のタスクが自分で L2 になってはいけない。認可は明示的で、取り消せ、期限付きでなければならない。</p>
     </div>
     <div class="ts-stripe-b"></div>
     <div class="ts-footer"><span>risk · 3 levels</span><span>03 / 08</span></div>
@@ -291,8 +291,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <section class="slide">
     <div class="ts-stripe"></div>
     <div class="ts-chrome"><span class="ts-alert-tag">policy as code</span><span class="ts-page">04 / 08</span></div>
-    <div class="ts-kicker">别用文档管规则 · 用代码管规则</div>
-    <h2 class="ts-h2">三十行 YAML，<br><span class="ts-highlight-red">红线硬卡</span></h2>
+    <div class="ts-kicker">ルールを文書で管理するな · コードで管理しろ</div>
+    <h2 class="ts-h2">YAML 三十行，<br><span class="ts-highlight-red">レッドラインのハードブロック</span></h2>
     <pre class="ts-codebox"><span class="cm"># safety-policy.yaml · compiled → runtime guard</span>
 <span class="kw">level_1_allow</span>:
   - tools: [<span class="st">write_draft</span>, <span class="st">generate_image</span>, <span class="st">read_docs</span>]
@@ -317,8 +317,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <section class="slide">
     <div class="ts-stripe"></div>
     <div class="ts-chrome"><span class="ts-alert-tag amber">incident report · q1</span><span class="ts-page">05 / 08</span></div>
-    <h2 class="ts-h2">我们 Q1 的 <span class="red">12 起 AI 事故</span></h2>
-    <p class="ts-sub">幸好全部捕获在 staging。但每一起都能上生产。</p>
+    <h2 class="ts-h2">私たちの Q1 の <span class="red">AI 事故 12 件</span></h2>
+    <p class="ts-sub">幸いすべて staging で捕捉。だがどれも本番に出せた。</p>
     <svg viewBox="0 0 1040 360" style="width:100%;max-width:1040px;margin-top:18px" xmlns="http://www.w3.org/2000/svg">
       <g font-family="Inter,sans-serif" font-size="14" fill="#4a4955">
         <line x1="70" y1="320" x2="1000" y2="320" stroke="#eaecf3" stroke-width="2"/>
@@ -346,11 +346,11 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
         </g>
         <!-- legend -->
         <g transform="translate(720,60)">
-          <rect x="0" y="0" width="16" height="16" fill="#e0314a"/><text x="24" y="13" font-weight="700">L3 不可撤销 (3)</text>
-          <rect x="0" y="26" width="16" height="16" fill="#d97706"/><text x="24" y="39" font-weight="700">L2 需复核 (4)</text>
-          <rect x="0" y="52" width="16" height="16" fill="#067647"/><text x="24" y="65" font-weight="700">L1 可恢复 (5)</text>
-          <text x="0" y="100" font-size="13" fill="#8a8892">全部被 safety-policy 在 runtime 拦下，</text>
-          <text x="0" y="118" font-size="13" fill="#8a8892">未进 prod。但 3 起 L3 非常惊险。</text>
+          <rect x="0" y="0" width="16" height="16" fill="#e0314a"/><text x="24" y="13" font-weight="700">L3 取り消せない (3)</text>
+          <rect x="0" y="26" width="16" height="16" fill="#d97706"/><text x="24" y="39" font-weight="700">L2 レビュー要 (4)</text>
+          <rect x="0" y="52" width="16" height="16" fill="#067647"/><text x="24" y="65" font-weight="700">L1 復旧可 (5)</text>
+          <text x="0" y="100" font-size="13" fill="#8a8892">すべて safety-policy が runtime で止めた，</text>
+          <text x="0" y="118" font-size="13" fill="#8a8892">prod には入っていない。だが L3 の 3 件はかなり際どい。</text>
         </g>
       </g>
     </svg>
@@ -362,15 +362,15 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <section class="slide">
     <div class="ts-stripe"></div>
     <div class="ts-chrome"><span class="ts-alert-tag green">red-team checklist</span><span class="ts-page">06 / 08</span></div>
-    <h2 class="ts-h2">上线前 <span class="red">必过 7 道题</span></h2>
+    <h2 class="ts-h2">リリース前に <span class="red">必ず通す 7 問</span></h2>
     <div class="ts-checklist">
-      <div class="ts-check ok"><div class="box">✓</div><div class="txt">它能删除东西吗？有人类 review 吗？能 60 秒内回滚吗？</div></div>
-      <div class="ts-check ok"><div class="box">✓</div><div class="txt">它的 prompt 注入能让它越权吗？（跑过红队提示词）</div></div>
-      <div class="ts-check"><div class="box">!</div><div class="txt">它处理 PII 吗？日志里是不是也有 PII？</div></div>
-      <div class="ts-check ok"><div class="box">✓</div><div class="txt">上下游失败时，它会不会开始乱改其他资源？</div></div>
-      <div class="ts-check"><div class="box">!</div><div class="txt">并发 100 个 agent 一起跑会不会死锁？</div></div>
-      <div class="ts-check ok"><div class="box">✓</div><div class="txt">错了能不能 <b>立刻</b> 停？（kill switch 能 2 秒内生效吗）</div></div>
-      <div class="ts-check"><div class="box">!</div><div class="txt">出事时有没有人值班？值班手册有没有 agent 专属章节？</div></div>
+      <div class="ts-check ok"><div class="box">✓</div><div class="txt">削除できるか？人間の review はあるか？60 秒以内にロールバックできるか？</div></div>
+      <div class="ts-check ok"><div class="box">✓</div><div class="txt">prompt 注入で権限を越えられるか？（レッドチームのプロンプトは走らせた）</div></div>
+      <div class="ts-check"><div class="box">!</div><div class="txt">PII を扱うか？ログにも PII はあるか？</div></div>
+      <div class="ts-check ok"><div class="box">✓</div><div class="txt">上下流が失敗したとき、他のリソースを勝手に変え始めるか？</div></div>
+      <div class="ts-check"><div class="box">!</div><div class="txt">100 個の agent を同時に走らせるとデッドロックするか？</div></div>
+      <div class="ts-check ok"><div class="box">✓</div><div class="txt">間違えたら <b>即座に</b> 止められるか？（kill switch は 2 秒以内に効くか）</div></div>
+      <div class="ts-check"><div class="box">!</div><div class="txt">事故時に当直はいるか？当直マニュアルに agent 専用の章はあるか？</div></div>
     </div>
     <div class="ts-stripe-b"></div>
     <div class="ts-footer"><span>checklist · pre-launch</span><span>06 / 08</span></div>
@@ -379,16 +379,16 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
   <!-- 7. CTA -->
   <section class="slide">
     <div class="ts-stripe"></div>
-    <div class="ts-chrome"><span class="ts-alert-tag green">今晚就能动</span><span class="ts-page">07 / 08</span></div>
-    <h2 class="ts-h2">今晚先做 <span class="ts-highlight-red">三件事</span></h2>
+    <div class="ts-chrome"><span class="ts-alert-tag green">今夜すぐ動ける</span><span class="ts-page">07 / 08</span></div>
+    <h2 class="ts-h2">今夜まずやる <span class="ts-highlight-red">三つのこと</span></h2>
     <div class="ts-grid-3">
-      <div class="ts-card"><div class="lbl">1 · 分级</div><h4>给你的 agent<br>写 L1/L2/L3</h4><p>把所有工具列出来，标上等级。不标的一律按 L3。</p></div>
-      <div class="ts-card"><div class="lbl">2 · 写 policy</div><h4>policy.yaml<br>接 runtime</h4><p>不要信 prompt 里的 "be careful"，要信执行层的硬卡。</p></div>
-      <div class="ts-card"><div class="lbl">3 · kill switch</div><h4>红按钮<br>能在 2 秒内停</h4><p>CTO / on-call 都得知道怎么按。演练一次。</p></div>
+      <div class="ts-card"><div class="lbl">1 · 等級分け</div><h4>agent に<br>L1/L2/L3 を書け</h4><p>ツールを全部列挙し、等級を付ける。未記入は一律 L3。</p></div>
+      <div class="ts-card"><div class="lbl">2 · policy を書く</div><h4>policy.yaml<br>runtime に接続</h4><p>prompt の "be careful" を信じるな、実行層のハードブロックを信じろ。</p></div>
+      <div class="ts-card"><div class="lbl">3 · kill switch</div><h4>赤いボタン<br>2 秒以内に止められる</h4><p>CTO / on-call は押し方を知っている必要がある。一度演習しろ。</p></div>
     </div>
     <div class="ts-alert-box green">
-      <h3>真正的安全不是 prompt，是流程</h3>
-      <p>prompt 会被注入，流程不会。—— 把保护放在不可被说服的一层。</p>
+      <h3>本当の安全は prompt ではなく、フローだ</h3>
+      <p>prompt は注入される、フローはされない。—— 保護を説得できない層に置け。</p>
     </div>
     <div class="ts-stripe-b"></div>
     <div class="ts-footer"><span>cta · tonight</span><span>07 / 08</span></div>
@@ -400,8 +400,8 @@ h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
     <div class="ts-chrome"><span class="ts-alert-tag amber">please stay safe</span><span class="ts-page">08 / 08</span></div>
     <div style="margin:auto 0">
       <div class="ts-kicker">end of brief</div>
-      <h1 class="ts-h1" style="font-size:140px">谢谢 <span class="red">·</span> thanks</h1>
-      <p class="ts-sub" style="font-size:24px">policy.yaml 模板、红队 prompt 清单、事故复盘模板 —— 评论区扣「安全」。</p>
+      <h1 class="ts-h1" style="font-size:140px">ありがとう <span class="red">·</span> thanks</h1>
+      <p class="ts-sub" style="font-size:24px">policy.yaml テンプレート、レッドチーム prompt リスト、事故振り返りテンプレート —— コメント欄に「安全」と書け。</p>
     </div>
     <div class="ts-stripe-b"></div>
     <div class="ts-footer"><span>end of brief</span><span>08 / 08</span></div>
